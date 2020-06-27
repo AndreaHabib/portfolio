@@ -10,9 +10,7 @@ import {
 const RoutesView = () => {
   return (
     <Switch>
-      <Route exact path="/portfolios" component={PortfolioPageContainer} />
-      <Route exact path="/extras" component={ExtraPageContainer} />
-      <Route exact path="/myPortfolio" component={MyPortfolioContainer} />
+      <Route exact path="/" component={MyPortfolioContainer} />
     </Switch>
   );
 };
