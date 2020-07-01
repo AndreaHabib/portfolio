@@ -1,11 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router";
-import {
-  HomePageContainer,
-  PortfolioPageContainer,
-  ExtraPageContainer,
-  MyPortfolioContainer,
-} from "../containers";
+import { MyPortfolioContainer } from "../containers";
 
 const RoutesView = () => {
   return (

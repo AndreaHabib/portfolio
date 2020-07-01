@@ -6,6 +6,10 @@ import facebook from "./facebook.png";
 import { Link } from "react-router-dom";
 import pic from "./my-picture.png";
 import { Card, Button } from "react-bootstrap";
+import port from "./port.png";
+import discord from "./discord.png";
+import todo from "./todo.png";
+import hackathon1 from "./hackathon1.png";
 
 const MyPortfolioView = () => {
   return (
@@ -35,8 +39,21 @@ const MyPortfolioView = () => {
                 interested in Full Stack web development and Software engineer,
                 as well as the hardware parts of a computer.
               </p>
-              <a class="btn btn-outline-primary" role="button" href="#">
+              <a
+                class="btn btn-outline-primary"
+                style={{ marginRight: "10px" }}
+                role="button"
+                href="#"
+              >
                 Hire me
+              </a>
+
+              <a
+                class="btn btn-outline-primary"
+                role="button"
+                href="Resume.html"
+              >
+                Resume
               </a>
             </div>
           </div>
@@ -44,7 +61,15 @@ const MyPortfolioView = () => {
         <section class="portfolio-block skills">
           <div class="container">
             <div class="heading">
-              <h2>Special Skills</h2>
+              <h2
+                style={{
+                  border: "3px solid #1E90FF",
+                  padding: "10px",
+                  textAlign: "center",
+                }}
+              >
+                Special Skills
+              </h2>
             </div>
             <div class="row">
               <div class="col-md-4">
@@ -96,33 +121,166 @@ const MyPortfolioView = () => {
         </section>
       </main>
       <section class="portfolio-block website gradient">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-12 col-lg-5 offset-lg-1 text">
-              <h3>My Most Notable Projects</h3>
-              <Card style={{ width: "18rem" }} className="mr-5">
-                <Card.Img variant="top" />
-                <Card.Body>
-                  <Card.Title>gggggggg</Card.Title>
-                  <Card.Text>ggggggggg</Card.Text>
-                  <Button variant="info" target="_blank">
-                    Checkout the project
-                  </Button>
-                </Card.Body>
-              </Card>
-            </div>
-            <div class="col-md-12 col-lg-5">
-              <div class="portfolio-laptop-mockup">
-                <div class="screen">
-                  <div
-                    class="screen-content"
-                    style={{ backgroundImage: "tech/image6.png" }}
-                  ></div>
-                </div>
-                <div class="keyboard"></div>
+        <div style={{ color: "black", textAlign: "center" }} class="container">
+          <h3 style={{ color: "white" }}>My Most Notable Projects on Github</h3>
+          <div class="card-deck">
+            <div class="card mb-4">
+              <img
+                class="card-img-top img-fluid"
+                src="//placehold.it/500x280"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h4 class="card-title">This Website</h4>
+                <p class="card-text">React/Javascript, JSX, CSS, Bootstrap</p>
               </div>
+              <Button
+                variant="info"
+                href="https://github.com/AndreaHabib/portifolio"
+                target="_blank"
+              >
+                Checkout the project
+              </Button>
+            </div>
+            <div class="card mb-4">
+              <img
+                class="card-img-top img-fluid"
+                src="//placehold.it/500x280"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Discord Bot</h4>
+                <p class="card-text">Python, Discord API/discord.py</p>
+              </div>
+              <Button
+                variant="info"
+                href="https://github.com/AndreaHabib/Discord-bot"
+                target="_blank"
+              >
+                Checkout the project
+              </Button>
+            </div>
+            <div class="w-100 d-none d-sm-block d-md-none"></div>
+            <div class="card mb-4">
+              <img
+                class="card-img-top img-fluid"
+                src="//placehold.it/500x280"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Hackathon</h4>
+                <p class="card-text">
+                  Python, Twilio.py, IBM Watson AI (NLP), Twitter API
+                </p>
+              </div>
+              <Button
+                variant="info"
+                href="https://github.com/AndreaHabib/Hackathon"
+                target="_blank"
+              >
+                Checkout the project
+              </Button>
+            </div>
+            <div class="w-100 d-none d-md-block d-lg-none"></div>
+            <div class="card mb-4">
+              <img
+                class="card-img-top img-fluid"
+                src="//placehold.it/500x280"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h4 class="card-title">TODO-List</h4>
+                <p class="card-text">C++</p>
+              </div>
+              <Button
+                variant="info"
+                href="https://github.com/AndreaHabib/TODO-List"
+                target="_blank"
+              >
+                Checkout the project
+              </Button>
+            </div>
+            <div class="w-100 d-none d-sm-block d-md-none"></div>
+            <div class="w-100 d-none d-lg-block d-xl-none"></div>
+            <div class="card mb-4">
+              <img
+                class="card-img-top img-fluid"
+                src="//placehold.it/500x280"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h4 class="card-title">GamesFave</h4>
+                <p class="card-text">
+                  React, Redux, PostgreSQL, IGDB API, Express, Sequelize,
+                  Bootstrap, Javascript, JSX, CSS, AXIOS
+                </p>
+              </div>
+              <Button
+                variant="info"
+                href="https://github.com/GameINFO-cc/gamesFaves"
+                target="_blank"
+              >
+                Checkout the project
+              </Button>
+            </div>
+            <div class="w-100 d-none d-xl-block"></div>
+            <div class="card mb-4">
+              <img
+                class="card-img-top img-fluid"
+                src="//placehold.it/500x300"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Ciphers</h4>
+                <p class="card-text">Hill Cipher: Java, Caesar Cipher: C++</p>
+              </div>
+              <Button
+                variant="info"
+                href="https://github.com/AndreaHabib/Ciphers"
+                target="_blank"
+              >
+                Checkout the project
+              </Button>
+            </div>
+            <div class="w-100 d-none d-sm-block d-md-none"></div>
+            <div class="w-100 d-none d-md-block d-lg-none"></div>
+            <div class="card mb-4">
+              <img
+                class="card-img-top img-fluid"
+                src="//placehold.it/500x270"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Coronavirus Map</h4>
+                <p class="card-text">
+                  Hackathon Orientation Project: 1st place -- React, Redux,
+                  PostgreSQL, Google Maps API, CSS, Bootstrap
+                </p>
+              </div>
+              <Button
+                variant="info"
+                href="https://github.com/MLH-Fellowship/ttp-team-2"
+                target="_blank"
+              >
+                Checkout the project
+              </Button>
             </div>
           </div>
+          <h3 style={{ color: "white" }}>
+            More projects here:{" "}
+            <a
+              style={{
+                textDecoration: "none",
+                color: "white",
+                border: "1px solid white",
+                padding: "5px",
+                borderRadius: "5px",
+              }}
+              href="https://github.com/AndreaHabib?tab=repositories"
+            >
+              Github
+            </a>
+          </h3>
         </div>
       </section>
       <footer class="page-footer">
