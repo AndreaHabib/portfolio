@@ -3,13 +3,13 @@ import "./styles/MyPortfolioView.css";
 import linkedin from "./linkedin.png";
 import github from "./github.png";
 import facebook from "./facebook.png";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import pic from "./my-picture.png";
 import { Card, Button } from "react-bootstrap";
-import port from "./port.png";
-import discord from "./discord.png";
-import todo from "./todo.png";
-import hackathon1 from "./hackathon1.png";
+// import port from "./port.png";
+// import discord from "./discord.png";
+// import todo from "./todo.png";
+// import hackathon1 from "./hackathon1.png";
 
 const MyPortfolioView = () => {
   return (
