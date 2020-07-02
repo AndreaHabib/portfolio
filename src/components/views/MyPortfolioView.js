@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./styles/MyPortfolioView.css";
 import linkedin from "./linkedin.png";
 import github from "./github.png";
@@ -19,399 +19,430 @@ import webdev from "./webdev.png";
 import code from "./coding.png";
 import tools from "./tools.png";
 
-const MyPortfolioView = () => {
-  return (
-    <div>
-      <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
-        <div class="container">
-          <a class="navbar-brand logo" href="#">
-            Andrea Habib
-          </a>
+class MyPortfolioView extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      display: false,
+    };
+  }
+  onClick = () => {
+    this.setState({ display: !this.state.display });
+  };
+  render() {
+    let display;
+    if (this.state.display) {
+      display = (
+        <div
+          className="portfolio-block website gradient"
+          style={{
+            padding: "10px",
+            textAlign: "center",
+            marginTop: "30px",
+          }}
+        >
+          <h3>Email: andrea.atef@yahoo.com</h3>
+          <h3>Phone number: (929)-422-8163</h3>
         </div>
-      </nav>
-      <main class="page lanidng-page">
-        <section class="portfolio-block block-intro">
+      );
+    }
+    return (
+      <div>
+        <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
           <div class="container">
-            <div
-              class="avatar"
-              style={{
-                backgroundImage: "url({ pic })",
-              }}
-            >
-              <img style={{ height: "160px" }} src={pic} class="avatar" />
-            </div>
-            <div class="about-me">
-              <p>
-                Hello! I am <strong>Andrea Habib!</strong> I am a College of
-                Staten Island student, majoring in Computer Science. I am
-                interested in Full Stack web development and Software engineer,
-                as well as the hardware parts of a computer.
-              </p>
-              <a
-                class="btn btn-outline-primary"
-                style={{ marginRight: "10px" }}
-                role="button"
-                href="#"
-              >
-                Hire me
-              </a>
-
-              <a
-                class="btn btn-outline-primary"
-                role="button"
-                href="Resume.pdf"
-              >
-                Resume
-              </a>
-            </div>
+            <a class="navbar-brand logo" href="#">
+              Andrea Habib
+            </a>
           </div>
-        </section>
-        <section class="portfolio-block skills">
-          <div class="container">
-            <div class="heading">
-              <h2
+        </nav>
+        <main class="page lanidng-page">
+          <section class="portfolio-block block-intro">
+            <div class="container">
+              <div
+                class="avatar"
                 style={{
-                  border: "3px solid #1E90FF",
-                  padding: "10px",
-                  textAlign: "center",
+                  backgroundImage: "url({ pic })",
                 }}
               >
-                Special Skills
-              </h2>
-            </div>
-            <div class="row" style={{ textAlign: "center" }}>
-              <div class="col-md-4">
-                <div class="card special-skill-item border-0">
-                  <div class="card-header bg-transparent border-0">
-                    <i class="icon ion-ios-star-outline"></i>
-                  </div>
-                  <div class="card-body">
-                    <img
-                      src={webdev}
-                      class="img-fluid rounded mx-auto d-block"
-                      alt="Responsive image"
-                    />
-                    <h3 class="card-title">Web Development</h3>
-                    <p class="card-text">
-                      Skills for web development: React, Redux, Express,
-                      PostgreSQL, Sequelize, Bootstrap, HTML, CSS, Javascript,
-                      Node, Restful APIs, JSX, JSON
-                    </p>
-                  </div>
-                </div>
+                <img style={{ height: "160px" }} src={pic} class="avatar" />
               </div>
-              <div class="col-md-4">
-                <div class="card special-skill-item border-0">
-                  <div class="card-header bg-transparent border-0">
-                    <i class="icon ion-ios-lightbulb-outline"></i>
-                  </div>
-                  <div class="card-body">
-                    <img
-                      src={code}
-                      class="img-fluid rounded mx-auto d-block"
-                      alt="Responsive image"
-                    />
-                    <h3 class="card-title">Software Engineer</h3>
-                    <p class="card-text">
-                      Skills for software engineer: Java, Python, C++ (Data
-                      Structures), Matlab
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card special-skill-item border-0">
-                  <div class="card-header bg-transparent border-0">
-                    <i class="icon ion-ios-gear-outline"></i>
-                  </div>
-                  <div class="card-body">
-                    <img
-                      src={tools}
-                      class="img-fluid rounded mx-auto d-block"
-                      alt="Responsive image"
-                    />
-                    <h3 class="card-title">Tools and Expertise</h3>
-                    <p class="card-text">
-                      Microsoft Word, Excel, Powerpoint, Visual Studio, Visual
-                      Studio Code, Git/Git BASH, Github, Postman, Anaconda,
-                      Spydr, Ubuntu-18.04 WSL 2, Windows 10, Computer
-                      Troubleshooting, Fixing Errors
-                    </p>
-                  </div>
-                </div>
+              <div class="about-me">
+                <p>
+                  Hello! I am <strong>Andrea Habib!</strong> I am a College of
+                  Staten Island student, majoring in Computer Science. I am
+                  interested in Full Stack web development and Software
+                  engineer, as well as the hardware parts of a computer.
+                </p>
+                <a
+                  onClick={this.onClick}
+                  class="btn btn-outline-primary"
+                  style={{ marginRight: "10px" }}
+                  role="button"
+                  href="#"
+                >
+                  Contact
+                </a>
+                <a
+                  class="btn btn-outline-primary"
+                  role="button"
+                  href="Resume.pdf"
+                >
+                  Resume
+                </a>
+                <div>{display}</div>
               </div>
             </div>
+          </section>
+          <section class="portfolio-block skills">
+            <div class="container">
+              <div class="heading">
+                <h2
+                  style={{
+                    border: "3px solid #1E90FF",
+                    padding: "10px",
+                    textAlign: "center",
+                  }}
+                >
+                  Special Skills
+                </h2>
+              </div>
+              <div class="row" style={{ textAlign: "center" }}>
+                <div class="col-md-4">
+                  <div class="card special-skill-item border-0">
+                    <div class="card-header bg-transparent border-0">
+                      <i class="icon ion-ios-star-outline"></i>
+                    </div>
+                    <div class="card-body">
+                      <img
+                        src={webdev}
+                        class="img-fluid rounded mx-auto d-block"
+                        alt="Responsive image"
+                      />
+                      <h3 class="card-title">Web Development</h3>
+                      <p class="card-text">
+                        Skills for web development: React, Redux, Express,
+                        PostgreSQL, Sequelize, Bootstrap, HTML, CSS, Javascript,
+                        Node, Restful APIs, JSX, JSON
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card special-skill-item border-0">
+                    <div class="card-header bg-transparent border-0">
+                      <i class="icon ion-ios-lightbulb-outline"></i>
+                    </div>
+                    <div class="card-body">
+                      <img
+                        src={code}
+                        class="img-fluid rounded mx-auto d-block"
+                        alt="Responsive image"
+                      />
+                      <h3 class="card-title">Software Engineer</h3>
+                      <p class="card-text">
+                        Skills for software engineer: Java, Python, C++ (Data
+                        Structures), Matlab
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card special-skill-item border-0">
+                    <div class="card-header bg-transparent border-0">
+                      <i class="icon ion-ios-gear-outline"></i>
+                    </div>
+                    <div class="card-body">
+                      <img
+                        src={tools}
+                        class="img-fluid rounded mx-auto d-block"
+                        alt="Responsive image"
+                      />
+                      <h3 class="card-title">Tools and Expertise</h3>
+                      <p class="card-text">
+                        Microsoft Word, Excel, Powerpoint, Visual Studio, Visual
+                        Studio Code, Git/Git BASH, Github, Postman, Anaconda,
+                        Spydr, Ubuntu-18.04 WSL 2, Windows 10, Computer
+                        Troubleshooting, Fixing Errors
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <section class="portfolio-block website gradient">
+          <div
+            style={{ color: "black", textAlign: "center" }}
+            class="container"
+          >
+            <h3
+              style={{
+                color: "white",
+                marginBottom: "50px",
+                border: "3px solid white",
+                padding: "10px",
+                textAlign: "center",
+              }}
+            >
+              My Most Notable Projects on Github
+            </h3>
+            <div class="card-deck">
+              <div class="card mb-4">
+                <img
+                  class="card-img-top img-fluid"
+                  src={port}
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">This Website</h4>
+                  <p class="card-text">React/Javascript, JSX, CSS, Bootstrap</p>
+                </div>
+                <Button
+                  variant="info"
+                  href="https://github.com/AndreaHabib/portifolio"
+                  target="_blank"
+                >
+                  Checkout the project
+                </Button>
+              </div>
+
+              <div class="card mb-4">
+                <img
+                  class="card-img-top img-fluid"
+                  src={discord}
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Discord Bot</h4>
+                  <p class="card-text">Python, Discord API/discord.py</p>
+                </div>
+                <Button
+                  variant="info"
+                  href="https://github.com/AndreaHabib/Discord-bot"
+                  target="_blank"
+                >
+                  Checkout the project
+                </Button>
+              </div>
+              <div class="w-100 d-none d-sm-block d-md-none"></div>
+              <div class="card mb-4">
+                <img
+                  class="card-img-top img-fluid"
+                  src={hackathon1}
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">CUNY Hackathon 2019</h4>
+                  <p class="card-text">
+                    Python, Twilio.py, IBM Watson AI (NLP), Twitter API
+                  </p>
+                </div>
+                <Button
+                  variant="info"
+                  href="https://github.com/AndreaHabib/Hackathon"
+                  target="_blank"
+                >
+                  Checkout the project
+                </Button>
+              </div>
+              <div class="w-100"></div>
+              <div class="w-100 d-none d-md-block d-lg-none"></div>
+              <div class="card mb-4">
+                <img
+                  class="card-img-top img-fluid"
+                  src={todo}
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">TODO-List</h4>
+                  <p class="card-text">
+                    C++, Features: Multiple files, Dynamic Arrays, Classes(OOP){" "}
+                    <br></br>
+                    React, Features: Add, Remove tasks, mark as done
+                  </p>
+                </div>
+                <Button
+                  variant="info"
+                  href="https://github.com/AndreaHabib/TODO-List"
+                  target="_blank"
+                >
+                  Checkout the project in C++
+                </Button>
+                <Button
+                  variant="info"
+                  href="https://github.com/AndreaHabib/TODO-REACT/tree/master/todo"
+                  target="_blank"
+                >
+                  Checkout the project in React
+                </Button>
+              </div>
+              <div class="w-100 d-none d-sm-block d-md-none"></div>
+              <div class="w-100 d-none d-lg-block d-xl-none"></div>
+              <div class="card mb-4">
+                <img
+                  class="card-img-top img-fluid"
+                  src={gamef}
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">GamesFave</h4>
+                  <p class="card-text">
+                    React, Redux, PostgreSQL, IGDB API, Express, Sequelize,
+                    Bootstrap, Javascript, JSX, CSS, AXIOS <br></br> Features:
+                    Look up games from API, Login/Register, add game to
+                    favorites and view on your profile.
+                  </p>
+                </div>
+                <Button
+                  variant="info"
+                  href="https://github.com/GameINFO-cc/gamesFaves"
+                  target="_blank"
+                >
+                  Checkout the project
+                </Button>
+              </div>
+              <div class="w-100 d-none d-xl-block"></div>
+              <div class="card mb-4">
+                <img
+                  class="card-img-top img-fluid"
+                  src={cipher}
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Ciphers</h4>
+                  <p class="card-text">Hill Cipher: Java, Caesar Cipher: C++</p>
+                </div>
+                <Button
+                  variant="info"
+                  href="https://github.com/AndreaHabib/Ciphers"
+                  target="_blank"
+                >
+                  Checkout the project
+                </Button>
+              </div>
+              <div class="w-100 d-none d-md-block d-lg-none"></div>
+              <div class="card mb-4">
+                <img
+                  class="card-img-top img-fluid"
+                  src={cpp}
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">CSC326 Garage Stack</h4>
+                  <p class="card-text">
+                    Garage Stack using C++ (Data structures and OOP)
+                  </p>
+                </div>
+                <Button
+                  variant="info"
+                  href="https://github.com/AndreaHabib/CSC326"
+                  target="_blank"
+                >
+                  Checkout the project
+                </Button>
+              </div>
+
+              <div class="w-100 d-none d-md-block d-lg-none"></div>
+              <div class="card mb-4">
+                <img
+                  class="card-img-top img-fluid"
+                  src={cpp}
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">CSC211</h4>
+                  <p class="card-text">
+                    My collective experience for CSC211, C++
+                  </p>
+                </div>
+                <Button
+                  variant="info"
+                  href="https://github.com/AndreaHabib/CSC211"
+                  target="_blank"
+                >
+                  Checkout the project
+                </Button>
+              </div>
+              <div class="w-100"></div>
+              <div class="w-100 d-none d-sm-block d-md-none"></div>
+              <div class="w-100 d-none d-md-block d-lg-none"></div>
+              <div class="card mb-4">
+                <img
+                  class="card-img-top img-fluid"
+                  src={map}
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Coronavirus Map</h4>
+                  <p class="card-text">
+                    Hackathon Orientation Project: 1st place -- React, Redux,
+                    PostgreSQL, Google Maps API, CSS, Bootstrap
+                  </p>
+                </div>
+                <Button
+                  variant="info"
+                  href="https://github.com/MLH-Fellowship/ttp-team-2"
+                  target="_blank"
+                >
+                  Checkout the project
+                </Button>
+              </div>
+              <div class="w-100 d-none d-md-block d-lg-none"></div>
+              <div class="card mb-4">
+                <img
+                  class="card-img-top img-fluid"
+                  src={wip}
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Pathfinder Algo</h4>
+                  <p class="card-text">(WORK IN PROGRERSS)</p>
+                </div>
+                <Button
+                  variant="info"
+                  href="https://github.com/AndreaHabib/Pathfinder-Algorithm"
+                  target="_blank"
+                >
+                  Checkout the project
+                </Button>
+              </div>
+            </div>
+            <h3 style={{ color: "white" }}>
+              More projects here:{" "}
+              <a
+                style={{
+                  textDecoration: "none",
+                  color: "white",
+                  border: "1px solid white",
+                  padding: "5px",
+                  borderRadius: "5px",
+                }}
+                href="https://github.com/AndreaHabib?tab=repositories"
+              >
+                Github
+              </a>
+            </h3>
           </div>
         </section>
-      </main>
-      <section class="portfolio-block website gradient">
-        <div style={{ color: "black", textAlign: "center" }} class="container">
-          <h3
-            style={{
-              color: "white",
-              marginBottom: "50px",
-              border: "3px solid white",
-              padding: "10px",
-              textAlign: "center",
-            }}
-          >
-            My Most Notable Projects on Github
-          </h3>
-          <div class="card-deck">
-            <div class="card mb-4">
-              <img
-                class="card-img-top img-fluid"
-                src={port}
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <h4 class="card-title">This Website</h4>
-                <p class="card-text">React/Javascript, JSX, CSS, Bootstrap</p>
-              </div>
-              <Button
-                variant="info"
-                href="https://github.com/AndreaHabib/portifolio"
-                target="_blank"
-              >
-                Checkout the project
-              </Button>
-            </div>
-
-            <div class="card mb-4">
-              <img
-                class="card-img-top img-fluid"
-                src={discord}
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <h4 class="card-title">Discord Bot</h4>
-                <p class="card-text">Python, Discord API/discord.py</p>
-              </div>
-              <Button
-                variant="info"
-                href="https://github.com/AndreaHabib/Discord-bot"
-                target="_blank"
-              >
-                Checkout the project
-              </Button>
-            </div>
-            <div class="w-100 d-none d-sm-block d-md-none"></div>
-            <div class="card mb-4">
-              <img
-                class="card-img-top img-fluid"
-                src={hackathon1}
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <h4 class="card-title">CUNY Hackathon 2019</h4>
-                <p class="card-text">
-                  Python, Twilio.py, IBM Watson AI (NLP), Twitter API
-                </p>
-              </div>
-              <Button
-                variant="info"
-                href="https://github.com/AndreaHabib/Hackathon"
-                target="_blank"
-              >
-                Checkout the project
-              </Button>
-            </div>
-            <div class="w-100"></div>
-            <div class="w-100 d-none d-md-block d-lg-none"></div>
-            <div class="card mb-4">
-              <img
-                class="card-img-top img-fluid"
-                src={todo}
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <h4 class="card-title">TODO-List</h4>
-                <p class="card-text">
-                  C++, Features: Multiple files, Dynamic Arrays, Classes(OOP){" "}
-                  <br></br>
-                  React, Features: Add, Remove tasks, mark as done
-                </p>
-              </div>
-              <Button
-                variant="info"
-                href="https://github.com/AndreaHabib/TODO-List"
-                target="_blank"
-              >
-                Checkout the project in C++
-              </Button>
-              <Button
-                variant="info"
-                href="https://github.com/AndreaHabib/TODO-REACT/tree/master/todo"
-                target="_blank"
-              >
-                Checkout the project in React
-              </Button>
-            </div>
-            <div class="w-100 d-none d-sm-block d-md-none"></div>
-            <div class="w-100 d-none d-lg-block d-xl-none"></div>
-            <div class="card mb-4">
-              <img
-                class="card-img-top img-fluid"
-                src={gamef}
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <h4 class="card-title">GamesFave</h4>
-                <p class="card-text">
-                  React, Redux, PostgreSQL, IGDB API, Express, Sequelize,
-                  Bootstrap, Javascript, JSX, CSS, AXIOS <br></br> Features:
-                  Look up games from API, Login/Register, add game to favorites
-                  and view on your profile.
-                </p>
-              </div>
-              <Button
-                variant="info"
-                href="https://github.com/GameINFO-cc/gamesFaves"
-                target="_blank"
-              >
-                Checkout the project
-              </Button>
-            </div>
-            <div class="w-100 d-none d-xl-block"></div>
-            <div class="card mb-4">
-              <img
-                class="card-img-top img-fluid"
-                src={cipher}
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <h4 class="card-title">Ciphers</h4>
-                <p class="card-text">Hill Cipher: Java, Caesar Cipher: C++</p>
-              </div>
-              <Button
-                variant="info"
-                href="https://github.com/AndreaHabib/Ciphers"
-                target="_blank"
-              >
-                Checkout the project
-              </Button>
-            </div>
-            <div class="w-100 d-none d-md-block d-lg-none"></div>
-            <div class="card mb-4">
-              <img
-                class="card-img-top img-fluid"
-                src={cpp}
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <h4 class="card-title">CSC326 Garage Stack</h4>
-                <p class="card-text">
-                  Garage Stack using C++ (Data structures and OOP)
-                </p>
-              </div>
-              <Button
-                variant="info"
-                href="https://github.com/AndreaHabib/CSC326"
-                target="_blank"
-              >
-                Checkout the project
-              </Button>
-            </div>
-
-            <div class="w-100 d-none d-md-block d-lg-none"></div>
-            <div class="card mb-4">
-              <img
-                class="card-img-top img-fluid"
-                src={cpp}
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <h4 class="card-title">CSC211</h4>
-                <p class="card-text">
-                  My collective experience for CSC211, C++
-                </p>
-              </div>
-              <Button
-                variant="info"
-                href="https://github.com/AndreaHabib/CSC211"
-                target="_blank"
-              >
-                Checkout the project
-              </Button>
-            </div>
-            <div class="w-100"></div>
-            <div class="w-100 d-none d-sm-block d-md-none"></div>
-            <div class="w-100 d-none d-md-block d-lg-none"></div>
-            <div class="card mb-4">
-              <img
-                class="card-img-top img-fluid"
-                src={map}
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <h4 class="card-title">Coronavirus Map</h4>
-                <p class="card-text">
-                  Hackathon Orientation Project: 1st place -- React, Redux,
-                  PostgreSQL, Google Maps API, CSS, Bootstrap
-                </p>
-              </div>
-              <Button
-                variant="info"
-                href="https://github.com/MLH-Fellowship/ttp-team-2"
-                target="_blank"
-              >
-                Checkout the project
-              </Button>
-            </div>
-            <div class="w-100 d-none d-md-block d-lg-none"></div>
-            <div class="card mb-4">
-              <img
-                class="card-img-top img-fluid"
-                src={wip}
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <h4 class="card-title">Pathfinder Algo</h4>
-                <p class="card-text">(WORK IN PROGRERSS)</p>
-              </div>
-              <Button
-                variant="info"
-                href="https://github.com/AndreaHabib/Pathfinder-Algorithm"
-                target="_blank"
-              >
-                Checkout the project
-              </Button>
+        <footer class="page-footer">
+          <div class="container">
+            <div class="social-icons">
+              <a href="https://www.facebook.com/andrea.atef">
+                <img src={facebook} alt="facebook" />
+              </a>
+              <a href="https://github.com/AndreaHabib?tab=repositories">
+                <img src={github} alt="github" />
+              </a>
+              <a href="https://www.linkedin.com/in/andrea-habib-730941198/">
+                <img src={linkedin} alt="linkedin" />
+              </a>
             </div>
           </div>
-          <h3 style={{ color: "white" }}>
-            More projects here:{" "}
-            <a
-              style={{
-                textDecoration: "none",
-                color: "white",
-                border: "1px solid white",
-                padding: "5px",
-                borderRadius: "5px",
-              }}
-              href="https://github.com/AndreaHabib?tab=repositories"
-            >
-              Github
-            </a>
-          </h3>
-        </div>
-      </section>
-      <footer class="page-footer">
-        <div class="container">
-          <div class="social-icons">
-            <a href="https://www.facebook.com/andrea.atef">
-              <img src={facebook} alt="facebook" />
-            </a>
-            <a href="https://github.com/AndreaHabib?tab=repositories">
-              <img src={github} alt="github" />
-            </a>
-            <a href="https://www.linkedin.com/in/andrea-habib-730941198/">
-              <img src={linkedin} alt="linkedin" />
-            </a>
-          </div>
-        </div>
-      </footer>
-    </div>
-  );
-};
+        </footer>
+      </div>
+    );
+  }
+}
 
 export default MyPortfolioView;
