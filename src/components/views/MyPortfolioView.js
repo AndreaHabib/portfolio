@@ -3,7 +3,6 @@ import "./styles/MyPortfolioView.css";
 import linkedin from "./linkedin.png";
 import github from "./github.png";
 import facebook from "./facebook.png";
-import { Link } from "react-router-dom";
 import pic from "./my-picture.png";
 import { Button } from "react-bootstrap";
 import port from "./port.png";
@@ -18,6 +17,10 @@ import wip from "./wip.png";
 import webdev from "./webdev.png";
 import code from "./coding.png";
 import tools from "./tools.png";
+import birth from "./birth.png";
+import email from "./email.png";
+import face from "./face.png";
+import phone from "./phone.png";
 
 class MyPortfolioView extends Component {
   constructor(props) {
@@ -34,15 +37,63 @@ class MyPortfolioView extends Component {
     if (this.state.display) {
       display = (
         <div
+          style={{ borderRadius: "20px", marginTop: "20px" }}
           className="portfolio-block website gradient"
-          style={{
-            padding: "10px",
-            textAlign: "center",
-            marginTop: "30px",
-          }}
         >
-          <h3>Email: andrea.atef@yahoo.com</h3>
-          <h3>Phone number: (929)-422-8163</h3>
+          <div
+            style={{ marginLeft: "40px" }}
+            class="contact-info portfolio-info-card"
+          >
+            <h2 style={{ textAlign: "left" }}>Contact Info</h2>
+            <div style={{ margin: "15px" }} class="row">
+              <div class="col-1">
+                <img
+                  style={{ float: "right" }}
+                  src={birth}
+                  className="mx-auto d-block"
+                />
+              </div>
+              <div class="col-9">
+                <span style={{ float: "left" }}>07/31/1999</span>
+              </div>
+            </div>
+            <div style={{ margin: "15px" }} class="row">
+              <div class="col-1">
+                <img
+                  style={{ float: "right" }}
+                  src={face}
+                  className="mx-auto d-block"
+                />
+              </div>
+              <div class="col-9">
+                <span style={{ float: "left" }}>Andrea Habib</span>
+              </div>
+            </div>
+            <div style={{ margin: "15px" }} class="row">
+              <div class="col-1">
+                <img
+                  style={{ float: "right" }}
+                  src={phone}
+                  className="mx-auto d-block"
+                />
+              </div>
+              <div class="col-9">
+                <span style={{ float: "left" }}>+1 (929) 422-8163</span>
+              </div>
+            </div>
+            <div style={{ margin: "15px" }} class="row">
+              <div class="col-1">
+                <img
+                  style={{ float: "right" }}
+                  src={email}
+                  className="mx-auto d-block"
+                />
+              </div>
+              <div class="col-9">
+                <span style={{ float: "left" }}>andrea.atef@yahoo.com</span>
+              </div>
+            </div>
+          </div>
         </div>
       );
     }
@@ -68,7 +119,7 @@ class MyPortfolioView extends Component {
               </div>
               <div class="about-me">
                 <p>
-                  Hey! I am <strong>Andrea Habib!</strong> A College of Staten
+                  Hey! I'm <strong>Andrea Habib!</strong> A College of Staten
                   Island student, majoring in Computer Science. I am interested
                   in Full Stack web development and Software engineering, as
                   well as the hardware parts of a computer.
