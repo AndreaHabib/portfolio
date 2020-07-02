@@ -68,10 +68,10 @@ class MyPortfolioView extends Component {
               </div>
               <div class="about-me">
                 <p>
-                  Hello! I am <strong>Andrea Habib!</strong> I am a College of
-                  Staten Island student, majoring in Computer Science. I am
-                  interested in Full Stack web development and Software
-                  engineer, as well as the hardware parts of a computer.
+                  Hey! I am <strong>Andrea Habib!</strong> A College of Staten
+                  Island student, majoring in Computer Science. I am interested
+                  in Full Stack web development and Software engineering, as
+                  well as the hardware parts of a computer.
                 </p>
                 <a
                   onClick={this.onClick}
