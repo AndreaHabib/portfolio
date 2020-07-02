@@ -3,7 +3,7 @@ import "./styles/MyPortfolioView.css";
 import linkedin from "./linkedin.png";
 import github from "./github.png";
 import facebook from "./facebook.png";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import pic from "./my-picture.png";
 import { Button } from "react-bootstrap";
 import port from "./port.png";
@@ -134,7 +134,8 @@ const MyPortfolioView = () => {
                     <p class="card-text">
                       Microsoft Word, Excel, Powerpoint, Visual Studio, Visual
                       Studio Code, Git/Git BASH, Github, Postman, Anaconda,
-                      Spydr, Ubuntu-18.04 WSL 2
+                      Spydr, Ubuntu-18.04 WSL 2, Windows 10, Computer
+                      Troubleshooting, Fixing Errors
                     </p>
                   </div>
                 </div>
@@ -259,7 +260,7 @@ const MyPortfolioView = () => {
                 <p class="card-text">
                   React, Redux, PostgreSQL, IGDB API, Express, Sequelize,
                   Bootstrap, Javascript, JSX, CSS, AXIOS <br></br> Features:
-                  Look up games from API, Login/Register, Add game to favorites
+                  Look up games from API, Login/Register, add game to favorites
                   and view on your profile.
                 </p>
               </div>
