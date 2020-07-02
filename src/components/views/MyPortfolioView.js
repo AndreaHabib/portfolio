@@ -30,7 +30,7 @@ const MyPortfolioView = () => {
                 backgroundImage: "url({ pic })",
               }}
             >
-              <img src={pic} class="avatar" />
+              <img style={{ height: "160px" }} src={pic} class="avatar" />
             </div>
             <div class="about-me">
               <p>
@@ -122,7 +122,15 @@ const MyPortfolioView = () => {
       </main>
       <section class="portfolio-block website gradient">
         <div style={{ color: "black", textAlign: "center" }} class="container">
-          <h3 style={{ color: "white" }}>My Most Notable Projects on Github</h3>
+          <h3 style={{ 
+                     color: "white",
+                     marginBottom: "50px",
+                     border: "3px solid white",
+                     padding: "10px",
+                     textAlign: "center",
+                    }}
+                      >
+                        My Most Notable Projects on Github</h3>
           <div class="card-deck">
             <div class="card mb-4">
               <img
