@@ -10,7 +10,7 @@ body {
   background-color: #fff;
 }
 html {
-  min-width: 550px;
+  /*min-width: 550px;*/
   position: relative;
 }
 @media (min-width: 992px) {
