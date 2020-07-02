@@ -115,7 +115,11 @@ class MyPortfolioView extends Component {
                   backgroundImage: "url({ pic })",
                 }}
               >
-                <img style={{ height: "160px" }} src={pic} class="avatar" />
+                <img
+                  style={{ height: "165px", border: "5px solid black" }}
+                  src={pic}
+                  class="avatar"
+                />
               </div>
               <div class="about-me">
                 <p>
@@ -276,7 +280,6 @@ class MyPortfolioView extends Component {
                   Checkout the project
                 </Button>
               </div>
-              <div class="w-100 d-none d-sm-block d-md-none"></div>
               <div class="card mb-4">
                 <img
                   class="card-img-top img-fluid"
@@ -298,7 +301,6 @@ class MyPortfolioView extends Component {
                 </Button>
               </div>
               <div class="w-100"></div>
-              <div class="w-100 d-none d-md-block d-lg-none"></div>
               <div class="card mb-4">
                 <img
                   class="card-img-top img-fluid"
@@ -328,8 +330,6 @@ class MyPortfolioView extends Component {
                   Checkout the project in React
                 </Button>
               </div>
-              <div class="w-100 d-none d-sm-block d-md-none"></div>
-              <div class="w-100 d-none d-lg-block d-xl-none"></div>
               <div class="card mb-4">
                 <img
                   class="card-img-top img-fluid"
@@ -353,7 +353,6 @@ class MyPortfolioView extends Component {
                   Checkout the project
                 </Button>
               </div>
-              <div class="w-100 d-none d-xl-block"></div>
               <div class="card mb-4">
                 <img
                   class="card-img-top img-fluid"
@@ -372,7 +371,7 @@ class MyPortfolioView extends Component {
                   Checkout the project
                 </Button>
               </div>
-              <div class="w-100 d-none d-md-block d-lg-none"></div>
+              <div class="w-100"></div>
               <div class="card mb-4">
                 <img
                   class="card-img-top img-fluid"
@@ -393,8 +392,6 @@ class MyPortfolioView extends Component {
                   Checkout the project
                 </Button>
               </div>
-
-              <div class="w-100 d-none d-md-block d-lg-none"></div>
               <div class="card mb-4">
                 <img
                   class="card-img-top img-fluid"
@@ -415,9 +412,7 @@ class MyPortfolioView extends Component {
                   Checkout the project
                 </Button>
               </div>
-              <div class="w-100"></div>
-              <div class="w-100 d-none d-sm-block d-md-none"></div>
-              <div class="w-100 d-none d-md-block d-lg-none"></div>
+
               <div class="card mb-4">
                 <img
                   class="card-img-top img-fluid"
@@ -439,7 +434,7 @@ class MyPortfolioView extends Component {
                   Checkout the project
                 </Button>
               </div>
-              <div class="w-100 d-none d-md-block d-lg-none"></div>
+              <div class="w-100"></div>
               <div class="card mb-4">
                 <img
                   class="card-img-top img-fluid"
@@ -459,6 +454,7 @@ class MyPortfolioView extends Component {
                 </Button>
               </div>
             </div>
+
             <h3 style={{ color: "white" }}>
               More projects here:{" "}
               <a
