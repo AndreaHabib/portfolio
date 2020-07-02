@@ -59,7 +59,7 @@ const MyPortfolioView = () => {
               <a
                 class="btn btn-outline-primary"
                 role="button"
-                href="Resume.html"
+                href="Resume.pdf"
               >
                 Resume
               </a>
