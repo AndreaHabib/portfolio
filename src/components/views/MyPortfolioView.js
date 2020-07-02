@@ -5,11 +5,19 @@ import github from "./github.png";
 import facebook from "./facebook.png";
 // import { Link } from "react-router-dom";
 import pic from "./my-picture.png";
-import { Card, Button } from "react-bootstrap";
-// import port from "./port.png";
-// import discord from "./discord.png";
-// import todo from "./todo.png";
-// import hackathon1 from "./hackathon1.png";
+import { Button } from "react-bootstrap";
+import port from "./port.png";
+import discord from "./discord.png";
+import todo from "./todo.png";
+import hackathon1 from "./hackathon1.png";
+import gamef from "./gamef.png";
+import cipher from "./cipher.png";
+import map from "./map.png";
+import cpp from "./cpp.png";
+import wip from "./wip.png";
+import webdev from "./webdev.png";
+import code from "./coding.png";
+import tools from "./tools.png";
 
 const MyPortfolioView = () => {
   return (
@@ -71,13 +79,18 @@ const MyPortfolioView = () => {
                 Special Skills
               </h2>
             </div>
-            <div class="row">
+            <div class="row" style={{ textAlign: "center" }}>
               <div class="col-md-4">
                 <div class="card special-skill-item border-0">
                   <div class="card-header bg-transparent border-0">
                     <i class="icon ion-ios-star-outline"></i>
                   </div>
                   <div class="card-body">
+                    <img
+                      src={webdev}
+                      class="img-fluid rounded mx-auto d-block"
+                      alt="Responsive image"
+                    />
                     <h3 class="card-title">Web Development</h3>
                     <p class="card-text">
                       Skills for web development: React, Redux, Express,
@@ -93,6 +106,11 @@ const MyPortfolioView = () => {
                     <i class="icon ion-ios-lightbulb-outline"></i>
                   </div>
                   <div class="card-body">
+                    <img
+                      src={code}
+                      class="img-fluid rounded mx-auto d-block"
+                      alt="Responsive image"
+                    />
                     <h3 class="card-title">Software Engineer</h3>
                     <p class="card-text">
                       Skills for software engineer: Java, Python, C++ (Data
@@ -107,6 +125,11 @@ const MyPortfolioView = () => {
                     <i class="icon ion-ios-gear-outline"></i>
                   </div>
                   <div class="card-body">
+                    <img
+                      src={tools}
+                      class="img-fluid rounded mx-auto d-block"
+                      alt="Responsive image"
+                    />
                     <h3 class="card-title">Tools and Expertise</h3>
                     <p class="card-text">
                       Microsoft Word, Excel, Powerpoint, Visual Studio, Visual
@@ -137,7 +160,7 @@ const MyPortfolioView = () => {
             <div class="card mb-4">
               <img
                 class="card-img-top img-fluid"
-                src="//placehold.it/500x280"
+                src={port}
                 alt="Card image cap"
               />
               <div class="card-body">
@@ -152,10 +175,11 @@ const MyPortfolioView = () => {
                 Checkout the project
               </Button>
             </div>
+
             <div class="card mb-4">
               <img
                 class="card-img-top img-fluid"
-                src="//placehold.it/500x280"
+                src={discord}
                 alt="Card image cap"
               />
               <div class="card-body">
@@ -174,11 +198,11 @@ const MyPortfolioView = () => {
             <div class="card mb-4">
               <img
                 class="card-img-top img-fluid"
-                src="//placehold.it/500x280"
+                src={hackathon1}
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h4 class="card-title">Hackathon</h4>
+                <h4 class="card-title">CUNY Hackathon 2019</h4>
                 <p class="card-text">
                   Python, Twilio.py, IBM Watson AI (NLP), Twitter API
                 </p>
@@ -191,23 +215,35 @@ const MyPortfolioView = () => {
                 Checkout the project
               </Button>
             </div>
+            <div class="w-100"></div>
             <div class="w-100 d-none d-md-block d-lg-none"></div>
             <div class="card mb-4">
               <img
                 class="card-img-top img-fluid"
-                src="//placehold.it/500x280"
+                src={todo}
                 alt="Card image cap"
               />
               <div class="card-body">
                 <h4 class="card-title">TODO-List</h4>
-                <p class="card-text">C++</p>
+                <p class="card-text">
+                  C++, Features: Multiple files, Dynamic Arrays, Classes(OOP){" "}
+                  <br></br>
+                  React, Features: Add, Remove tasks, mark as done
+                </p>
               </div>
               <Button
                 variant="info"
                 href="https://github.com/AndreaHabib/TODO-List"
                 target="_blank"
               >
-                Checkout the project
+                Checkout the project in C++
+              </Button>
+              <Button
+                variant="info"
+                href="https://github.com/AndreaHabib/TODO-REACT/tree/master/todo"
+                target="_blank"
+              >
+                Checkout the project in React
               </Button>
             </div>
             <div class="w-100 d-none d-sm-block d-md-none"></div>
@@ -215,14 +251,16 @@ const MyPortfolioView = () => {
             <div class="card mb-4">
               <img
                 class="card-img-top img-fluid"
-                src="//placehold.it/500x280"
+                src={gamef}
                 alt="Card image cap"
               />
               <div class="card-body">
                 <h4 class="card-title">GamesFave</h4>
                 <p class="card-text">
                   React, Redux, PostgreSQL, IGDB API, Express, Sequelize,
-                  Bootstrap, Javascript, JSX, CSS, AXIOS
+                  Bootstrap, Javascript, JSX, CSS, AXIOS <br></br> Features:
+                  Look up games from API, Login/Register, Add game to favorites
+                  and view on your profile.
                 </p>
               </div>
               <Button
@@ -237,7 +275,7 @@ const MyPortfolioView = () => {
             <div class="card mb-4">
               <img
                 class="card-img-top img-fluid"
-                src="//placehold.it/500x300"
+                src={cipher}
                 alt="Card image cap"
               />
               <div class="card-body">
@@ -252,12 +290,56 @@ const MyPortfolioView = () => {
                 Checkout the project
               </Button>
             </div>
+            <div class="w-100 d-none d-md-block d-lg-none"></div>
+            <div class="card mb-4">
+              <img
+                class="card-img-top img-fluid"
+                src={cpp}
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h4 class="card-title">CSC326 Garage Stack</h4>
+                <p class="card-text">
+                  Garage Stack using C++ (Data structures and OOP)
+                </p>
+              </div>
+              <Button
+                variant="info"
+                href="https://github.com/AndreaHabib/CSC326"
+                target="_blank"
+              >
+                Checkout the project
+              </Button>
+            </div>
+
+            <div class="w-100 d-none d-md-block d-lg-none"></div>
+            <div class="card mb-4">
+              <img
+                class="card-img-top img-fluid"
+                src={cpp}
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h4 class="card-title">CSC211</h4>
+                <p class="card-text">
+                  My collective experience for CSC211, C++
+                </p>
+              </div>
+              <Button
+                variant="info"
+                href="https://github.com/AndreaHabib/CSC211"
+                target="_blank"
+              >
+                Checkout the project
+              </Button>
+            </div>
+            <div class="w-100"></div>
             <div class="w-100 d-none d-sm-block d-md-none"></div>
             <div class="w-100 d-none d-md-block d-lg-none"></div>
             <div class="card mb-4">
               <img
                 class="card-img-top img-fluid"
-                src="//placehold.it/500x270"
+                src={map}
                 alt="Card image cap"
               />
               <div class="card-body">
@@ -270,6 +352,25 @@ const MyPortfolioView = () => {
               <Button
                 variant="info"
                 href="https://github.com/MLH-Fellowship/ttp-team-2"
+                target="_blank"
+              >
+                Checkout the project
+              </Button>
+            </div>
+            <div class="w-100 d-none d-md-block d-lg-none"></div>
+            <div class="card mb-4">
+              <img
+                class="card-img-top img-fluid"
+                src={wip}
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Pathfinder Algo</h4>
+                <p class="card-text">(WORK IN PROGRERSS)</p>
+              </div>
+              <Button
+                variant="info"
+                href="https://github.com/AndreaHabib/Pathfinder-Algorithm"
                 target="_blank"
               >
                 Checkout the project
