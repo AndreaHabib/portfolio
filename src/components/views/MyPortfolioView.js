@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Anime from "react-anime";
 import "./styles/MyPortfolioView.css";
 import linkedin from "./linkedin.png";
 import github from "./github.png";
@@ -36,65 +37,67 @@ class MyPortfolioView extends Component {
     let display;
     if (this.state.display) {
       display = (
-        <div
-          style={{ borderRadius: "20px", marginTop: "20px" }}
-          className="portfolio-block website gradient"
-        >
+        <Anime opacity={[0, 1]} translateY={[-64, 0]}>
           <div
-            style={{ marginLeft: "40px" }}
-            class="contact-info portfolio-info-card"
+            style={{ borderRadius: "20px", marginTop: "20px" }}
+            className="portfolio-block website gradient"
           >
-            <h2 style={{ textAlign: "left" }}>Contact Info</h2>
-            <div style={{ margin: "15px" }} class="row">
-              <div class="col-1">
-                <img
-                  style={{ float: "right" }}
-                  src={birth}
-                  className="mx-auto d-block"
-                />
+            <div
+              style={{ marginLeft: "40px" }}
+              class="contact-info portfolio-info-card"
+            >
+              <h2 style={{ textAlign: "left" }}>Contact Info</h2>
+              <div style={{ margin: "15px" }} class="row">
+                <div class="col-1">
+                  <img
+                    style={{ float: "right" }}
+                    src={birth}
+                    className="mx-auto d-block"
+                  />
+                </div>
+                <div class="col-9">
+                  <span style={{ float: "left" }}>07/31/1999</span>
+                </div>
               </div>
-              <div class="col-9">
-                <span style={{ float: "left" }}>07/31/1999</span>
+              <div style={{ margin: "15px" }} class="row">
+                <div class="col-1">
+                  <img
+                    style={{ float: "right" }}
+                    src={face}
+                    className="mx-auto d-block"
+                  />
+                </div>
+                <div class="col-9">
+                  <span style={{ float: "left" }}>Andrea Habib</span>
+                </div>
               </div>
-            </div>
-            <div style={{ margin: "15px" }} class="row">
-              <div class="col-1">
-                <img
-                  style={{ float: "right" }}
-                  src={face}
-                  className="mx-auto d-block"
-                />
+              <div style={{ margin: "15px" }} class="row">
+                <div class="col-1">
+                  <img
+                    style={{ float: "right" }}
+                    src={phone}
+                    className="mx-auto d-block"
+                  />
+                </div>
+                <div class="col-9">
+                  <span style={{ float: "left" }}>+1 (929) 422-8163</span>
+                </div>
               </div>
-              <div class="col-9">
-                <span style={{ float: "left" }}>Andrea Habib</span>
-              </div>
-            </div>
-            <div style={{ margin: "15px" }} class="row">
-              <div class="col-1">
-                <img
-                  style={{ float: "right" }}
-                  src={phone}
-                  className="mx-auto d-block"
-                />
-              </div>
-              <div class="col-9">
-                <span style={{ float: "left" }}>+1 (929) 422-8163</span>
-              </div>
-            </div>
-            <div style={{ margin: "15px" }} class="row">
-              <div class="col-1">
-                <img
-                  style={{ float: "right" }}
-                  src={email}
-                  className="mx-auto d-block"
-                />
-              </div>
-              <div class="col-9">
-                <span style={{ float: "left" }}>andrea.atef@yahoo.com</span>
+              <div style={{ margin: "15px" }} class="row">
+                <div class="col-1">
+                  <img
+                    style={{ float: "right" }}
+                    src={email}
+                    className="mx-auto d-block"
+                  />
+                </div>
+                <div class="col-9">
+                  <span style={{ float: "left" }}>andrea.atef@yahoo.com</span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </Anime>
       );
     }
     return (
@@ -116,9 +119,12 @@ class MyPortfolioView extends Component {
                 }}
               >
                 <img
-                  style={{ height: "165px", border: "5px solid black" }}
+                  style={{
+                    height: "165px",
+                    border: "5px solid #1E90FF",
+                    borderRadius: "11px",
+                  }}
                   src={pic}
-                  class="avatar"
                 />
               </div>
               <div class="about-me">
@@ -175,9 +181,9 @@ class MyPortfolioView extends Component {
                       />
                       <h3 class="card-title">Web Development</h3>
                       <p class="card-text">
-                        Skills for web development: React, Redux, Express,
-                        PostgreSQL, Sequelize, Bootstrap, HTML, CSS, Javascript,
-                        Node, Restful APIs, JSX, JSON
+                        Skills for web development: (MERN) React, Redux,
+                        Express, PostgreSQL, Sequelize, Bootstrap, HTML, CSS,
+                        Javascript, Node, Restful APIs, JSX, JSON
                       </p>
                     </div>
                   </div>
