@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Anime from "react-anime";
+import ScrollEvent from "react-onscroll";
 import "./styles/MyPortfolioView.css";
 import linkedin from "./linkedin.png";
 import github from "./github.png";
@@ -28,75 +29,90 @@ class MyPortfolioView extends Component {
     super(props);
     this.state = {
       display: false,
+      mounted: false,
+      autoplay: false,
     };
+    this.handleScrollCallback = this.handleScrollCallback.bind(this);
   }
+  dismount = () => {
+    this.setState(({ mounted }) => ({ mounted: !mounted }));
+  };
   onClick = () => {
+    console.log(this.state.autoplay);
     this.setState({ display: !this.state.display });
   };
+  handleScrollCallback = () => {
+    if (!this.state.autoplay) {
+      this.setState({ autoplay: !this.state.autoplay });
+    }
+  };
   render() {
+    let mounted = this.state;
     let display;
     if (this.state.display) {
       display = (
         <Anime opacity={[0, 1]} translateY={[-64, 0]}>
-          <div
-            style={{ borderRadius: "20px", marginTop: "20px" }}
-            className="portfolio-block website gradient"
-          >
+          {mounted ? (
             <div
-              style={{ marginLeft: "40px" }}
-              class="contact-info portfolio-info-card"
+              style={{ borderRadius: "20px", marginTop: "20px" }}
+              className="portfolio-block website gradient"
             >
-              <h2 style={{ textAlign: "left" }}>Contact Info</h2>
-              <div style={{ margin: "15px" }} class="row">
-                <div class="col-1">
-                  <img
-                    style={{ float: "right" }}
-                    src={birth}
-                    className="mx-auto d-block"
-                  />
+              <div
+                style={{ marginLeft: "40px" }}
+                class="contact-info portfolio-info-card"
+              >
+                <h2 style={{ textAlign: "left" }}>Contact Info</h2>
+                <div style={{ margin: "15px" }} class="row">
+                  <div class="col-1">
+                    <img
+                      style={{ float: "right" }}
+                      src={birth}
+                      className="mx-auto d-block"
+                    />
+                  </div>
+                  <div class="col-9">
+                    <span style={{ float: "left" }}>07/31/1999</span>
+                  </div>
                 </div>
-                <div class="col-9">
-                  <span style={{ float: "left" }}>07/31/1999</span>
+                <div style={{ margin: "15px" }} class="row">
+                  <div class="col-1">
+                    <img
+                      style={{ float: "right" }}
+                      src={face}
+                      className="mx-auto d-block"
+                    />
+                  </div>
+                  <div class="col-9">
+                    <span style={{ float: "left" }}>Andrea Habib</span>
+                  </div>
                 </div>
-              </div>
-              <div style={{ margin: "15px" }} class="row">
-                <div class="col-1">
-                  <img
-                    style={{ float: "right" }}
-                    src={face}
-                    className="mx-auto d-block"
-                  />
+                <div style={{ margin: "15px" }} class="row">
+                  <div class="col-1">
+                    <img
+                      style={{ float: "right" }}
+                      src={phone}
+                      className="mx-auto d-block"
+                    />
+                  </div>
+                  <div class="col-9">
+                    <span style={{ float: "left" }}>+1 (929) 422-8163</span>
+                  </div>
                 </div>
-                <div class="col-9">
-                  <span style={{ float: "left" }}>Andrea Habib</span>
-                </div>
-              </div>
-              <div style={{ margin: "15px" }} class="row">
-                <div class="col-1">
-                  <img
-                    style={{ float: "right" }}
-                    src={phone}
-                    className="mx-auto d-block"
-                  />
-                </div>
-                <div class="col-9">
-                  <span style={{ float: "left" }}>+1 (929) 422-8163</span>
-                </div>
-              </div>
-              <div style={{ margin: "15px" }} class="row">
-                <div class="col-1">
-                  <img
-                    style={{ float: "right" }}
-                    src={email}
-                    className="mx-auto d-block"
-                  />
-                </div>
-                <div class="col-9">
-                  <span style={{ float: "left" }}>andrea.atef@yahoo.com</span>
+                <div style={{ margin: "15px" }} class="row">
+                  <div class="col-1">
+                    <img
+                      style={{ float: "right" }}
+                      src={email}
+                      className="mx-auto d-block"
+                    />
+                  </div>
+                  <div class="col-9">
+                    <span style={{ float: "left" }}>andrea.atef@yahoo.com</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          ) : null}
         </Anime>
       );
     }
@@ -248,219 +264,233 @@ class MyPortfolioView extends Component {
             >
               My Most Notable Projects on Github
             </h3>
-            <div class="card-deck">
-              <div class="card mb-4">
-                <img
-                  class="card-img-top img-fluid"
-                  src={port}
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h4 class="card-title">This Website</h4>
-                  <p class="card-text">React/Javascript, JSX, CSS, Bootstrap</p>
+            <ScrollEvent handleScrollCallback={this.handleScrollCallback} />
+            <Anime
+              onScroll={this.onScroll}
+              autoplay={this.state.autoplay}
+              opacity={[0, 1]}
+              translateY={[64, 0]}
+              delay={100}
+              easing={"easeInOutExpo"}
+            >
+              <div class="card-deck">
+                <div class="card mb-4">
+                  <img
+                    class="card-img-top img-fluid"
+                    src={port}
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">This Website</h4>
+                    <p class="card-text">
+                      React/Javascript, JSX, HTML, CSS, Bootstrap, Anime.js
+                    </p>
+                  </div>
+                  <Button
+                    variant="info"
+                    href="https://github.com/AndreaHabib/portifolio"
+                    target="_blank"
+                  >
+                    Checkout the project
+                  </Button>
                 </div>
-                <Button
-                  variant="info"
-                  href="https://github.com/AndreaHabib/portifolio"
-                  target="_blank"
-                >
-                  Checkout the project
-                </Button>
-              </div>
 
-              <div class="card mb-4">
-                <img
-                  class="card-img-top img-fluid"
-                  src={discord}
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h4 class="card-title">Discord Bot</h4>
-                  <p class="card-text">Python, Discord API/discord.py</p>
+                <div class="card mb-4">
+                  <img
+                    class="card-img-top img-fluid"
+                    src={discord}
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Discord Bot</h4>
+                    <p class="card-text">Python, Discord API/discord.py</p>
+                  </div>
+                  <Button
+                    variant="info"
+                    href="https://github.com/AndreaHabib/Discord-bot"
+                    target="_blank"
+                  >
+                    Checkout the project
+                  </Button>
                 </div>
-                <Button
-                  variant="info"
-                  href="https://github.com/AndreaHabib/Discord-bot"
-                  target="_blank"
-                >
-                  Checkout the project
-                </Button>
-              </div>
-              <div class="card mb-4">
-                <img
-                  class="card-img-top img-fluid"
-                  src={hackathon1}
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h4 class="card-title">CUNY Hackathon 2019</h4>
-                  <p class="card-text">
-                    Python, Twilio.py, IBM Watson AI (NLP), Twitter API
-                  </p>
+                <div class="card mb-4">
+                  <img
+                    class="card-img-top img-fluid"
+                    src={hackathon1}
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">CUNY Hackathon 2019</h4>
+                    <p class="card-text">
+                      Python, Twilio.py, IBM Watson AI (NLP), Twitter API
+                    </p>
+                  </div>
+                  <Button
+                    variant="info"
+                    href="https://github.com/AndreaHabib/Hackathon"
+                    target="_blank"
+                  >
+                    Checkout the project
+                  </Button>
                 </div>
-                <Button
-                  variant="info"
-                  href="https://github.com/AndreaHabib/Hackathon"
-                  target="_blank"
-                >
-                  Checkout the project
-                </Button>
-              </div>
-              <div class="w-100"></div>
-              <div class="card mb-4">
-                <img
-                  class="card-img-top img-fluid"
-                  src={todo}
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h4 class="card-title">TODO-List</h4>
-                  <p class="card-text">
-                    C++, Features: Multiple files, Dynamic Arrays, Classes(OOP){" "}
-                    <br></br>
-                    React, Features: Add, Remove tasks, mark as done
-                  </p>
+                <div class="w-100"></div>
+                <div class="card mb-4">
+                  <img
+                    class="card-img-top img-fluid"
+                    src={todo}
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">TODO-List</h4>
+                    <p class="card-text">
+                      C++, Features: Multiple files, Dynamic Arrays,
+                      Classes(OOP) <br></br>
+                      React, Features: Add, Remove tasks, mark as done
+                    </p>
+                  </div>
+                  <Button
+                    variant="info"
+                    href="https://github.com/AndreaHabib/TODO-List"
+                    target="_blank"
+                  >
+                    Checkout the project in C++
+                  </Button>
+                  <Button
+                    variant="info"
+                    href="https://github.com/AndreaHabib/TODO-REACT/tree/master/todo"
+                    target="_blank"
+                  >
+                    Checkout the project in React
+                  </Button>
                 </div>
-                <Button
-                  variant="info"
-                  href="https://github.com/AndreaHabib/TODO-List"
-                  target="_blank"
-                >
-                  Checkout the project in C++
-                </Button>
-                <Button
-                  variant="info"
-                  href="https://github.com/AndreaHabib/TODO-REACT/tree/master/todo"
-                  target="_blank"
-                >
-                  Checkout the project in React
-                </Button>
-              </div>
-              <div class="card mb-4">
-                <img
-                  class="card-img-top img-fluid"
-                  src={gamef}
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h4 class="card-title">GamesFave</h4>
-                  <p class="card-text">
-                    React, Redux, PostgreSQL, IGDB API, Express, Sequelize,
-                    Bootstrap, Javascript, JSX, CSS, AXIOS <br></br> Features:
-                    Look up games from API, Login/Register, add game to
-                    favorites and view on your profile.
-                  </p>
+                <div class="card mb-4">
+                  <img
+                    class="card-img-top img-fluid"
+                    src={gamef}
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">GamesFave</h4>
+                    <p class="card-text">
+                      React, Redux, PostgreSQL, IGDB API, Express, Sequelize,
+                      Bootstrap, Javascript, JSX, CSS, AXIOS <br></br> Features:
+                      Look up games from API, Login/Register, add game to
+                      favorites and view on your profile.
+                    </p>
+                  </div>
+                  <Button
+                    variant="info"
+                    href="https://github.com/GameINFO-cc/gamesFaves"
+                    target="_blank"
+                  >
+                    Checkout the project
+                  </Button>
                 </div>
-                <Button
-                  variant="info"
-                  href="https://github.com/GameINFO-cc/gamesFaves"
-                  target="_blank"
-                >
-                  Checkout the project
-                </Button>
-              </div>
-              <div class="card mb-4">
-                <img
-                  class="card-img-top img-fluid"
-                  src={cipher}
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h4 class="card-title">Ciphers</h4>
-                  <p class="card-text">Hill Cipher: Java, Caesar Cipher: C++</p>
+                <div class="card mb-4">
+                  <img
+                    class="card-img-top img-fluid"
+                    src={cipher}
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Ciphers</h4>
+                    <p class="card-text">
+                      Hill Cipher: Java, Caesar Cipher: C++
+                    </p>
+                  </div>
+                  <Button
+                    variant="info"
+                    href="https://github.com/AndreaHabib/Ciphers"
+                    target="_blank"
+                  >
+                    Checkout the project
+                  </Button>
                 </div>
-                <Button
-                  variant="info"
-                  href="https://github.com/AndreaHabib/Ciphers"
-                  target="_blank"
-                >
-                  Checkout the project
-                </Button>
-              </div>
-              <div class="w-100"></div>
-              <div class="card mb-4">
-                <img
-                  class="card-img-top img-fluid"
-                  src={cpp}
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h4 class="card-title">CSC326 Garage Stack</h4>
-                  <p class="card-text">
-                    Garage Stack using C++ (Data structures and OOP)
-                  </p>
+                <div class="w-100"></div>
+                <div class="card mb-4">
+                  <img
+                    class="card-img-top img-fluid"
+                    src={cpp}
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">CSC326 Garage Stack</h4>
+                    <p class="card-text">
+                      Garage Stack using C++ (Data structures and OOP)
+                    </p>
+                  </div>
+                  <Button
+                    variant="info"
+                    href="https://github.com/AndreaHabib/CSC326"
+                    target="_blank"
+                  >
+                    Checkout the project
+                  </Button>
                 </div>
-                <Button
-                  variant="info"
-                  href="https://github.com/AndreaHabib/CSC326"
-                  target="_blank"
-                >
-                  Checkout the project
-                </Button>
-              </div>
-              <div class="card mb-4">
-                <img
-                  class="card-img-top img-fluid"
-                  src={cpp}
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h4 class="card-title">CSC211</h4>
-                  <p class="card-text">
-                    My collective experience for CSC211, C++
-                  </p>
+                <div class="card mb-4">
+                  <img
+                    class="card-img-top img-fluid"
+                    src={cpp}
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">CSC211</h4>
+                    <p class="card-text">
+                      My collective experience for CSC211, C++
+                    </p>
+                  </div>
+                  <Button
+                    variant="info"
+                    href="https://github.com/AndreaHabib/CSC211"
+                    target="_blank"
+                  >
+                    Checkout the project
+                  </Button>
                 </div>
-                <Button
-                  variant="info"
-                  href="https://github.com/AndreaHabib/CSC211"
-                  target="_blank"
-                >
-                  Checkout the project
-                </Button>
-              </div>
 
-              <div class="card mb-4">
-                <img
-                  class="card-img-top img-fluid"
-                  src={map}
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h4 class="card-title">Coronavirus Map</h4>
-                  <p class="card-text">
-                    Hackathon Orientation Project: 1st place -- React, Redux,
-                    PostgreSQL, Google Maps API, CSS, Bootstrap
-                  </p>
+                <div class="card mb-4">
+                  <img
+                    class="card-img-top img-fluid"
+                    src={map}
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Coronavirus Map</h4>
+                    <p class="card-text">
+                      Hackathon Orientation Project: 1st place -- React, Redux,
+                      PostgreSQL, Google Maps API, CSS, Bootstrap
+                    </p>
+                  </div>
+                  <Button
+                    variant="info"
+                    href="https://github.com/MLH-Fellowship/ttp-team-2"
+                    target="_blank"
+                  >
+                    Checkout the project
+                  </Button>
                 </div>
-                <Button
-                  variant="info"
-                  href="https://github.com/MLH-Fellowship/ttp-team-2"
-                  target="_blank"
-                >
-                  Checkout the project
-                </Button>
+                <div class="w-100"></div>
+                <div class="card mb-4">
+                  <img
+                    class="card-img-top img-fluid"
+                    src={wip}
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Pathfinder Algo</h4>
+                    <p class="card-text">(WORK IN PROGRERSS)</p>
+                  </div>
+                  <Button
+                    variant="info"
+                    href="https://github.com/AndreaHabib/Pathfinder-Algorithm"
+                    target="_blank"
+                  >
+                    Checkout the project
+                  </Button>
+                </div>
               </div>
               <div class="w-100"></div>
-              <div class="card mb-4">
-                <img
-                  class="card-img-top img-fluid"
-                  src={wip}
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h4 class="card-title">Pathfinder Algo</h4>
-                  <p class="card-text">(WORK IN PROGRERSS)</p>
-                </div>
-                <Button
-                  variant="info"
-                  href="https://github.com/AndreaHabib/Pathfinder-Algorithm"
-                  target="_blank"
-                >
-                  Checkout the project
-                </Button>
-              </div>
-            </div>
-            <div class="w-100"></div>
+            </Anime>
             <h3 style={{ color: "white" }}>
               More projects here:{" "}
               <a
