@@ -38,7 +38,6 @@ class MyPortfolioView extends Component {
     this.setState(({ mounted }) => ({ mounted: !mounted }));
   };
   onClick = () => {
-    console.log(this.state.autoplay);
     this.setState({ display: !this.state.display });
   };
   handleScrollCallback = () => {
@@ -52,67 +51,65 @@ class MyPortfolioView extends Component {
     if (this.state.display) {
       display = (
         <Anime opacity={[0, 1]} translateY={[-64, 0]}>
-          {mounted ? (
+          <div
+            style={{ borderRadius: "20px", marginTop: "20px" }}
+            className="portfolio-block website gradient"
+          >
             <div
-              style={{ borderRadius: "20px", marginTop: "20px" }}
-              className="portfolio-block website gradient"
+              style={{ marginLeft: "40px" }}
+              class="contact-info portfolio-info-card"
             >
-              <div
-                style={{ marginLeft: "40px" }}
-                class="contact-info portfolio-info-card"
-              >
-                <h2 style={{ textAlign: "left" }}>Contact Info</h2>
-                <div style={{ margin: "15px" }} class="row">
-                  <div class="col-1">
-                    <img
-                      style={{ float: "right" }}
-                      src={birth}
-                      className="mx-auto d-block"
-                    />
-                  </div>
-                  <div class="col-9">
-                    <span style={{ float: "left" }}>07/31/1999</span>
-                  </div>
+              <h2 style={{ textAlign: "left" }}>Contact Info</h2>
+              <div style={{ margin: "15px" }} class="row">
+                <div class="col-1">
+                  <img
+                    style={{ float: "right" }}
+                    src={birth}
+                    className="mx-auto d-block"
+                  />
                 </div>
-                <div style={{ margin: "15px" }} class="row">
-                  <div class="col-1">
-                    <img
-                      style={{ float: "right" }}
-                      src={face}
-                      className="mx-auto d-block"
-                    />
-                  </div>
-                  <div class="col-9">
-                    <span style={{ float: "left" }}>Andrea Habib</span>
-                  </div>
+                <div class="col-9">
+                  <span style={{ float: "left" }}>07/31/1999</span>
                 </div>
-                <div style={{ margin: "15px" }} class="row">
-                  <div class="col-1">
-                    <img
-                      style={{ float: "right" }}
-                      src={phone}
-                      className="mx-auto d-block"
-                    />
-                  </div>
-                  <div class="col-9">
-                    <span style={{ float: "left" }}>+1 (929) 422-8163</span>
-                  </div>
+              </div>
+              <div style={{ margin: "15px" }} class="row">
+                <div class="col-1">
+                  <img
+                    style={{ float: "right" }}
+                    src={face}
+                    className="mx-auto d-block"
+                  />
                 </div>
-                <div style={{ margin: "15px" }} class="row">
-                  <div class="col-1">
-                    <img
-                      style={{ float: "right" }}
-                      src={email}
-                      className="mx-auto d-block"
-                    />
-                  </div>
-                  <div class="col-9">
-                    <span style={{ float: "left" }}>andrea.atef@yahoo.com</span>
-                  </div>
+                <div class="col-9">
+                  <span style={{ float: "left" }}>Andrea Habib</span>
+                </div>
+              </div>
+              <div style={{ margin: "15px" }} class="row">
+                <div class="col-1">
+                  <img
+                    style={{ float: "right" }}
+                    src={phone}
+                    className="mx-auto d-block"
+                  />
+                </div>
+                <div class="col-9">
+                  <span style={{ float: "left" }}>+1 (929) 422-8163</span>
+                </div>
+              </div>
+              <div style={{ margin: "15px" }} class="row">
+                <div class="col-1">
+                  <img
+                    style={{ float: "right" }}
+                    src={email}
+                    className="mx-auto d-block"
+                  />
+                </div>
+                <div class="col-9">
+                  <span style={{ float: "left" }}>andrea.atef@yahoo.com</span>
                 </div>
               </div>
             </div>
-          ) : null}
+          </div>
         </Anime>
       );
     }
