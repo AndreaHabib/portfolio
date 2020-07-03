@@ -126,7 +126,7 @@ class MyPortfolioView extends Component {
                   Hey! I'm <strong>Andrea Habib!</strong> A College of Staten
                   Island student, majoring in Computer Science. I am interested
                   in Full Stack web development and Software engineering, as
-                  well as the hardware parts of a computer.
+                  well as computer hardware.
                 </p>
                 <a
                   onClick={this.onClick}
@@ -454,7 +454,7 @@ class MyPortfolioView extends Component {
                 </Button>
               </div>
             </div>
-
+            <div class="w-100"></div>
             <h3 style={{ color: "white" }}>
               More projects here:{" "}
               <a
