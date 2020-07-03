@@ -39,9 +39,15 @@ class MyPortfolioView extends Component {
   };
   onClick = () => {
     this.setState({ display: !this.state.display });
-    setTimeout(() => {
-      this.setState({ mounted: !this.state.mounted });
-    }, 100);
+    if (!this.state.mounted) {
+      setTimeout(() => {
+        this.setState({ mounted: !this.state.mounted });
+      }, 10);
+    } else if (this.state.mounted) {
+      setTimeout(() => {
+        this.setState({ mounted: !this.state.mounted });
+      }, 250);
+    }
   };
   handleScrollCallback = () => {
     if (!this.state.autoplay) {
