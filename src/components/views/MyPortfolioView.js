@@ -126,7 +126,11 @@ class MyPortfolioView extends Component {
           <div class="container">
             <a class="navbar-brand logo" href="#">
               {/* Andrea Habib */}
-              <img style={{ marginLeft: "-55px" }} src={name} />
+              <img
+                className="rounded float-left img"
+                //style={{ marginLeft: "-55px" }}
+                src={name}
+              />
             </a>
           </div>
         </nav>

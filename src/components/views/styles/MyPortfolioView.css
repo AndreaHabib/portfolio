@@ -40,7 +40,24 @@ html {
     max-width: 50%;
   }
 }
-
+@media (min-width: 360px) {
+  .img {
+    display: block;
+    margin-left: -30px;
+  }
+}
+@media (min-width: 411px) {
+  .img {
+    display: block;
+    margin-left: -10px;
+  }
+}
+@media (max-width: 320px) {
+  .img {
+    display: block;
+    margin-left: -50px;
+  }
+}
 @media (max-width: 991.98px) {
   .navbar-expand-lg > .container,
   .navbar-expand-lg > .container-fluid,
