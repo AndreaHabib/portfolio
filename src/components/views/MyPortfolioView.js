@@ -23,6 +23,8 @@ import birth from "./birth.png";
 import email from "./email.png";
 import face from "./face.png";
 import phone from "./phone.png";
+import GRN from "./GRN.png";
+import name from "./name.png";
 
 class MyPortfolioView extends Component {
   constructor(props) {
@@ -123,27 +125,28 @@ class MyPortfolioView extends Component {
         <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
           <div class="container">
             <a class="navbar-brand logo" href="#">
-              Andrea Habib
+              {/* Andrea Habib */}
+              <img style={{ marginLeft: "-55px" }} src={name} />
             </a>
           </div>
         </nav>
         <main class="page lanidng-page">
           <section class="portfolio-block block-intro">
             <div class="container">
-              <div
-                class="avatar"
-                style={{
-                  backgroundImage: "url({ pic })",
-                }}
-              >
-                <img
-                  style={{
-                    height: "165px",
-                    border: "5px solid #1E90FF",
-                    borderRadius: "11px",
-                  }}
-                  src={pic}
-                />
+              <div style={{ position: "relative" }}>
+                {/* <div>
+                  <img src={GRN} class="mx-auto d-block img-fluid" />
+                </div> */}
+                <div class="avatar">
+                  <img
+                    style={{
+                      height: "165px",
+                      border: "5px solid #1E90FF",
+                      borderRadius: "11px",
+                    }}
+                    src={pic}
+                  />
+                </div>
               </div>
               <div class="about-me">
                 <p>
@@ -388,7 +391,8 @@ class MyPortfolioView extends Component {
                         React, Redux, PostgreSQL, IGDB API, Express, Sequelize,
                         Bootstrap, Javascript, JSX, CSS, AXIOS <br></br>{" "}
                         Features: Look up games from API, Login/Register, add
-                        game to favorites and view on your profile.
+                        game to favorites and view on your profile. Deployed
+                        Using Heroku.
                       </p>
                     </div>
                     <Button
@@ -427,9 +431,9 @@ class MyPortfolioView extends Component {
                       alt="Card image cap"
                     />
                     <div class="card-body">
-                      <h4 class="card-title">CSC326 Garage Stack</h4>
+                      <h4 class="card-title">CSC326</h4>
                       <p class="card-text">
-                        Garage Stack using C++ (Data structures and OOP)
+                        Most of my 326 projects (Data structures)
                       </p>
                     </div>
                     <Button
