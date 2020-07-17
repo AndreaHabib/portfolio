@@ -218,7 +218,8 @@ class MyPortfolioView extends Component {
                       <p class="card-text">
                         Skills for web development: (MERN) React, Redux,
                         Express, PostgreSQL, Sequelize, Bootstrap, HTML, CSS,
-                        Javascript, Node, Restful APIs, JSX, JSON
+                        Javascript, Node, Restful APIs, JSX, JSON, Ruby on Rails,
+                        Emberjs
                       </p>
                     </div>
                   </div>
