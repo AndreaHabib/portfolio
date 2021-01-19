@@ -2,64 +2,84 @@ import React, { Component } from "react";
 import Anime from "react-anime";
 import ScrollEvent from "react-onscroll";
 import "./styles/MyPortfolioView.css";
-import linkedin from "./linkedin.png";
-import github from "./github.png";
-import facebook from "./facebook.png";
-import pic from "./my-picture.png";
+import linkedin from "./images/linkedin.png";
+import github from "./images/github.png";
+import pic from "./images/my-picture.png";
 import { Button } from "react-bootstrap";
-import port from "./port.png";
-import discord from "./discord.png";
-import todo from "./todo.png";
-import hackathon1 from "./hackathon1.png";
-import gamef from "./gamef.png";
-import cipher from "./cipher.png";
-import map from "./map.png";
-import cpp from "./cpp.png";
-import wip from "./wip.png";
-import webdev from "./webdev.png";
-import code from "./coding.png";
-import tools from "./tools.png";
-import birth from "./birth.png";
-import email from "./email.png";
-import face from "./face.png";
-import phone from "./phone.png";
-import GRN from "./GRN.png";
-import name from "./name.png";
+import port from "./images/port.png";
+import discord from "./images/discord.png";
+import todo from "./images/todo.png";
+import hackathon1 from "./images/hackathon1.png";
+import gamef from "./images/gamef.png";
+import map from "./images/map.png";
+import cpp from "./images/cpp.png";
+import birth from "./images/birth.png";
+import email from "./images/email.png";
+import face from "./images/face.png";
+import phone from "./images/phone.png";
+import name from "./images/name.png";
+import gameStore from "./images/GameStore.png";
+import battlefood from "./images/menu.png";
+import webdev from "./images/webdev.png";
+import code from "./images/coding.png";
+import tools from "./images/tools.png";
+
 
 class MyPortfolioView extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      display: false,
-      mounted: false,
+      contact: false,
+      experience: false,
+      mountedContact: false,
+      mountedExperience: false,
       autoplay: false,
+      classNameContact: "btn btn-outline-primary",
+      classNameExperience: "btn btn-outline-primary"
     };
     this.handleScrollCallback = this.handleScrollCallback.bind(this);
   }
   dismount = () => {
     this.setState(({ mounted }) => ({ mounted: !mounted }));
   };
-  onClick = () => {
-    this.setState({ display: !this.state.display });
-    if (!this.state.mounted) {
+  Contact = () => {
+    this.setState({ contact: !this.state.contact });
+    if (!this.state.mountedContact) {
+      this.setState({ classNameContact: "btn btn-outline-primary active"})
       setTimeout(() => {
-        this.setState({ mounted: !this.state.mounted });
+        this.setState({ mountedContact: !this.state.mountedCOntact });
       }, 10);
-    } else if (this.state.mounted) {
+    } else if (this.state.mountedContact) {
+      this.setState({ classNameContact: "btn btn-outline-primary"})
       setTimeout(() => {
-        this.setState({ mounted: !this.state.mounted });
+        this.setState({ mountedContact: !this.state.mountedContact });
       }, 250);
     }
   };
+
+  Experience = () => {
+    this.setState({ experience: !this.state.experience });
+    if (!this.state.mountedExperience) {
+      this.setState({ classNameExperience: "btn btn-outline-primary active"})
+      setTimeout(() => {
+        this.setState({ mountedExperience: !this.state.mountedExperience });
+      }, 10);
+    } else if (this.state.mountedExperience) {
+      this.setState({ classNameExperience: "btn btn-outline-primary"})
+      setTimeout(() => {
+        this.setState({ mountedExperience: !this.state.mountedExperience });
+      }, 250);
+    }
+  };
+
   handleScrollCallback = () => {
     if (!this.state.autoplay) {
       this.setState({ autoplay: !this.state.autoplay });
     }
   };
   render() {
-    //let mounted = this.state;
-    let display;
-    display = (
+    let contact;
+    contact = (
       <div
         style={{ borderRadius: "20px", marginTop: "20px" }}
         className="portfolio-block website gradient"
@@ -120,6 +140,39 @@ class MyPortfolioView extends Component {
         </div>
       </div>
     );
+
+    let experience;
+    experience = (
+      <div
+        style={{ borderRadius: "20px", marginTop: "20px" }}
+        className="portfolio-block website gradient"
+      >
+        <div
+          style={{ marginLeft: "35px", paddingRight: "20px" }}
+          class="contact-info portfolio-info-card"
+        >
+          <h2>Experience</h2>
+          <p>Major League Hacking, NY - <em>Internship</em></p>
+          <ul style={{ textAlign: "left" }}>
+            <li>Competed in MLH Hackathon against 8 teams and won first place</li>
+            <li>Utilized React, Javascript, PostgreSQL and Google Maps API to show map of infected people with COVID19 in your area</li>
+            <li>Contributed to the open source community by writing a step-by-step technical documentation to install Windows Subsystem for Linux resulting in the ability of using Discourse on Windows 10</li>
+            <li>Worked in agile environment where I engaged in daily stand ups and weekly sprint retrospectives</li>
+            <li>Used Ruby on Rails for hiding system queries from frontend along with Rake tasks to unhide them</li>
+            <li>Applied Ember.js to fix UI issues that was preventing sorting text from showing up and created a modal that warns a user before deleting a topic with more than 5K views</li>
+          </ul>
+
+          <p>Tech Talent Pipeline, NY - <em>Student Intern</em></p>
+          <ul style={{ textAlign: "left" }}>
+            <li>React.js, Redux, PostgreSQL, Node.js, Express.js, Sequelize, Axios.</li>
+            <li>Created user login and registration pages using React.js and Redux Javascript frameworks to create a user friendly front-end</li>
+            <li>Used Axios for http POST requests from API to search for video games and add them to favorites page using PostgreSQL, Express.js and Sequelize  </li>
+            <li>Worked with many different teams and mentors</li>
+          </ul>
+        </div>
+      </div>
+    );
+
     return (
       <div>
         <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
@@ -128,7 +181,6 @@ class MyPortfolioView extends Component {
               {/* Andrea Habib */}
               <img
                 className="rounded float-left img"
-                //style={{ marginLeft: "-55px" }}
                 src={name}
               />
             </a>
@@ -138,11 +190,8 @@ class MyPortfolioView extends Component {
           <section class="portfolio-block block-intro">
             <div class="container">
               <div style={{ position: "relative" }}>
-                {/* <div>
-                  <img src={GRN} class="mx-auto d-block img-fluid" />
-                </div> */}
                 <div class="avatar">
-                  <img
+                <img
                     style={{
                       height: "165px",
                       border: "5px solid #1E90FF",
@@ -160,8 +209,17 @@ class MyPortfolioView extends Component {
                   well as computer hardware.
                 </p>
                 <a
-                  onClick={this.onClick}
-                  class="btn btn-outline-primary"
+                  onClick={this.Experience}
+                  className={this.state.classNameExperience}
+                  style={{ marginRight: "10px" }}
+                  role="button"
+                  href="#"
+                >
+                  Experience
+                </a>
+                <a
+                  onClick={this.Contact}
+                  className={this.state.classNameContact}
                   style={{ marginRight: "10px" }}
                   role="button"
                   href="#"
@@ -175,98 +233,111 @@ class MyPortfolioView extends Component {
                 >
                   Resume
                 </a>
-                {this.state.mounted ? (
-                  this.state.display ? (
+                {this.state.mountedContact ? (
+                  this.state.contact ? (
                     <Anime opacity={[0, 1]} translateY={[-64, 0]}>
-                      <div>{display}</div>
+                      <div>{contact}</div>
                     </Anime>
                   ) : (
                     <Anime opacity={[1, 0]} translateY={[0, 64]}>
-                      <div>{display}</div>
+                      <div>{contact}</div>
                     </Anime>
                   )
                 ) : null}
+
+                {this.state.mountedExperience ? (
+                  this.state.experience ? (
+                    <Anime opacity={[0, 1]} translateY={[-64, 0]}>
+                      <div>{experience}</div>
+                    </Anime>
+                  ) : (
+                    <Anime opacity={[1, 0]} translateY={[0, 64]}>
+                      <div>{experience}</div>
+                    </Anime>
+                  )
+                ) : null}
+
               </div>
             </div>
           </section>
           <section class="portfolio-block skills">
-            <div class="container">
-              <div class="heading">
-                <h2
-                  style={{
-                    border: "3px solid #1E90FF",
-                    padding: "10px",
-                    textAlign: "center",
-                  }}
-                >
-                  Special Skills
-                </h2>
-              </div>
-              <div class="row" style={{ textAlign: "center" }}>
-                <div class="col-md-4">
-                  <div class="card special-skill-item border-0">
-                    <div class="card-header bg-transparent border-0">
-                      <i class="icon ion-ios-star-outline"></i>
+                <div class="container">
+                    <div class="heading">
+                        <h2
+                            style={{
+                            border: "3px solid #1E90FF",
+                            padding: "10px",
+                            textAlign: "center",
+                        }}
+                        >
+                        Special Skills
+                        </h2>
                     </div>
-                    <div class="card-body">
-                      <img
-                        src={webdev}
-                        class="img-fluid rounded mx-auto d-block"
-                        alt="Responsive image"
-                      />
-                      <h3 class="card-title">Web Development</h3>
-                      <p class="card-text">
-                        Skills for web development: (PERN) React, Redux,
-                        Express, PostgreSQL, Sequelize, Bootstrap, HTML, CSS,
-                        Javascript, Node, Restful APIs, JSX, JSON, Ruby on Rails,
-                        Emberjs
-                      </p>
+                    <div class="row" style={{ textAlign: "center" }}>
+                        <div class="col-md-4">
+                            <div class="card special-skill-item border-0">
+                                <div class="card-header bg-transparent border-0">
+                                    <i class="icon ion-ios-star-outline"></i>
+                                </div>
+                                <div class="card-body">
+                                    <img
+                                    src={webdev}
+                                    class="img-fluid rounded mx-auto d-block"
+                                    alt="Responsive image"
+                                    />
+                                    <h3 class="card-title">Web Development</h3>
+                                    <p class="card-text">
+                                        Skills for web development: (PERN) React, Redux,
+                                        Express, PostgreSQL, Sequelize, Bootstrap, HTML, CSS,
+                                        Javascript, Node, Restful APIs, JSX, JSON, Ruby on Rails,
+                                        Emberjs, PHP
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col-md-4">
+                        <div class="card special-skill-item border-0">
+                            <div class="card-header bg-transparent border-0">
+                                <i class="icon ion-ios-lightbulb-outline"></i>
+                            </div>
+                                <div class="card-body">
+                                    <img
+                                        src={code}
+                                        class="img-fluid rounded mx-auto d-block"
+                                        alt="Responsive image"
+                                    />
+                                    <h3 class="card-title">Software Engineer</h3>
+                                    <p class="card-text">
+                                        Skills for software engineer: Java (JavaFX), Python, C++ (Data
+                                        Structures)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card special-skill-item border-0">
+                                <div class="card-header bg-transparent border-0">
+                                <i class="icon ion-ios-gear-outline"></i>
+                                </div>
+                                <div class="card-body">
+                                <img
+                                    src={tools}
+                                    class="img-fluid rounded mx-auto d-block"
+                                    alt="Responsive image"
+                                />
+                                <h3 class="card-title">Tools and Expertise</h3>
+                                <p class="card-text">
+                                    Microsoft Word, Excel, Powerpoint, Visual Studio, Visual
+                                    Studio Code, Git/Git BASH, Github, Postman, Anaconda,
+                                    Spydr, Ubuntu-18.04 WSL 2, Windows 10, Computer
+                                    Troubleshooting, Fixing Errors
+                                </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <div class="col-md-4">
-                  <div class="card special-skill-item border-0">
-                    <div class="card-header bg-transparent border-0">
-                      <i class="icon ion-ios-lightbulb-outline"></i>
-                    </div>
-                    <div class="card-body">
-                      <img
-                        src={code}
-                        class="img-fluid rounded mx-auto d-block"
-                        alt="Responsive image"
-                      />
-                      <h3 class="card-title">Software Engineer</h3>
-                      <p class="card-text">
-                        Skills for software engineer: Java, Python, C++ (Data
-                        Structures), Matlab
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card special-skill-item border-0">
-                    <div class="card-header bg-transparent border-0">
-                      <i class="icon ion-ios-gear-outline"></i>
-                    </div>
-                    <div class="card-body">
-                      <img
-                        src={tools}
-                        class="img-fluid rounded mx-auto d-block"
-                        alt="Responsive image"
-                      />
-                      <h3 class="card-title">Tools and Expertise</h3>
-                      <p class="card-text">
-                        Microsoft Word, Excel, Powerpoint, Visual Studio, Visual
-                        Studio Code, Git/Git BASH, Github, Postman, Anaconda,
-                        Spydr, Ubuntu-18.04 WSL 2, Windows 10, Computer
-                        Troubleshooting, Fixing Errors
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+            </section>
         </main>
         <section class="portfolio-block website gradient">
           <div
@@ -387,6 +458,26 @@ class MyPortfolioView extends Component {
                   <div class="card mb-4">
                     <img
                       class="card-img-top img-fluid"
+                      src={battlefood}
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">BattleFood</h4>
+                      <p class="card-text">
+                        Battleship, food themed, using Java and JavaFX (OOP)
+                      </p>
+                    </div>
+                    <Button
+                      variant="info"
+                      href="https://github.com/AndreaHabib/Final_Project_330_JAVA"
+                      target="_blank"
+                    >
+                      Checkout the project
+                    </Button>
+                  </div>
+                  <div class="card mb-4">
+                    <img
+                      class="card-img-top img-fluid"
                       src={gamef}
                       alt="Card image cap"
                     />
@@ -408,26 +499,7 @@ class MyPortfolioView extends Component {
                       Checkout the project
                     </Button>
                   </div>
-                  <div class="card mb-4">
-                    <img
-                      class="card-img-top img-fluid"
-                      src={cipher}
-                      alt="Card image cap"
-                    />
-                    <div class="card-body">
-                      <h4 class="card-title">Ciphers</h4>
-                      <p class="card-text">
-                        Hill Cipher: Java, Caesar Cipher: C++
-                      </p>
-                    </div>
-                    <Button
-                      variant="info"
-                      href="https://github.com/AndreaHabib/Ciphers"
-                      target="_blank"
-                    >
-                      Checkout the project
-                    </Button>
-                  </div>
+                
                   <div class="w-100"></div>
                   <div class="card mb-4">
                     <img
@@ -436,34 +508,15 @@ class MyPortfolioView extends Component {
                       alt="Card image cap"
                     />
                     <div class="card-body">
-                      <h4 class="card-title">CSC326</h4>
+                      <h4 class="card-title">Analysis of Algorithms (C++)</h4>
                       <p class="card-text">
-                        Most of my 326 projects (Data structures)
+                        Analysis of insertion sort, merge sort, heap sort, quick sort (& randomized),
+                        and text compression app using Huffman algorithm
                       </p>
                     </div>
                     <Button
                       variant="info"
-                      href="https://github.com/AndreaHabib/CSC326"
-                      target="_blank"
-                    >
-                      Checkout the project
-                    </Button>
-                  </div>
-                  <div class="card mb-4">
-                    <img
-                      class="card-img-top img-fluid"
-                      src={cpp}
-                      alt="Card image cap"
-                    />
-                    <div class="card-body">
-                      <h4 class="card-title">CSC211</h4>
-                      <p class="card-text">
-                        My collective experience for CSC211, C++
-                      </p>
-                    </div>
-                    <Button
-                      variant="info"
-                      href="https://github.com/AndreaHabib/CSC211"
+                      href="https://github.com/AndreaHabib/CSC382"
                       target="_blank"
                     >
                       Checkout the project
@@ -491,23 +544,32 @@ class MyPortfolioView extends Component {
                       Checkout the project
                     </Button>
                   </div>
-                  <div class="w-100"></div>
-                  <div class="card mb-4">
+                    <div class="card mb-4">
                     <img
                       class="card-img-top img-fluid"
-                      src={wip}
+                      src={gameStore}
                       alt="Card image cap"
                     />
                     <div class="card-body">
-                      <h4 class="card-title">Pathfinder Algo</h4>
-                      <p class="card-text">(WORK IN PROGRERSS)</p>
+                      <h4 class="card-title">GameStore</h4>
+                      <p class="card-text">
+                        Gaming e-commerce website.
+                        PHP, HTML, CSS, mySQL
+                      </p>
                     </div>
                     <Button
                       variant="info"
-                      href="https://github.com/AndreaHabib/Pathfinder-Algorithm"
+                      href="https://github.com/AndreaHabib/GameStore"
                       target="_blank"
                     >
                       Checkout the project
+                    </Button>
+                    <Button
+                      variant="info"
+                      href="http://163.238.35.165/~habib/lab1/final_project/view/index.php"
+                      target="_blank"
+                    >
+                      Deployed website
                     </Button>
                   </div>
                 </div>
@@ -534,9 +596,6 @@ class MyPortfolioView extends Component {
         <footer class="page-footer">
           <div class="container">
             <div class="social-icons">
-              <a href="https://www.facebook.com/andrea.atef">
-                <img src={facebook} alt="facebook" />
-              </a>
               <a href="https://github.com/AndreaHabib?tab=repositories">
                 <img src={github} alt="github" />
               </a>
