@@ -23,6 +23,7 @@ import battlefood from "./images/menu.png";
 import webdev from "./images/webdev.png";
 import code from "./images/coding.png";
 import tools from "./images/tools.png";
+import Typewriter from "typewriter-effect";
 
 
 class MyPortfolioView extends Component {
@@ -204,10 +205,18 @@ class MyPortfolioView extends Component {
               <div class="about-me">
                 <p>
                   Hey! I'm <strong>Andrea Habib!</strong> A College of Staten
-                  Island student, majoring in Computer Science. I am interested
-                  in Full Stack web development and Software engineering, as
-                  well as computer hardware.
+                  Island student, majoring in Computer Science.
                 </p>
+                <div style={{ marginBottom: "15px" }} className="sub">
+                  <Typewriter
+                    options={{
+                      strings: ["Software Engineer", "Student", "Learner", "Web Development", "Passionate"],
+                      autoStart: true,
+                      loop: true,
+                      delay: 50
+                    }}
+                  />
+                </div>
                 <a
                   onClick={this.Experience}
                   className={this.state.classNameExperience}
@@ -233,6 +242,7 @@ class MyPortfolioView extends Component {
                 >
                   Resume
                 </a>
+                
                 {this.state.mountedContact ? (
                   this.state.contact ? (
                     <Anime opacity={[0, 1]} translateY={[-64, 0]}>
@@ -375,7 +385,7 @@ class MyPortfolioView extends Component {
                     <div class="card-body">
                       <h4 class="card-title">This Website</h4>
                       <p class="card-text">
-                        React/Javascript, JSX, HTML, CSS, Bootstrap, Anime.js
+                        React/Javascript, JSX, HTML, CSS, Bootstrap, Anime.js, TypewriterJS
                       </p>
                     </div>
                     <Button
