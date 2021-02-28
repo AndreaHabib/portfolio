@@ -49,6 +49,16 @@ function PhotoGallery() {
         </Carousel.Item>
         <Carousel.Item>
           <Carousel.Caption className="caption">
+            Hack-A-Project Poster/Banner
+          </Carousel.Caption>
+          <img
+            className="d-block w-100 image"
+            alt="HAP"
+            src="https://res.cloudinary.com/andreahabib/image/upload/v1614539683/Hack-A-Project_kest1k.png"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <Carousel.Caption className="caption">
             "Let's Python" Poster
           </Carousel.Caption>
           <img
