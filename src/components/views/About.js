@@ -64,7 +64,10 @@ export default class About extends Component {
       </div>
     );
     return (
-      <section style={{marginTop: "100px"}} className="portfolio-block block-intro">
+      <section
+        style={{ marginTop: "100px" }}
+        className="portfolio-block block-intro"
+      >
         <div style={{ position: "relative" }}>
           <div className="avatar">
             <img

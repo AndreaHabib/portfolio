@@ -3,7 +3,8 @@ html,
 body {
   overflow-x: hidden;
   margin: 0;
-  font-family: 'Gill Sans', Arial, Helvetica, sans-serif, 'Gill Sans MT', 'Trebuchet MS';
+  font-family: "Gill Sans", Arial, Helvetica, sans-serif, "Gill Sans MT",
+    "Trebuchet MS";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;

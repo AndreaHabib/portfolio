@@ -4,10 +4,10 @@ export default class Experience extends Component {
   render() {
     return (
       <section>
-        <h2 style={{ marginBottom: "2rem", textAlign: "center",  }}>
+        <h2 style={{ marginBottom: "2rem", textAlign: "center" }}>
           Experience
         </h2>
-        <p style={{textDecoration: "underline"}}>
+        <p style={{ textDecoration: "underline" }}>
           Major League Hacking, NY - <em>Internship</em>
         </p>
         <h6>
@@ -59,7 +59,7 @@ export default class Experience extends Component {
           </li>
         </ul>
         <hr style={{ border: "1px solid white" }}></hr>
-        <p style={{textDecoration: "underline"}}> 
+        <p style={{ textDecoration: "underline" }}>
           Tech Talent Pipeline, NY - <em>Apprenticeship</em>
         </p>
         <h6>
@@ -88,16 +88,35 @@ export default class Experience extends Component {
             with my team.
           </li>
         </ul>
-        <hr style={{border: "1px dashed white", marginTop: "3rem", width: "60%"}}></hr>
-        <h2 style={{ marginBottom: "2rem", textAlign: "center", marginTop: "3rem"  }}>
+        <hr
+          style={{
+            border: "1px dashed white",
+            marginTop: "3rem",
+            width: "60%",
+          }}
+        ></hr>
+        <h2
+          style={{
+            marginBottom: "2rem",
+            textAlign: "center",
+            marginTop: "3rem",
+          }}
+        >
           Activities
         </h2>
-        <p style={{textDecoration: "underline"}}>
-          "Git into Github" Workshop - <em>Beginner's introduction to Git and Github</em>
+        <p style={{ textDecoration: "underline" }}>
+          "Git into Github" Workshop -{" "}
+          <em>Beginner's introduction to Git and Github</em>
         </p>
         <ul style={{ textAlign: "left" }}>
-          <li>Hosted and facilitated a beginner's Git/Github workshop at College of Staten Island, computer science department.</li>
-          <li>Covered basic and critical skills for developers: version control, Git, GitHub, terminology and best practices</li>
+          <li>
+            Hosted and facilitated a beginner's Git/Github workshop at College
+            of Staten Island, computer science department.
+          </li>
+          <li>
+            Covered basic and critical skills for developers: version control,
+            Git, GitHub, terminology and best practices
+          </li>
           <li>Sponsored by Major League hacking and CUNY2X</li>
         </ul>
       </section>

@@ -1,12 +1,12 @@
 #contact {
-    background-color: #001f3f;
+  background-color: #001f3f;
 }
 
 a {
-    color: white !important;
-    border-color: #001f3f !important;
+  color: white !important;
+  border-color: #001f3f !important;
 }
 
 a:hover {
-    background-color: #001f3f !important;
+  background-color: #001f3f !important;
 }

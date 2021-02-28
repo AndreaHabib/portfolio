@@ -1,31 +1,30 @@
 .button {
-    background-color: #007CC7;
-    color: white !important;
+  background-color: #007cc7;
+  color: white !important;
 }
 
 .button:hover {
-    background-color: black;
+  background-color: black;
 }
 
 .card {
-    background-color: #203647 !important;
+  background-color: #203647 !important;
 }
 
 .card:hover {
-    border: 3px solid white !important;
+  border: 3px solid white !important;
 }
 
-
 .moreInfo {
-    text-decoration: none;
-    color: white !important;
-    border: 1px solid white !important;
-    padding: 5px;
-    border-radius: 5px;
+  text-decoration: none;
+  color: white !important;
+  border: 1px solid white !important;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .moreInfo:hover {
-    background-color: black;
-    border-color: #2b4162 !important;
-    color: white !important;
+  background-color: black;
+  border-color: #2b4162 !important;
+  color: white !important;
 }
