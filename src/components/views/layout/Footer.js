@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import linkedin from "../images/linkedin.png";
-import github from "../images/github.png";
 
 export default class Footer extends Component {
   render() {
@@ -9,10 +7,16 @@ export default class Footer extends Component {
         <div className="container">
           <div className="social-icons">
             <a href="https://github.com/AndreaHabib?tab=repositories">
-              <img src={github} alt="github" />
+              <img
+                src="https://res.cloudinary.com/andreahabib/image/upload/v1614539665/github_nhoac9.png"
+                alt="github"
+              />
             </a>
             <a href="https://www.linkedin.com/in/andrea-habib-730941198/">
-              <img src={linkedin} alt="linkedin" />
+              <img
+                src="https://res.cloudinary.com/andreahabib/image/upload/v1614539664/linkedin_i1m9wc.png"
+                alt="linkedin"
+              />
             </a>
           </div>
         </div>

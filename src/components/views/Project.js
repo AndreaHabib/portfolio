@@ -1,20 +1,11 @@
 import React, { Component } from "react";
-import gameStore from "./images/GameStore.png";
-import battlefood from "./images/menu.png";
 import "./styles/project.css";
 import { Button } from "react-bootstrap";
-import port from "./images/port.png";
-import discord from "./images/discord.png";
-import todo from "./images/todo.png";
-import hackathon1 from "./images/hackathon1.png";
-import gamef from "./images/gamef.png";
-import map from "./images/map.png";
-import cpp from "./images/cpp.png";
 
 export default class Project extends Component {
   render() {
     return (
-      <section id="projects" className="portfolio-block website">
+      <section className="portfolio-block website">
         <div
           style={{ color: "black", textAlign: "center" }}
           className="container"
@@ -31,7 +22,11 @@ export default class Project extends Component {
           </h3>
           <div className="card-deck">
             <div className="card mb-4">
-              <img className="card-img-top img-fluid" src={port} alt="Card" />
+              <img
+                className="card-img-top img-fluid"
+                src="https://res.cloudinary.com/andreahabib/image/upload/v1614539664/port_qszkrl.png"
+                alt="Card"
+              />
               <div className="card-body">
                 <h4 className="card-title">This Website</h4>
                 <p className="card-text">
@@ -51,7 +46,7 @@ export default class Project extends Component {
             <div className="card mb-4">
               <img
                 className="card-img-top img-fluid"
-                src={discord}
+                src="https://res.cloudinary.com/andreahabib/image/upload/v1614539665/discord_x0pttb.jpg"
                 alt="Card"
               />
               <div className="card-body">
@@ -70,7 +65,7 @@ export default class Project extends Component {
             <div className="card mb-4">
               <img
                 className="card-img-top img-fluid"
-                src={hackathon1}
+                src="https://res.cloudinary.com/andreahabib/image/upload/v1614539665/hackathon1_ycllgv.png"
                 alt="Card"
               />
               <div className="card-body">
@@ -90,7 +85,11 @@ export default class Project extends Component {
             </div>
             <div className="w-100"></div>
             <div className="card mb-4">
-              <img className="card-img-top img-fluid" src={todo} alt="Card" />
+              <img
+                className="card-img-top img-fluid"
+                src="https://res.cloudinary.com/andreahabib/image/upload/v1614539664/todo_yfc814.png"
+                alt="Card"
+              />
               <div className="card-body">
                 <h4 className="card-title">TODO-List</h4>
                 <p className="card-text">
@@ -119,7 +118,7 @@ export default class Project extends Component {
             <div className="card mb-4">
               <img
                 className="card-img-top img-fluid"
-                src={battlefood}
+                src="https://res.cloudinary.com/andreahabib/image/upload/v1614539664/menu_exksr8.png"
                 alt="Card"
               />
               <div className="card-body">
@@ -138,7 +137,11 @@ export default class Project extends Component {
               </Button>
             </div>
             <div className="card mb-4">
-              <img className="card-img-top img-fluid" src={gamef} alt="Card" />
+              <img
+                className="card-img-top img-fluid"
+                src="https://res.cloudinary.com/andreahabib/image/upload/v1614539665/gamef_tlgsqi.png"
+                alt="Card"
+              />
               <div className="card-body">
                 <h4 className="card-title">GamesFave</h4>
                 <p className="card-text">
@@ -159,7 +162,11 @@ export default class Project extends Component {
             </div>
             <div className="w-100"></div>
             <div className="card mb-4">
-              <img className="card-img-top img-fluid" src={cpp} alt="Card" />
+              <img
+                className="card-img-top img-fluid"
+                src="https://res.cloudinary.com/andreahabib/image/upload/v1614539664/cipher_pbtnka.jpg"
+                alt="Card"
+              />
               <div className="card-body">
                 <h4 className="card-title">Analysis of Algorithms (C++)</h4>
                 <p className="card-text">
@@ -179,7 +186,11 @@ export default class Project extends Component {
             </div>
 
             <div className="card mb-4">
-              <img className="card-img-top img-fluid" src={map} alt="Card" />
+              <img
+                className="card-img-top img-fluid"
+                src="https://res.cloudinary.com/andreahabib/image/upload/v1614539665/map_glzxsc.png"
+                alt="Card"
+              />
               <div className="card-body">
                 <h4 className="card-title">Coronavirus Map</h4>
                 <p className="card-text">
@@ -199,7 +210,7 @@ export default class Project extends Component {
             <div className="card mb-4">
               <img
                 className="card-img-top img-fluid"
-                src={gameStore}
+                src="https://res.cloudinary.com/andreahabib/image/upload/v1614539665/GameStore_m1u8vq.png"
                 alt="Card"
               />
               <div className="card-body">
@@ -227,22 +238,19 @@ export default class Project extends Component {
             </div>
           </div>
           <div className="w-100"></div>
-          <h3 style={{ color: "white", marginTop: "20px" }}>
-            More projects here:{" "}
+          <span>
+            <h3 style={{ color: "white", marginTop: "20px" }}>
+              More projects here:{" "}
+            </h3>
+          </span>
+          <span className="span">
             <a
               className="moreInfo"
-              style={{
-                textDecoration: "none",
-                color: "white",
-                border: "1px solid white",
-                padding: "10px",
-                borderRadius: "5px",
-              }}
               href="https://github.com/AndreaHabib?tab=repositories"
             >
               Github
             </a>
-          </h3>
+          </span>
         </div>
       </section>
     );

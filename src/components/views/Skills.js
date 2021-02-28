@@ -1,8 +1,5 @@
 import React, { Component } from "react";
-import webdev from "./images/webdev.png";
-import code from "./images/coding.png";
 import "./styles/skills.css";
-import tools from "./images/tools.png";
 
 export default class Skills extends Component {
   render() {
@@ -27,7 +24,7 @@ export default class Skills extends Component {
                 </div>
                 <div className="card-body">
                   <img
-                    src={webdev}
+                    src="https://res.cloudinary.com/andreahabib/image/upload/v1614539664/webdev_rxmsmj.png"
                     className="img-fluid rounded mx-auto d-block"
                     alt="Responsive img"
                   />
@@ -47,7 +44,7 @@ export default class Skills extends Component {
                 </div>
                 <div className="card-body">
                   <img
-                    src={code}
+                    src="https://res.cloudinary.com/andreahabib/image/upload/v1614539665/coding_ip0nxj.png"
                     className="img-fluid rounded mx-auto d-block"
                     alt="Responsive img"
                   />
@@ -66,7 +63,7 @@ export default class Skills extends Component {
                 </div>
                 <div className="card-body">
                   <img
-                    src={tools}
+                    src="https://res.cloudinary.com/andreahabib/image/upload/v1614539664/tools_nal1p9.png"
                     className="img-fluid rounded mx-auto d-block"
                     alt="Responsive img"
                   />

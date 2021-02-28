@@ -1,6 +1,14 @@
 import React, { Component } from "react";
 import "./styles/MyPortfolioView.css";
-import { Project, Experience, Skills, Footer, Navbar, About } from "./index";
+import {
+  Project,
+  Experience,
+  Skills,
+  Footer,
+  Navbar,
+  About,
+  PhotoGallery,
+} from "./index";
 
 class MyPortfolioView extends Component {
   constructor(props) {
@@ -49,7 +57,15 @@ class MyPortfolioView extends Component {
             className="portfolio-block website"
           >
             <Experience />
-            <hr style={{ border: "5px solid white", marginTop: "100px" }}></hr>
+            <hr
+              id="photoGallery"
+              style={{ border: "5px solid white", marginTop: "100px" }}
+            ></hr>
+            <PhotoGallery />
+            <hr
+              id="projects"
+              style={{ border: "5px solid white", marginTop: "100px" }}
+            ></hr>
             <Project />
           </div>
           <Footer />

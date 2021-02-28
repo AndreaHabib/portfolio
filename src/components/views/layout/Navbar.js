@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import name from "../images/name.png";
 import "../styles/navbar.css";
 
 export default class Navbar extends Component {
@@ -8,12 +7,12 @@ export default class Navbar extends Component {
     slide: 0, // How much should the Navbar slide up or down
     lastScrollY: 0, // Keep track of current position in state
   };
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     // When this component mounts, begin listening for scroll changes
     window.addEventListener("scroll", this.handleScroll);
   }
 
-  componentWillUnmount() {
+  UNSAFE_componentWillUnmount() {
     // If this component is unmounted, stop listening
     window.removeEventListener("scroll", this.handleScroll);
   }
@@ -46,7 +45,11 @@ export default class Navbar extends Component {
         <div className="container">
           <div className="navbar-brand logo" href="#">
             {/* Andrea Habib */}
-            <img className="rounded float-left img" alt="img" src={name} />
+            <img
+              className="rounded float-left img"
+              alt="img"
+              src="https://res.cloudinary.com/andreahabib/image/upload/v1614539664/name_jinbtm.png"
+            />
           </div>
         </div>
       </nav>

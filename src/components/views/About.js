@@ -1,10 +1,6 @@
 import React, { Component } from "react";
 import Typewriter from "typewriter-effect";
-import pic from "./images/my-picture.png";
 import Anime from "react-anime";
-import email from "./images/email.png";
-import face from "./images/face.png";
-import phone from "./images/phone.png";
 import "./styles/about.css";
 
 export default class About extends Component {
@@ -25,7 +21,7 @@ export default class About extends Component {
             <div className="col-1">
               <img
                 style={{ float: "right" }}
-                src={face}
+                src="https://res.cloudinary.com/andreahabib/image/upload/v1614539665/face_rayfzh.png"
                 className="mx-auto d-block"
                 alt="img"
               />
@@ -38,7 +34,7 @@ export default class About extends Component {
             <div className="col-1">
               <img
                 style={{ float: "right" }}
-                src={phone}
+                src="https://res.cloudinary.com/andreahabib/image/upload/v1614539665/phone_ogou8l.png"
                 className="mx-auto d-block"
                 alt="img"
               />
@@ -52,7 +48,7 @@ export default class About extends Component {
               <img
                 alt="img"
                 style={{ float: "right" }}
-                src={email}
+                src="https://res.cloudinary.com/andreahabib/image/upload/v1614539665/email_qc8bkq.png"
                 className="mx-auto d-block"
               />
             </div>
@@ -77,7 +73,7 @@ export default class About extends Component {
                 border: "5px solid black",
                 borderRadius: "11px",
               }}
-              src={pic}
+              src="https://res.cloudinary.com/andreahabib/image/upload/v1614539664/backup_aurk3d.jpg"
             />
           </div>
         </div>
@@ -109,6 +105,14 @@ export default class About extends Component {
             role="button"
           >
             Experience
+          </a>
+          <a
+            href="#photoGallery"
+            className="btn btn-outline-primary"
+            style={{ marginRight: "10px" }}
+            role="button"
+          >
+            Posters
           </a>
           <a
             href="#projects"
