@@ -10,8 +10,6 @@ body {
   font-size: 107%;
   color: white;
   text-align: left;
-  background-color: #1b2845;
-  background-image: linear-gradient(315deg, #1b2845 0%, #274060 74%);
 }
 html {
   /*min-width: 550px;*/

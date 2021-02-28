@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import RoutesContainer from "../components/routes/RoutesContainer";
+import Particles from "react-particles-js";
 import "./App.css";
 
 class App extends Component {
