@@ -4,5 +4,5 @@ export { default as Project } from "./Project";
 export { default as Experience } from "./Experience";
 export { default as Skills } from "./Skills";
 export { default as Footer } from "./layout/Footer";
-export { default as Navbar } from "./layout/Navbar";
+export { default as NavBar } from "./layout/NavBar";
 export { default as PhotoGallery } from "./PhotoGallery";

@@ -1,0 +1,15 @@
+.section {
+  clear: none;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: white;
+  left: 0;
+  background-color: #572854;
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  margin-top: 100px;
+  left: 50%;
+}

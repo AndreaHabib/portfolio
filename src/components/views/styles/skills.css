@@ -1,6 +1,72 @@
-.card {
+.heading {
+  font-family: "Overpass", sans-serif;
+  text-decoration: underline;
+  margin-bottom: 50px;
   color: white;
-  background-color: #274060;
-  border: 2px solid #1b2845 !important;
-  margin-bottom: 10px;
+}
+h2 {
+  font-size: 100px;
+}
+.skills {
+  display: block;
+  background-color: #3d0b3b;
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  height: auto;
+  left: 50%;
+  padding-top: 100px;
+  padding-bottom: 10rem;
+  clear: none;
+}
+
+@media (max-width: 600px) {
+  .skills {
+    margin-top: 130px;
+  }
+  h2 {
+    font-size: 10vw;
+  }
+}
+
+.row {
+  display: flex;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 768px) and (min-width: 768px) {
+  .col1 {
+    flex-flow: column;
+  }
+  .row {
+    padding-left: 90px;
+  }
+}
+
+.col1 {
+  vertical-align: middle;
+  float: none;
+  margin-bottom: 20px;
+}
+
+.card1 {
+  margin-left: 1.65rem;
+  background-color: #6617cb;
+  font-size: large;
+  background-image: linear-gradient(315deg, #cb1717 0%, #d4147b 74%);
+}
+
+.card2 {
+  margin-left: 1.65rem;
+  font-size: large;
+  background-color: #f6d327;
+  background-image: linear-gradient(315deg, #e023c7 0%, #cf4b9f 74%);
+}
+
+.card3 {
+  margin-left: 1.65rem;
+  font-size: large;
+  background-color: #9921e8;
+  background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
 }

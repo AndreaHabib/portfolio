@@ -7,14 +7,6 @@
   background-color: black;
 }
 
-.card {
-  background-color: #203647 !important;
-}
-
-.card:hover {
-  border: 3px solid #007cc7 !important;
-}
-
 .moreInfo {
   text-decoration: none;
   color: white;
@@ -27,4 +19,20 @@
   background-color: black;
   border-color: #2b4162 !important;
   color: white !important;
+}
+
+.projects {
+  clear: none;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: white;
+  left: 0;
+  background-color: #172b69;
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  margin-top: 100px;
+  left: 50%;
 }

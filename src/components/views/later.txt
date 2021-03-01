@@ -1,0 +1,102 @@
+import Anime from "react-anime";
+let contact;
+    contact = (
+      <div id="contact" style={{ marginTop: "20px", padding: "20px" }}>
+        <div
+          style={{ marginLeft: "40px" }}
+          className="contact-info portfolio-info-card"
+        >
+          <h2 style={{ textAlign: "left" }}>Contact Info</h2>
+          <div style={{ margin: "15px" }} className="row">
+            <div className="col-1">
+              <img
+                style={{ float: "right" }}
+                src="https://res.cloudinary.com/andreahabib/image/upload/v1614539665/face_rayfzh.png"
+                className="mx-auto d-block"
+                alt="img"
+              />
+            </div>
+            <div className="col-9">
+              <span style={{ float: "left" }}>Andrea Habib</span>
+            </div>
+          </div>
+          <div style={{ margin: "15px" }} class="row">
+            <div className="col-1">
+              <img
+                style={{ float: "right" }}
+                src="https://res.cloudinary.com/andreahabib/image/upload/v1614539665/phone_ogou8l.png"
+                className="mx-auto d-block"
+                alt="img"
+              />
+            </div>
+            <div className="col-9">
+              <span style={{ float: "left" }}>+1 (929) 422-8163</span>
+            </div>
+          </div>
+          <div style={{ margin: "15px" }} class="row">
+            <div className="col-1">
+              <img
+                alt="img"
+                style={{ float: "right" }}
+                src="https://res.cloudinary.com/andreahabib/image/upload/v1614539665/email_qc8bkq.png"
+                className="mx-auto d-block"
+              />
+            </div>
+            <div className="col-9">
+              <span style={{ float: "left" }}>andrea.atef@yahoo.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+
+    <a
+                onClick={this.props.Contact}
+                className={this.props.classNameContact}
+                style={{ marginRight: "10px" }}
+                role="button"
+              >
+                Contact <i class="far fa-id-card"></i>
+              </a>
+              {this.props.mountedContact ? (
+              this.props.contact ? (
+                <Anime opacity={[0, 1]} translateY={[-64, 0]}>
+                  <div>{contact}</div>
+                </Anime>
+              ) : (
+                <Anime opacity={[1, 0]} translateY={[0, 64]}>
+                  <div>{contact}</div>
+                </Anime>
+              )
+            ) : null}
+            this.state = {
+      contact: false,
+      mountedContact: false,
+      classNameContact: "btn btn-outline-primary",
+    };
+
+    dismount = () => {
+    this.setState(({ mounted }) => ({ mounted: !mounted }));
+  };
+
+  Contact = () => {
+    this.setState({ contact: !this.state.contact });
+    if (!this.state.mountedContact) {
+      this.setState({
+        classNameContact: "btn btn-outline-primary btn-dark text-white",
+      });
+      setTimeout(() => {
+        this.setState({ mountedContact: !this.state.mountedContact });
+      }, 10);
+    } else if (this.state.mountedContact) {
+      this.setState({ classNameContact: "btn btn-outline-primary" });
+      setTimeout(() => {
+        this.setState({ mountedContact: !this.state.mountedContact });
+      }, 250);
+    }
+  };
+
+              contact={this.state.contact}
+            Contact={this.Contact}
+            classNameContact={this.state.classNameContact}
+            mountedContact={this.state.mountedContact}

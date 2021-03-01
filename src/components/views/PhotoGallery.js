@@ -4,10 +4,10 @@ import "./styles/photoGallery.css";
 
 function PhotoGallery() {
   return (
-    <div>
-      <h3
+    <div className="photoGallery">
+      <h2
+        className="heading"
         style={{
-          color: "white",
           marginBottom: "50px",
           padding: "10px",
           textAlign: "center",
@@ -15,14 +15,20 @@ function PhotoGallery() {
         }}
       >
         My Posters
-      </h3>
-      <Carousel controls={true} indicators interval={3500} pause={false}>
+      </h2>
+      <Carousel
+        className="carousel"
+        controls={true}
+        indicators
+        interval={3500}
+        pause={false}
+      >
         <Carousel.Item>
           <Carousel.Caption className="caption">
             Git into Github Poster
           </Carousel.Caption>
           <img
-            className="d-block w-100 image"
+            className="d-block image"
             alt="git&github"
             src="https://res.cloudinary.com/andreahabib/image/upload/v1614539681/git_github_avgb4o.png"
           />
@@ -32,7 +38,7 @@ function PhotoGallery() {
             GameStore Poster
           </Carousel.Caption>
           <img
-            className="d-block w-100 image"
+            className="d-block  image"
             alt="gameStore"
             src="https://res.cloudinary.com/andreahabib/image/upload/v1614539665/GameStore_m1u8vq.png"
           />
@@ -42,7 +48,7 @@ function PhotoGallery() {
             Linkedin Background Image
           </Carousel.Caption>
           <img
-            className="d-block w-100 image"
+            className="d-block image"
             alt="forLinkedin"
             src="https://res.cloudinary.com/andreahabib/image/upload/v1614539682/linkedin_fqlgkw.png"
           />
@@ -52,7 +58,7 @@ function PhotoGallery() {
             Hack-A-Project Poster/Banner
           </Carousel.Caption>
           <img
-            className="d-block w-100 image"
+            className="d-block image"
             alt="HAP"
             src="https://res.cloudinary.com/andreahabib/image/upload/v1614539683/Hack-A-Project_kest1k.png"
           />
@@ -62,7 +68,7 @@ function PhotoGallery() {
             "Let's Python" Poster
           </Carousel.Caption>
           <img
-            className="d-block w-100 image"
+            className="d-block image"
             alt="python1"
             src="https://res.cloudinary.com/andreahabib/image/upload/v1614539682/Intro_to_python_q4mqpn.png"
           />
@@ -72,7 +78,7 @@ function PhotoGallery() {
             "Let's Python - Scrapping" Poster
           </Carousel.Caption>
           <img
-            className="d-block w-100 image"
+            className="d-block image"
             alt="python2"
             src="https://res.cloudinary.com/andreahabib/image/upload/v1614539682/part2_fgcwge.png"
           />
@@ -82,7 +88,7 @@ function PhotoGallery() {
             "Let's Python - Feed a bot" Poster
           </Carousel.Caption>
           <img
-            className="d-block w-100 image"
+            className="d-block image"
             alt="python3"
             src="https://res.cloudinary.com/andreahabib/image/upload/v1614539681/part3_wi7hqc.png"
           />

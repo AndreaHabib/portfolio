@@ -5,21 +5,21 @@ import { Button } from "react-bootstrap";
 export default class Project extends Component {
   render() {
     return (
-      <section className="portfolio-block website">
+      <section id="projects" className="website projects">
         <div
           style={{ color: "black", textAlign: "center" }}
           className="container"
         >
-          <h3
+          <h2
+            className="heading"
             style={{
-              color: "white",
               marginBottom: "50px",
               padding: "10px",
               textAlign: "center",
             }}
           >
             My Most Notable Projects on Github
-          </h3>
+          </h2>
           <div className="card-deck">
             <div className="card mb-4">
               <img

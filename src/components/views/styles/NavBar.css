@@ -1,0 +1,15 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  mix-blend-mode: screen;
+  background-color: whitesmoke;
+  float: left;
+  color: black !important;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  backdrop-filter: blur(5px);
+  z-index: 10000;
+  font-size: large;
+}

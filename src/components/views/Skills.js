@@ -1,10 +1,14 @@
 import React, { Component } from "react";
 import "./styles/skills.css";
+import Card from "react-bootstrap/Card";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Container from "react-bootstrap/Container";
 
 export default class Skills extends Component {
   render() {
     return (
-      <section className="portfolio-block skills">
+      <section className="skills">
         <div className="container">
           <div className="heading">
             <h2
@@ -13,71 +17,84 @@ export default class Skills extends Component {
                 textAlign: "center",
               }}
             >
-              Special Skills
+              SKILLS
             </h2>
           </div>
-          <div className="row" style={{ textAlign: "center" }}>
-            <div className="col-md-4 col-lg-4 d-flex align-items-stretch">
-              <div className="card special-skill-item border-0">
-                <div className="card-header bg-transparent border-0">
-                  <i className="icon ion-ios-star-outline"></i>
-                </div>
-                <div className="card-body">
-                  <img
-                    src="https://res.cloudinary.com/andreahabib/image/upload/v1614539664/webdev_rxmsmj.png"
-                    className="img-fluid rounded mx-auto d-block"
-                    alt="Responsive img"
-                  />
-                  <h3 className="card-title">Web Development</h3>
-                  <p className="card-text">
-                    Skills for web development: (PERN) React, Redux, Express,
-                    PostgreSQL, Sequelize, Bootstrap, HTML, CSS, Javascript,
-                    Node, Restful APIs, JSX, JSON, Ruby on Rails, Emberjs, PHP
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4 col-lg-4 d-flex align-items-stretch">
-              <div className="card special-skill-item border-0">
-                <div className="card-header bg-transparent border-0">
-                  <i className="icon ion-ios-lightbulb-outline"></i>
-                </div>
-                <div className="card-body">
-                  <img
-                    src="https://res.cloudinary.com/andreahabib/image/upload/v1614539665/coding_ip0nxj.png"
-                    className="img-fluid rounded mx-auto d-block"
-                    alt="Responsive img"
-                  />
-                  <h3 className="card-title">Software Engineer</h3>
-                  <p className="card-text">
-                    Skills for software engineer: Java (JavaFX), Python, C++
-                    (Data Structures)
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4 col-lg-4 d-flex align-items-stretch">
-              <div className="card special-skill-item border-0">
-                <div className="card-header bg-transparent border-0">
-                  <i className="icon ion-ios-gear-outline"></i>
-                </div>
-                <div className="card-body">
-                  <img
-                    src="https://res.cloudinary.com/andreahabib/image/upload/v1614539664/tools_nal1p9.png"
-                    className="img-fluid rounded mx-auto d-block"
-                    alt="Responsive img"
-                  />
-                  <h3 className="card-title">Tools and Expertise</h3>
-                  <p className="card-text">
-                    Microsoft Word, Excel, Powerpoint, Visual Studio, Visual
-                    Studio Code, Git/Git BASH, Github, Postman, Anaconda, Spydr,
-                    Ubuntu-18.04 WSL 2, Windows 10, Computer Troubleshooting,
-                    Fixing Errors
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Container fluid>
+            <Row>
+              <Col className="d-flex align-items-stretch" md="10" lg="4">
+                <Card className="card1" style={{ width: "20rem" }}>
+                  <Card.Img variant="top" />
+                  <Card.Body>
+                    <Card.Title>
+                      <strong>Wev Development</strong>
+                    </Card.Title>
+                    <Card.Text>
+                      <ul style={{ listStyle: "none", padding: "2rem" }}>
+                        <li>React</li>
+                        <li>Redux</li>
+                        <li>PostgreSQL</li>
+                        <li>Sequelize</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Node</li>
+                        <li>Restful APIs</li>
+                        <li>Ruby on Rails</li>
+                        <li>PHP</li>
+                        <li>Express.js</li>
+                      </ul>
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col className="d-flex align-items-stretch" md="10" lg="4">
+                <Card className="card2" style={{ width: "20rem" }}>
+                  <Card.Img variant="top" />
+                  <Card.Body>
+                    <Card.Title>
+                      <strong>Software Engineer</strong>
+                    </Card.Title>
+                    <Card.Text>
+                      <ul style={{ listStyle: "none", padding: "2rem" }}>
+                        <li>Java</li>
+                        <li>JavaFX</li>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>Data Structures</li>
+                      </ul>
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col className="d-flex align-items-stretch" md="10" lg="4">
+                <Card className="card3" style={{ width: "20rem" }}>
+                  <Card.Img variant="top" />
+                  <Card.Body>
+                    <Card.Title>
+                      <strong>Tools And Expertise</strong>
+                    </Card.Title>
+                    <Card.Text>
+                      <ul style={{ listStyle: "none", padding: "2rem" }}>
+                        <li>Microsoft Word</li>
+                        <li>Excel</li>
+                        <li>Powerpoint</li>
+                        <li>Visual Studio</li>
+                        <li>Visual Studio Code</li>
+                        <li>Git/Git BASH</li>
+                        <li>Github</li>
+                        <li>Postman</li>
+                        <li>Anaconda</li>
+                        <li>Spydr</li>
+                        <li>Ubuntu-18.04 WSL 2</li>
+                        <li>Windows 10</li>
+                      </ul>
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </Container>
         </div>
       </section>
     );
