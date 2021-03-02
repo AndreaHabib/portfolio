@@ -1,25 +1,26 @@
 import React, { Component } from "react";
 import "../styles/NavBar.css";
 import Nav from "react-bootstrap/Nav";
+import { Link } from "react-scroll";
 
 export default class NavBar extends Component {
   render() {
     return (
       <Nav className="justify-content-center nav">
         <Nav.Item>
-          <Nav.Link style={{ color: "black" }} href="#skills">
-            Skills
-          </Nav.Link>
+          <Link to="skills" spy={true} delay={false}>
+            <Nav.Link style={{ color: "black" }}>Skills</Nav.Link>
+          </Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link style={{ color: "black" }} href="#experience">
-            Experience
-          </Nav.Link>
+          <Link to="experience" spy={true} delay={false}>
+            <Nav.Link style={{ color: "black" }}>Experience</Nav.Link>
+          </Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link style={{ color: "black" }} href="#projects">
-            Projects
-          </Nav.Link>
+          <Link to="project" spy={true} delay={false}>
+            <Nav.Link style={{ color: "black" }}>Projects</Nav.Link>
+          </Link>
         </Nav.Item>
       </Nav>
     );

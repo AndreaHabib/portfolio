@@ -10,11 +10,12 @@
 }
 
 .caption {
+  font-family: "Overpass", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  background-color: whitesmoke;
+  background-color: #e69a8d;
   border-radius: 20px;
   color: black;
 }

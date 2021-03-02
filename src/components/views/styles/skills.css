@@ -39,9 +39,6 @@ h2 {
   .col1 {
     flex-flow: column;
   }
-  .row {
-    padding-left: 90px;
-  }
 }
 
 .col1 {
@@ -51,21 +48,21 @@ h2 {
 }
 
 .card1 {
-  margin-left: 1.65rem;
+  margin-left: 2.1rem;
   background-color: #6617cb;
   font-size: large;
   background-image: linear-gradient(315deg, #cb1717 0%, #d4147b 74%);
 }
 
 .card2 {
-  margin-left: 1.65rem;
+  margin-left: 2.1rem;
   font-size: large;
   background-color: #f6d327;
   background-image: linear-gradient(315deg, #e023c7 0%, #cf4b9f 74%);
 }
 
 .card3 {
-  margin-left: 1.65rem;
+  margin-left: 2.1rem;
   font-size: large;
   background-color: #9921e8;
   background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);

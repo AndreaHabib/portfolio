@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Typewriter from "typewriter-effect";
 import "./styles/about.css";
+import { Link } from "react-scroll";
 
 export default class About extends Component {
   render() {
@@ -46,9 +47,9 @@ export default class About extends Component {
             </a>
           </div>
         </div>
-        <a href="#skills" className="downArrow bounce">
+        <Link to="skills" spy={true} delay={false} className="downArrow bounce">
           <i className="fas fa-chevron-down fa-5x"></i>
-        </a>
+        </Link>
       </section>
     );
   }

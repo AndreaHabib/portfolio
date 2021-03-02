@@ -3,7 +3,7 @@
 }
 
 .btn {
-  background-color: #ff3700 !important;
+  background-color: #ed0723 !important;
   color: white !important;
   border: 0 !important;
 }
@@ -26,7 +26,6 @@
   }
   .btn {
     width: 100%;
-    margin-bottom: 10px;
   }
   .portfolio-block {
     margin-bottom: 50px;
@@ -42,10 +41,11 @@ a:hover {
 }
 
 .downArrow {
-  padding-top: 50px;
+  padding-top: 40px;
   text-align: center;
   bottom: 45%;
   color: #ff3700 !important;
+  margin-top: 50px;
 }
 .bounce {
   -moz-animation: bounce 2s infinite;

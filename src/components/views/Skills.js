@@ -1,14 +1,40 @@
-import React, { Component } from "react";
+import React from "react";
 import "./styles/skills.css";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
+import { motion } from "framer-motion";
+import ScrollTrigger from "react-scroll-trigger";
 
-export default class Skills extends Component {
-  render() {
-    return (
-      <section className="skills">
+function Skills() {
+  const [lastYPos] = React.useState(0);
+  const [shouldShowActions, setShouldShowActions] = React.useState(false);
+
+  React.useEffect(() => {
+    function handleScroll() {
+      const yPos = window.scrollY;
+      const isScrollingDn = yPos >= lastYPos;
+
+      setShouldShowActions(isScrollingDn);
+
+      //setLastYPos(yPos);
+    }
+
+    window.addEventListener("scroll", handleScroll, false);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll, false);
+    };
+  }, [lastYPos]);
+  return (
+    <section className="skills">
+      <motion.div
+        className="skills__wrapper"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: shouldShowActions ? 1 : 0 }}
+        transition={{ opacity: { duration: 2 } }}
+      >
         <div className="container">
           <div className="heading">
             <h2
@@ -96,7 +122,9 @@ export default class Skills extends Component {
             </Row>
           </Container>
         </div>
-      </section>
-    );
-  }
+      </motion.div>
+    </section>
+  );
 }
+
+export default Skills;
