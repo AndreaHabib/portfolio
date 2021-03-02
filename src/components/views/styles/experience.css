@@ -15,5 +15,14 @@
 }
 
 .interns {
-  font-size: 1.4rem;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .interns {
+    width: 100%;
+  }
 }

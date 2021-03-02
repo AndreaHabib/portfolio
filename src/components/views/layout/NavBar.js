@@ -9,17 +9,23 @@ export default class NavBar extends Component {
       <Nav className="justify-content-center nav">
         <Nav.Item>
           <Link to="skills" spy={true} delay={false}>
-            <Nav.Link style={{ color: "black" }}>Skills</Nav.Link>
+            <Nav.Link className="option" style={{ color: "black" }}>
+              Skills
+            </Nav.Link>
           </Link>
         </Nav.Item>
         <Nav.Item>
           <Link to="experience" spy={true} delay={false}>
-            <Nav.Link style={{ color: "black" }}>Experience</Nav.Link>
+            <Nav.Link className="option" style={{ color: "black" }}>
+              Experience
+            </Nav.Link>
           </Link>
         </Nav.Item>
         <Nav.Item>
           <Link to="project" spy={true} delay={false}>
-            <Nav.Link style={{ color: "black" }}>Projects</Nav.Link>
+            <Nav.Link className="option" style={{ color: "black" }}>
+              Projects
+            </Nav.Link>
           </Link>
         </Nav.Item>
       </Nav>

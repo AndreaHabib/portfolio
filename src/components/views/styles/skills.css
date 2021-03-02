@@ -39,6 +39,9 @@ h2 {
   .col1 {
     flex-flow: column;
   }
+  .row {
+    margin-left: 5.2rem;
+  }
 }
 
 .col1 {

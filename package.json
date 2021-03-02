@@ -7,6 +7,8 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "aos": "^3.0.0-beta.6",
+    "framer": "^1.2.25",
     "framer-motion": "^2.9.5",
     "particles-bg": "^2.5.0",
     "prop-types": "^15.7.2",
