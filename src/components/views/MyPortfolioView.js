@@ -19,14 +19,16 @@ class MyPortfolioView extends Component {
         <div className="container">
           <ParticlesBg color="#fff" num={40} type="cobweb" bg={true} />
           <About />
-          <div id="skills"></div>
-          <Skills />
-          <div id="experience" style={{ marginTop: "-8rem" }}></div>
-          <Experience />
-          <div id="posters" style={{ marginTop: "-9rem" }}></div>
-          <PhotoGallery />
-          <div id="project" style={{ marginTop: "-8rem" }}></div>
-          <Project />
+          <div className="color">
+            <div id="skills"></div>
+            <Skills />
+            <div id="experience" style={{ marginTop: "-8rem" }}></div>
+            <Experience />
+            <div id="posters" style={{ marginTop: "-9rem" }}></div>
+            <PhotoGallery />
+            <div id="project" style={{ marginTop: "-8rem" }}></div>
+            <Project />
+          </div>
         </div>
         <Footer />
       </main>

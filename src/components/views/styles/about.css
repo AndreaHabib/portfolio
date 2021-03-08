@@ -1,13 +1,14 @@
 .btn1 {
-  background-color: #16193d !important;
+  background-color: #ff3700 !important;
   color: white !important;
   border: 0 !important;
-  margin-top: 100px;
-  margin-bottom: -70px;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
   padding: 6px;
-  width: 10.6%;
+  width: 100%;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.btn1:hover {
   text-decoration: none;
 }
 
@@ -37,11 +38,11 @@ a:hover {
 }
 
 .downArrow {
-  padding-top: 40px;
+  padding-top: 6rem;
   text-align: center;
   bottom: 45%;
   color: #ff3700 !important;
-  margin-top: 80px;
+  margin-top: 6rem;
 }
 .bounce {
   -moz-animation: bounce 2s infinite;
@@ -124,14 +125,13 @@ a:hover {
 }
 
 .about-text {
+  background: rgba(255, 255, 255, 0.9);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  box-shadow: 10px 10px 10px;
+  box-shadow: 5px 5px whitesmoke;
   padding: 7px;
   width: 50%;
-  background-color: white;
-  box-shadow: black;
   color: black !important;
   margin-right: auto;
   font-size: 22px;

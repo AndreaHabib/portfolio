@@ -78,3 +78,25 @@ html {
     padding-left: 0;
   }
 }
+
+.color {
+  background: rgb(99, 34, 195);
+  background: linear-gradient(
+    0deg,
+    rgb(70, 8, 161) 0%,
+    rgb(107, 24, 190) 50%,
+    rgb(137, 77, 160) 100%
+  );
+  clear: none;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: white;
+  left: 0;
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  margin-top: 100px;
+  left: 50%;
+}

@@ -20,6 +20,7 @@ export default class About extends Component {
               }}
               src="https://res.cloudinary.com/andreahabib/image/upload/v1614539664/backup_aurk3d.jpg"
             />
+
             <p className="about-text">
               <br />
               <p
@@ -48,12 +49,13 @@ export default class About extends Component {
               Constantly learning and exploring new skills. Passionate about
               learning and designing. <br />
               <br />
+              <a className="btn1" href="Resume.pdf">
+                Resume <i className="far fa-file"></i>
+              </a>
             </p>
           </div>
         </div>
-        <a className="btn1" href="Resume.pdf">
-          Resume <i className="far fa-file"></i>
-        </a>
+
         <Link to="skills" spy={true} delay={false} className="downArrow bounce">
           <i className="fas fa-chevron-down fa-5x"></i>
         </Link>

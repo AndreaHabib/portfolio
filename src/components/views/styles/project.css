@@ -1,24 +1,39 @@
 .button {
-  background-color: #ed0723;
+  background-color: #6423b3;
   color: white !important;
+  border: 0;
 }
 
 .button:hover {
   background-color: black;
 }
 
+.card {
+  background: rgb(255, 255, 255, 0.1);
+  color: white;
+}
+
+.card-text {
+  font-size: large;
+}
+
+.img-fluid {
+  width: 100%;
+  height: 13rem;
+}
+
 .moreInfo {
   text-decoration: none;
   color: white;
-  border: 1px solid white !important;
   padding: 10px;
   border-radius: 5px;
 }
 
 .moreInfo:hover {
-  background-color: black;
+  background-color: #6423b3 !important;
   border-color: #2b4162 !important;
   color: white !important;
+  text-decoration: none;
 }
 
 .projects {
@@ -29,7 +44,6 @@
   padding-left: 10px;
   color: white;
   left: 0;
-  background-color: #3d0b3b;
   width: 100vw;
   position: relative;
   margin-left: -50vw;
