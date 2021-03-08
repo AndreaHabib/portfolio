@@ -1,5 +1,6 @@
 .nav {
   position: fixed;
+  color: orange;
   top: 0;
   width: 100%;
   background: rgba(204, 204, 204, 0.1);
