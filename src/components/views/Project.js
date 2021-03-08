@@ -40,8 +40,8 @@ export default class Project extends Component {
                 <div className="card-body">
                   <h4 className="card-title">This Website</h4>
                   <p className="card-text">
-                    React/Javascript, JSX, HTML, CSS, Bootstrap, Anime.js,
-                    TypewriterJS
+                    React/Javascript, JSX, HTML, CSS, Bootstrap, AOS.js,
+                    TypewriterJS, particles-bg
                   </p>
                 </div>
                 <Button
@@ -242,7 +242,7 @@ export default class Project extends Component {
                 <Button
                   className="button"
                   variant="info"
-                  href="http://163.238.35.165/~habib/lab1/final_project/view/index.php"
+                  href="https://game-store1.herokuapp.com/view/index.php"
                   target="_blank"
                 >
                   Deployed website

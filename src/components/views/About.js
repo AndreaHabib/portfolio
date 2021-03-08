@@ -13,7 +13,7 @@ export default class About extends Component {
               alt="avatar"
               className="image1"
               style={{
-                height: "9rem",
+                height: "9.5rem",
                 width: "8rem",
                 border: "1px solid black",
                 borderRadius: "50%",

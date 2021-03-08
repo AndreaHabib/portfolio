@@ -1,15 +1,18 @@
 .btn1 {
-  background-color: #ed0723 !important;
+  background-color: #16193d !important;
   color: white !important;
   border: 0 !important;
   margin-top: 100px;
   margin-bottom: -70px;
-  border-radius: 5px;
-  padding: 5px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  padding: 6px;
+  width: 10.6%;
   text-decoration: none;
 }
 
 .portfolio-block {
+  clear: none;
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -115,22 +118,24 @@ a:hover {
 .image1 {
   display: flex;
   margin: 0 auto;
-  margin-top: 5rem !important;
+  margin-top: 3rem !important;
   margin-left: auto;
   margin-bottom: -75px !important;
 }
 
 .about-text {
-  border-radius: 30px;
-  background-color: #fffafa;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 10px 10px 10px;
   padding: 7px;
   width: 50%;
-  margin-bottom: 3%;
+  background-color: white;
+  box-shadow: black;
+  color: black !important;
   margin-right: auto;
   font-size: 22px;
   text-align: left;
-  line-height: 25px;
-  letter-spacing: 4px;
   margin-bottom: -100px !important;
   font-family: "Gill Sans", Arial, Helvetica, sans-serif, "Gill Sans MT",
     "Trebuchet MS" !important;
@@ -143,12 +148,19 @@ a:hover {
     padding-top: 3rem;
   }
   .about-text {
+    border-bottom-right-radius: 0px;
     margin-top: 90px;
     width: auto;
     display: flex;
     flex-direction: column;
     text-align: left;
     font-size: large;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 768px) {
+  .btn1 {
+    width: 100%;
   }
 }
 
