@@ -8,45 +8,52 @@ export default class About extends Component {
     return (
       <section className="portfolio-block block-intro">
         <div className="about-me">
-          <div>
-            <div className="avatar">
-              <img
-                alt="avatar"
+          <div className="main-about">
+            <img
+              alt="avatar"
+              className="image1"
+              style={{
+                height: "9rem",
+                width: "8rem",
+                border: "1px solid black",
+                borderRadius: "50%",
+              }}
+              src="https://res.cloudinary.com/andreahabib/image/upload/v1614539664/backup_aurk3d.jpg"
+            />
+            <p className="about-text">
+              <br />
+              <p
                 style={{
-                  height: "9rem",
-                  border: "1px solid black",
-                  borderRadius: "50%",
+                  margin: "1rem 0",
+                  fontSize: "23px",
+                  lineHeight: "2.4rem",
                 }}
-                src="https://res.cloudinary.com/andreahabib/image/upload/v1614539664/backup_aurk3d.jpg"
-              />
-            </div>
-          </div>
-          <div>
-            <p style={{ fontSize: "1.3rem" }}>
-              Hey! I'm <strong>Andrea Habib!</strong> A College of Staten Island
-              student, majoring in Computer Science.
+              >
+                <strong>Hey! I am Andrea Habib,</strong>
+                <Typewriter
+                  options={{
+                    strings: [
+                      "Software Engineer",
+                      "Student",
+                      "Learner",
+                      "Web Development",
+                      "Passionate",
+                    ],
+                    autoStart: true,
+                    loop: true,
+                    delay: 50,
+                  }}
+                />
+              </p>
+              Constantly learning and exploring new skills. Passionate about
+              learning and designing. <br />
+              <br />
             </p>
-            <div style={{ marginBottom: "15px" }} className="sub">
-              <Typewriter
-                options={{
-                  strings: [
-                    "Software Engineer",
-                    "Student",
-                    "Learner",
-                    "Web Development",
-                    "Passionate",
-                  ],
-                  autoStart: true,
-                  loop: true,
-                  delay: 50,
-                }}
-              />
-            </div>
-            <a className="btn" role="button" href="Resume.pdf">
-              Resume <i className="far fa-file"></i>
-            </a>
           </div>
         </div>
+        <a className="btn1" href="Resume.pdf">
+          Resume <i className="far fa-file"></i>
+        </a>
         <Link to="skills" spy={true} delay={false} className="downArrow bounce">
           <i className="fas fa-chevron-down fa-5x"></i>
         </Link>

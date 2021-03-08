@@ -122,8 +122,24 @@ export default class Experience extends Component {
                   marginTop: "3rem",
                 }}
               >
-                Activities
+                Activities and Leadership
               </h2>
+              <p
+                style={{
+                  marginLeft: "10px",
+                  textAlign: "left",
+                  textDecoration: "underline",
+                }}
+              >
+                "Hack-A-Project Club" Founder and President -{" "}
+                <em>Project-based club at College of Staten Island</em>
+              </p>
+              <ul style={{ textAlign: "left" }}>
+                <li>
+                  Founded a club for students to collaborate on projects and
+                  give them the opportunity to grow themselves within the club
+                </li>
+              </ul>
               <p
                 style={{
                   marginLeft: "10px",
@@ -143,6 +159,28 @@ export default class Experience extends Component {
                   Covered basic and critical skills for developers: version
                   control, Git, GitHub, terminology and best practices
                 </li>
+                <li>Sponsored by Major League hacking and CUNY2X</li>
+              </ul>
+              <p
+                style={{
+                  marginLeft: "10px",
+                  textAlign: "left",
+                  textDecoration: "underline",
+                }}
+              >
+                "Let's Python" Workshop -{" "}
+                <em>Beginner's introduction Python</em>
+              </p>
+              <ul style={{ textAlign: "left" }}>
+                <li>
+                  Lead instructor of a python introductory workshop for the
+                  computer science community at College of Staten Island
+                </li>
+                <li>
+                  Went over Glitch which is a website for projects and
+                  collaborations with minimal setup
+                </li>
+                <li>Explained Python basic syntax and structure.</li>
                 <li>Sponsored by Major League hacking and CUNY2X</li>
               </ul>
               <hr

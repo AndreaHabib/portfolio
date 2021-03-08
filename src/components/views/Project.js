@@ -251,7 +251,7 @@ export default class Project extends Component {
             </div>
             <div className="w-100"></div>
             <span>
-              <h3 style={{ color: "white", marginTop: "20px" }}>
+              <h3 style={{ color: "white", marginTop: "50px" }}>
                 More projects here:{" "}
               </h3>
             </span>

@@ -1,11 +1,12 @@
-#contact {
-  color: white;
-}
-
-.btn {
+.btn1 {
   background-color: #ed0723 !important;
   color: white !important;
   border: 0 !important;
+  margin-top: 100px;
+  margin-bottom: -70px;
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
 }
 
 .portfolio-block {
@@ -16,22 +17,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
 }
 
 @media (max-width: 600px) {
-  .buttons {
-    display: flex;
-    flex-direction: column;
-  }
-  .btn {
+  .btn1 {
     width: 100%;
   }
   .portfolio-block {
     margin-bottom: 50px;
-  }
-  #contact {
-    padding: 0 !important;
   }
 }
 
@@ -45,7 +38,7 @@ a:hover {
   text-align: center;
   bottom: 45%;
   color: #ff3700 !important;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 .bounce {
   -moz-animation: bounce 2s infinite;
@@ -111,5 +104,57 @@ a:hover {
     -ms-transform: translateY(-15px);
     -webkit-transform: translateY(-15px);
     transform: translateY(-15px);
+  }
+}
+
+.main-about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.image1 {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 5rem !important;
+  margin-left: auto;
+  margin-bottom: -75px !important;
+}
+
+.about-text {
+  border-radius: 30px;
+  background-color: #fffafa;
+  padding: 7px;
+  width: 50%;
+  margin-bottom: 3%;
+  margin-right: auto;
+  font-size: 22px;
+  text-align: left;
+  line-height: 25px;
+  letter-spacing: 4px;
+  margin-bottom: -100px !important;
+  font-family: "Gill Sans", Arial, Helvetica, sans-serif, "Gill Sans MT",
+    "Trebuchet MS" !important;
+}
+
+@media screen and (max-width: 768px) {
+  .main-about {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+  }
+  .about-text {
+    margin-top: 90px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
+  .about-text {
+    font-size: larger;
+    margin-right: 8%;
   }
 }
