@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  mix-blend-mode: screen;
+  opacity: 0.6;
   background-color: whitesmoke;
   float: left;
   color: black !important;
