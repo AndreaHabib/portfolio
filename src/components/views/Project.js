@@ -33,7 +33,7 @@ export default class Project extends Component {
               <div className="card mb-4">
                 <img
                   className="card-img-top img-fluid"
-                  src="https://res.cloudinary.com/andreahabib/image/upload/v1614539664/port_qszkrl.png"
+                  src="https://res.cloudinary.com/andreahabib/image/upload/v1621472665/website_mzrsvx.png"
                   alt="Card"
                 />
 

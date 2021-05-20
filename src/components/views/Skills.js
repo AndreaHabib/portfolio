@@ -36,7 +36,7 @@ function Skills() {
                 <Card.Img variant="top" />
                 <Card.Body>
                   <Card.Title>
-                    <strong>Wev Development</strong>
+                    <strong>Web Development</strong>
                   </Card.Title>
                   <Card.Text>
                     <ul style={{ listStyle: "none", padding: "2rem" }}>
@@ -51,6 +51,7 @@ function Skills() {
                       <li>Restful APIs</li>
                       <li>Ruby on Rails</li>
                       <li>PHP</li>
+                      <li>Django</li>
                       <li>Express.js</li>
                     </ul>
                   </Card.Text>
@@ -70,7 +71,6 @@ function Skills() {
                       <li>JavaFX</li>
                       <li>Python</li>
                       <li>C++</li>
-                      <li>Data Structures</li>
                     </ul>
                   </Card.Text>
                 </Card.Body>
@@ -97,6 +97,8 @@ function Skills() {
                       <li>Spydr</li>
                       <li>Ubuntu-18.04 WSL 2</li>
                       <li>Windows 10</li>
+                      <li>Data Structures</li>
+                      <li>Algorithms</li>
                     </ul>
                   </Card.Text>
                 </Card.Body>

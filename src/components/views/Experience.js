@@ -24,7 +24,7 @@ export default class Experience extends Component {
           <div className="interns">
             <div style={{ marginLeft: "1rem", textAlign: "left" }}>
               <p style={{ textDecoration: "underline" }}>
-                Major League Hacking, NY - <em>Internship</em>
+                Major League Hacking, Remote - <em>Internship</em>
               </p>
               <p>
                 Worked in an agile environment where I engaged in daily stand
@@ -76,6 +76,39 @@ export default class Experience extends Component {
                   with my team.
                 </li>
               </ul>
+              <div style={{ marginLeft: "1rem", textAlign: "left" }}>
+                <p style={{ textDecoration: "underline" }}>
+                  Develop For Good - Care Somalia, Remote -{" "}
+                  <em>Volunteer Backend developer</em>
+                </p>
+                <p>
+                  The project will be used by health staff of 20 health
+                  facilities for Internally Displaced People in Somalia and is
+                  expected to increase hospital birth delivery by 30% in the
+                  first year by tracking mothers’ hospital visit dates
+                </p>
+                <ul style={{ textAlign: "left" }}>
+                  <li>
+                    Creating entity-relationship diagram containing a database
+                    schema to blueprint column data element headers for the
+                    client
+                  </li>
+                  <li>
+                    Utilizing Django to implement client-approved database
+                    models to track data as they relate to hospital service and
+                    visits
+                  </li>
+                  <li>
+                    Storing data in PostgreSQL to track staff and patient
+                    information for administrator and internal employee
+                    dashboards
+                  </li>
+                  <li>
+                    Implementing Unit testing using Django to assure that
+                    server-side development is properly functioning
+                  </li>
+                </ul>
+              </div>
               <hr style={{ border: "1px solid white" }}></hr>
               <p style={{ textDecoration: "underline" }}>
                 Tech Talent Pipeline, NY - <em>Apprenticeship</em>
@@ -137,7 +170,7 @@ export default class Experience extends Component {
               <ul style={{ textAlign: "left" }}>
                 <li>
                   Founded a club for students to collaborate on projects and
-                  give them the opportunity to grow themselves within the club
+                  leading students to develop professionally and technically.
                 </li>
               </ul>
               <p
@@ -147,41 +180,20 @@ export default class Experience extends Component {
                   textDecoration: "underline",
                 }}
               >
-                "Git into Github" Workshop -{" "}
-                <em>Beginner's introduction to Git and Github</em>
+                Major League Hacking Sponsored Event Workshops -{" "}
               </p>
               <ul style={{ textAlign: "left" }}>
                 <li>
-                  Hosted and facilitated a beginner's Git/Github workshop at
-                  College of Staten Island, computer science department.
+                  <em>"Git into Github"</em> - Led and organized a workshop to
+                  introduce git and github for my computer science college
+                  community
                 </li>
                 <li>
-                  Covered basic and critical skills for developers: version
-                  control, Git, GitHub, terminology and best practices
+                  <em>“Let's Python”</em> - Lead instructor and organizer of a
+                  python workshop to introduce python basic syntax, regular
+                  expressions, and scraping twitter using BeautifulSoap for my
+                  computer science college community
                 </li>
-                <li>Sponsored by Major League hacking and CUNY2X</li>
-              </ul>
-              <p
-                style={{
-                  marginLeft: "10px",
-                  textAlign: "left",
-                  textDecoration: "underline",
-                }}
-              >
-                "Let's Python" Workshop -{" "}
-                <em>Beginner's introduction Python</em>
-              </p>
-              <ul style={{ textAlign: "left" }}>
-                <li>
-                  Lead instructor of a python introductory workshop for the
-                  computer science community at College of Staten Island
-                </li>
-                <li>
-                  Went over Glitch which is a website for projects and
-                  collaborations with minimal setup
-                </li>
-                <li>Explained Python basic syntax and structure.</li>
-                <li>Sponsored by Major League hacking and CUNY2X</li>
               </ul>
               <hr
                 style={{
