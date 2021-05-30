@@ -17,6 +17,7 @@
     "react-scripts": "^4.0.3",
     "react-scroll": "^1.8.1",
     "react-typewriter": "^0.4.1",
+    "react-vertical-timeline-component": "^3.3.3",
     "typewriter-effect": "^2.17.0"
   },
   "scripts": {

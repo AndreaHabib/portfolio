@@ -1,27 +1,44 @@
-.section {
-  clear: none;
-  padding-top: 100px;
-  padding-bottom: 50px;
-  padding-right: 10px;
-  padding-left: 10px;
-  color: white;
-  left: 0;
-  width: 100vw;
-  position: relative;
-  margin-left: -50vw;
-  margin-top: 100px;
-  left: 50%;
+.vertical-timeline-element-title,
+.vertical-timeline-element-subtitle,
+.vertical-timeline-element--work p {
+  color: black !important;
+  text-align: left;
 }
 
-.interns {
+.activities {
+  margin-top: 100px !important;
   font-size: 1.25rem;
   line-height: 2rem;
   width: 70%;
   margin: 0 auto;
 }
 
-@media (max-width: 600px) {
-  .interns {
-    width: 100%;
+@media screen and (max-width: 768px) {
+  .vertical-timeline-element--work {
+    color: black;
+  }
+  .workIcon {
+    width: 40px !important;
+  }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
+  .vertical-timeline-element--work {
+    color: black;
+  }
+  .workIcon {
+    width: 40px !important;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 768px) {
+  .vertical-timeline-element--work {
+    color: black !important;
+  }
+}
+
+@media screen and (max-width: 280px) and (min-width: 280px) {
+  .vertical-timeline-element--work {
+    color: black !important;
   }
 }
