@@ -1,16 +1,13 @@
 import React, { Component } from "react";
 import "./styles/experience.css";
 import MLH from "./mlh.jpg";
-import DFG from "./dvg.png";
+import DFG from "./dfg.png";
+import TTP from "./ttp.png";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-// ..
-AOS.init();
 
 export default class Experience extends Component {
   render() {
@@ -26,6 +23,7 @@ export default class Experience extends Component {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{
+              borderTop: "10px solid #ff7f50",
               color: "#fff",
             }}
             contentArrowStyle={{ borderRight: "7px solid" }}
@@ -40,12 +38,18 @@ export default class Experience extends Component {
               />
             }
           >
+            <span className="tag">Ember.js </span>
+            <span className="tag">Ruby on Rails</span>
+            <span className="tag">Hackathon</span>
+            <span className="tag">React.js</span>
             <h3 className="vertical-timeline-element-title">
               Major League Hacking - Discourse
             </h3>
             <h4
               className="vertical-timeline-element-subtitle"
-              style={{ marginBottom: "50px" }}
+              style={{
+                marginBottom: "50px",
+              }}
             >
               Fellowship
             </h4>
@@ -74,6 +78,10 @@ export default class Experience extends Component {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
+            contentStyle={{
+              borderTop: "10px solid #dc143c",
+              color: "#fff",
+            }}
             date="April 2021 – Present"
             iconStyle={{ background: "rgb(255, 255,255)", color: "#fff" }}
             icon={
@@ -85,6 +93,10 @@ export default class Experience extends Component {
               />
             }
           >
+            <span className="tag">Python </span>
+            <span className="tag">Django</span>
+            <span className="tag">PostgreSQL</span>
+            <span className="tag">GraphQL</span>
             <h3 className="vertical-timeline-element-title">
               Develop for Good - Care Somalia
             </h3>
@@ -92,7 +104,7 @@ export default class Experience extends Component {
               style={{ marginBottom: "50px" }}
               className="vertical-timeline-element-subtitle"
             >
-              Backend Developer
+              Backend Developer Volunteer
             </h4>
             <ul
               style={{ textAlign: "left", color: "black", fontSize: "medium" }}
@@ -115,45 +127,63 @@ export default class Experience extends Component {
               </li>
             </ul>
           </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{
+              borderTop: "10px solid #080808",
+              color: "#fff",
+            }}
+            date="June 2020"
+            iconStyle={{ background: "rgb(0, 0, 0)", color: "#fff" }}
+            icon={
+              <img
+                src={TTP}
+                alt="ttp"
+                style={{ borderRadius: "100%", width: "60px" }}
+                className="workIcon"
+              />
+            }
+          >
+            <span className="tag">React.js </span>
+            <span className="tag">Express.js</span>
+            <span className="tag">PostgreSQL</span>
+            <span className="tag">Redux</span>
+            <h3 className="vertical-timeline-element-title">
+              Tech Talent Pipeline
+            </h3>
+            <h4
+              style={{ marginBottom: "50px" }}
+              className="vertical-timeline-element-subtitle"
+            >
+              Apprenticeship
+            </h4>
+            <ul
+              style={{ textAlign: "left", color: "black", fontSize: "medium" }}
+            >
+              <li>
+                Led a group of 3 members to develop a full-stack web application
+                that allows a user to look up different video games and add them
+                to their favorites on their account.
+              </li>
+              <li>
+                Created user login and registration pages using React.js and
+                Redux Javascript frameworks to create a user friendly front-end
+              </li>
+              <li>
+                Used Axios for HTTP POST requests from API to search for video
+                games and add them to favorites page using PostgreSQL,
+                Express.js and Sequelize
+              </li>
+              <li>
+                Utilized Git/GitHub for version control and continuous
+                development with my team.
+              </li>
+            </ul>
+          </VerticalTimelineElement>
         </VerticalTimeline>
         <div className="activities">
           <hr style={{ border: "1px solid white" }}></hr>
-          <p style={{ textDecoration: "underline" }}>
-            Tech Talent Pipeline, NY - <em>Apprenticeship</em>
-          </p>
-          <p>
-            Interviewed and selected to participate in a full stack development
-            bootcamp in which topics on use of PostgreSQL, Express, React.js,
-            Node,js were first taught and then applied to delivering a minimum
-            viable product in an agile environment.{" "}
-          </p>
-          <ul style={{ textAlign: "left" }}>
-            <li>
-              Led a group of 3 members to develop a full-stack web application
-              that allows a user to look up different video games and add them
-              to their favorites on their account.
-            </li>
-            <li>
-              Created user login and registration pages using React.js and Redux
-              Javascript frameworks to create a user friendly front-end
-            </li>
-            <li>
-              Used Axios for HTTP POST requests from API to search for video
-              games and add them to favorites page using PostgreSQL, Express.js
-              and Sequelize
-            </li>
-            <li>
-              Utilized Git/GitHub for version control and continuous development
-              with my team.
-            </li>
-          </ul>
-          <hr
-            style={{
-              border: "1px dashed black",
-              marginTop: "3rem",
-              width: "60%",
-            }}
-          ></hr>
+
           <h2
             className="heading"
             style={{
@@ -203,7 +233,8 @@ export default class Experience extends Component {
           </ul>
           <hr
             style={{
-              border: "2px dashed black",
+              marginTop: "100px",
+              border: "2px dashed white",
             }}
           ></hr>
         </div>

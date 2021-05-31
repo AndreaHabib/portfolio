@@ -50,6 +50,7 @@ h2 {
 }
 
 .card1 {
+  margin-bottom: 10px;
   margin-left: 2.1rem;
   background-color: #6617cb;
   font-size: large;
@@ -57,6 +58,7 @@ h2 {
 }
 
 .card2 {
+  margin-bottom: 10px;
   margin-left: 2.1rem;
   font-size: large;
   background-color: #f6d327;
@@ -64,8 +66,17 @@ h2 {
 }
 
 .card3 {
+  margin-bottom: 10px;
   margin-left: 2.1rem;
   font-size: large;
   background-color: #9921e8;
   background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
+}
+
+.card4 {
+  margin-bottom: 10px;
+  margin-left: 2.1rem;
+  font-size: large;
+  background-color: #1d721a;
+  background-image: linear-gradient(315deg, #8faa1a 0%, #17b932 74%);
 }

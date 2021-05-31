@@ -5,6 +5,26 @@
   text-align: left;
 }
 
+.vertical-timeline-element-title {
+  margin-top: 30px !important;
+}
+
+.vertical-timeline-element-subtitle {
+  color: grey !important;
+  font-size: large;
+}
+
+.tag {
+  margin-top: 20px !important;
+  color: white;
+  border-radius: 50px;
+  background-image: linear-gradient(315deg, #cb1717 0%, #d4147b 74%);
+  padding: 8px;
+  margin-left: 5px;
+  display: inline-block;
+  font-size: medium;
+}
+
 .activities {
   margin-top: 100px !important;
   font-size: 1.25rem;
@@ -16,6 +36,11 @@
 @media screen and (max-width: 768px) {
   .vertical-timeline-element--work {
     color: black;
+    visibility: hidden;
+  }
+  .vertical-timeline-element-subtitle {
+    visibility: visible;
+    display: block;
   }
   .workIcon {
     width: 40px !important;
