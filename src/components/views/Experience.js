@@ -23,6 +23,61 @@ export default class Experience extends Component {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{
+              borderTop: "10px solid #dc143c",
+              color: "#fff",
+            }}
+            date="April 2021 – Present"
+            iconStyle={{ background: "rgb(255, 255,255)", color: "#fff" }}
+            icon={
+              <img
+                src={DFG}
+                alt="dfg"
+                style={{ borderRadius: "100%", width: "60px" }}
+                className="workIcon"
+              />
+            }
+          >
+            <span className="tag">Python </span>
+            <span className="tag">Django</span>
+            <span className="tag">PostgreSQL</span>
+            <span className="tag">GraphQL</span>
+            <h3 className="vertical-timeline-element-title">
+              Develop for Good - Care Somalia
+            </h3>
+            <h4
+              style={{ marginBottom: "50px" }}
+              className="vertical-timeline-element-subtitle"
+            >
+              Backend Developer Volunteer
+            </h4>
+            <ul
+              style={{ textAlign: "left", color: "black", fontSize: "medium" }}
+            >
+              <li>
+                Creating entity-relationship diagram containing a database
+                schema to blueprint column data element headers for the client
+              </li>
+              <li>
+                Utilizing Django to implement client-approved database models to
+                track data as they relate to hospital service and visits
+              </li>
+              <li>
+                Storing data in PostgreSQL to track staff and patient
+                information for administrator and internal employee dashboards
+              </li>
+              <li>
+                Implementing Unit testing using Django to assure that
+                server-side development is properly functioning
+              </li>
+              <li>
+                Used Django Graphene to implement GraphQL and created the
+                queries and mutations.
+              </li>
+            </ul>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{
               borderTop: "10px solid #ff7f50",
               color: "#fff",
             }}
@@ -73,57 +128,6 @@ export default class Experience extends Component {
               <li>
                 Stored information on a PostgreSQL database for initial user
                 registration and login when returning to the web application
-              </li>
-            </ul>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={{
-              borderTop: "10px solid #dc143c",
-              color: "#fff",
-            }}
-            date="April 2021 – Present"
-            iconStyle={{ background: "rgb(255, 255,255)", color: "#fff" }}
-            icon={
-              <img
-                src={DFG}
-                alt="dfg"
-                style={{ borderRadius: "100%", width: "60px" }}
-                className="workIcon"
-              />
-            }
-          >
-            <span className="tag">Python </span>
-            <span className="tag">Django</span>
-            <span className="tag">PostgreSQL</span>
-            <span className="tag">GraphQL</span>
-            <h3 className="vertical-timeline-element-title">
-              Develop for Good - Care Somalia
-            </h3>
-            <h4
-              style={{ marginBottom: "50px" }}
-              className="vertical-timeline-element-subtitle"
-            >
-              Backend Developer Volunteer
-            </h4>
-            <ul
-              style={{ textAlign: "left", color: "black", fontSize: "medium" }}
-            >
-              <li>
-                Creating entity-relationship diagram containing a database
-                schema to blueprint column data element headers for the client
-              </li>
-              <li>
-                Utilizing Django to implement client-approved database models to
-                track data as they relate to hospital service and visits
-              </li>
-              <li>
-                Storing data in PostgreSQL to track staff and patient
-                information for administrator and internal employee dashboards
-              </li>
-              <li>
-                Implementing Unit testing using Django to assure that
-                server-side development is properly functioning
               </li>
             </ul>
           </VerticalTimelineElement>
@@ -209,6 +213,15 @@ export default class Experience extends Component {
               Founded a club for students to collaborate on projects and leading
               students to develop professionally and technically.
             </li>
+            <li>
+              Utilized React.js to create a{" "}
+              <a
+                style={{ textDecoration: "none", color: "orange" }}
+                href="https://hack-a-project.netlify.app"
+              >
+                website for the club
+              </a>
+            </li>
           </ul>
           <p
             style={{
@@ -217,7 +230,7 @@ export default class Experience extends Component {
               textDecoration: "underline",
             }}
           >
-            Major League Hacking Sponsored Event Workshops -{" "}
+            Major League Hacking & CUNY2X Sponsored Event Workshops -{" "}
           </p>
           <ul style={{ textAlign: "left" }}>
             <li>

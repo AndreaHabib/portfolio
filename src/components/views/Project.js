@@ -33,6 +33,58 @@ export default class Project extends Component {
               <div className="card mb-4">
                 <img
                   className="card-img-top img-fluid"
+                  src="https://res.cloudinary.com/andreahabib/image/upload/v1623081724/2020819637334518371227591_rqt6fj.jpg"
+                  alt="Card"
+                />
+                <div className="card-body">
+                  <h4 className="card-title">
+                    Develop for Good - Care Somalia
+                  </h4>
+                  <p className="card-text">
+                    Django, Python, GraphQL (Graphene), PostgreSQL
+                  </p>
+                </div>
+                <Button
+                  className="button"
+                  variant="info"
+                  href="https://github.com/dfg-care-somalia/caresomalia-maternal-delivery-backend"
+                  target="_blank"
+                >
+                  Checkout the project
+                </Button>
+              </div>
+              <div className="card mb-4">
+                <img
+                  className="card-img-top img-fluid"
+                  src="https://res.cloudinary.com/andreahabib/image/upload/v1623079763/Screenshot_from_2021-06-07_11-28-35_ommpqw.png"
+                  alt="Card"
+                />
+                <div className="card-body">
+                  <h4 className="card-title">Hack-A-Project Website</h4>
+                  <p className="card-text">
+                    Informative website for Hack-A-Project
+                  </p>
+                </div>
+                <Button
+                  className="button"
+                  variant="info"
+                  href="https://github.com/AndreaHabib/club_website"
+                  target="_blank"
+                >
+                  Checkout the project
+                </Button>
+                <Button
+                  className="button"
+                  variant="info"
+                  href="https://hack-a-project.netlify.app"
+                  target="_blank"
+                >
+                  Deployed Website
+                </Button>
+              </div>
+              <div className="card mb-4">
+                <img
+                  className="card-img-top img-fluid"
                   src="https://res.cloudinary.com/andreahabib/image/upload/v1621472665/website_mzrsvx.png"
                   alt="Card"
                 />
@@ -53,7 +105,7 @@ export default class Project extends Component {
                   Checkout the project
                 </Button>
               </div>
-
+              <div className="w-100"></div>
               <div className="card mb-4">
                 <img
                   className="card-img-top img-fluid"
@@ -94,39 +146,6 @@ export default class Project extends Component {
                   Checkout the project
                 </Button>
               </div>
-
-              <div className="w-100"></div>
-              <div className="card mb-4">
-                <img
-                  className="card-img-top img-fluid"
-                  src="https://res.cloudinary.com/andreahabib/image/upload/v1614539664/todo_yfc814.png"
-                  alt="Card"
-                />
-                <div className="card-body">
-                  <h4 className="card-title">TODO-List</h4>
-                  <p className="card-text">
-                    C++, Features: Multiple files, Dynamic Arrays,
-                    classNamees(OOP) <br></br>
-                    React, Features: Add, Remove tasks, mark as done
-                  </p>
-                </div>
-                <Button
-                  className="button"
-                  variant="info"
-                  href="https://github.com/AndreaHabib/TODO-List"
-                  target="_blank"
-                >
-                  Checkout the project in C++
-                </Button>
-                <Button
-                  className="button"
-                  variant="info"
-                  href="https://github.com/AndreaHabib/TODO-REACT/tree/master/todo"
-                  target="_blank"
-                >
-                  Checkout the project in React
-                </Button>
-              </div>
               <div className="card mb-4">
                 <img
                   className="card-img-top img-fluid"
@@ -148,6 +167,7 @@ export default class Project extends Component {
                   Checkout the project
                 </Button>
               </div>
+              <div className="w-100"></div>
               <div className="card mb-4">
                 <img
                   className="card-img-top img-fluid"
@@ -172,7 +192,6 @@ export default class Project extends Component {
                   Checkout the project
                 </Button>
               </div>
-              <div className="w-100"></div>
               <div className="card mb-4">
                 <img
                   className="card-img-top img-fluid"
@@ -196,7 +215,6 @@ export default class Project extends Component {
                   Checkout the project
                 </Button>
               </div>
-
               <div className="card mb-4">
                 <img
                   className="card-img-top img-fluid"
@@ -219,6 +237,7 @@ export default class Project extends Component {
                   Checkout the project
                 </Button>
               </div>
+              <div className="w-100"></div>
               <div className="card mb-4">
                 <img
                   className="card-img-top img-fluid"
@@ -248,8 +267,60 @@ export default class Project extends Component {
                   Deployed website
                 </Button>
               </div>
+              <div className="card mb-4">
+                <img
+                  className="card-img-top img-fluid"
+                  src="https://res.cloudinary.com/andreahabib/image/upload/v1623081086/logo_codepath_org_jgefty.jpg"
+                  alt="Card"
+                />
+                <div className="card-body">
+                  <h4 className="card-title">Jooboze</h4>
+                  <p className="card-text">
+                    iOS app to track jobs. Used Swift and Parse
+                  </p>
+                </div>
+                <Button
+                  className="button"
+                  variant="info"
+                  href="https://github.com/Jobooze-iOS-App/Jobooze"
+                  target="_blank"
+                >
+                  Checkout the project
+                </Button>
+              </div>
+              <div className="card mb-4">
+                <img
+                  className="card-img-top img-fluid"
+                  src="https://res.cloudinary.com/andreahabib/image/upload/v1623079972/Screenshot_from_2021-06-07_11-32-42_paakel.png"
+                  alt="Card"
+                />
+                <div className="card-body">
+                  <h4 className="card-title">Andrea Blog</h4>
+                  <p className="card-text">
+                    Blog website to share my experiences. Used React-Redux,
+                    Javascript, MongoDB, Express.js. Deployed on Heroku
+                  </p>
+                </div>
+                <Button
+                  className="button"
+                  variant="info"
+                  href="https://github.com/AndreaHabib/Blog_Website"
+                  target="_blank"
+                >
+                  Checkout the project
+                </Button>
+                <Button
+                  className="button"
+                  variant="info"
+                  href="https://andreablog.herokuapp.com/Blogs"
+                  target="_blank"
+                >
+                  Deployed Website
+                </Button>
+              </div>
+              <div className="w-100"></div>
             </div>
-            <div className="w-100"></div>
+
             <span>
               <h3 style={{ color: "white", marginTop: "50px" }}>
                 More projects here:{" "}

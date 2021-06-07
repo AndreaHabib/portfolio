@@ -5,4 +5,5 @@ export { default as Experience } from "./Experience";
 export { default as Skills } from "./Skills";
 export { default as Footer } from "./layout/Footer";
 export { default as NavBar } from "./layout/NavBar";
+export { default as Contact } from "./Contact";
 export { default as PhotoGallery } from "./PhotoGallery";

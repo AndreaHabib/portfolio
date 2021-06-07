@@ -9,6 +9,7 @@ import {
   About,
   PhotoGallery,
   NavBar,
+  Contact,
 } from "./index";
 
 class MyPortfolioView extends Component {
@@ -28,6 +29,8 @@ class MyPortfolioView extends Component {
             <PhotoGallery />
             <div id="project" style={{ marginTop: "-8rem" }}></div>
             <Project />
+            <div id="contact" style={{ marginTop: "8rem" }}></div>
+            <Contact />
           </div>
         </div>
         <Footer />

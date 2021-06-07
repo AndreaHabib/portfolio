@@ -47,6 +47,7 @@ function Skills() {
                       <li>Javascript</li>
                       <li>Restful APIs</li>
                       <li>JavaFX</li>
+                      <li>Swift</li>
                     </ul>
                   </Card.Text>
                 </Card.Body>
