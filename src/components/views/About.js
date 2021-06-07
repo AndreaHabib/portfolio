@@ -13,8 +13,8 @@ export default class About extends Component {
               alt="avatar"
               className="image1"
               style={{
-                height: "9.5rem",
-                width: "8rem",
+                height: "10rem",
+                width: "8.5rem",
                 borderRadius: "50%",
               }}
               src="https://res.cloudinary.com/andreahabib/image/upload/v1614539664/backup_aurk3d.jpg"
