@@ -15,7 +15,6 @@ export default class About extends Component {
               style={{
                 height: "9.5rem",
                 width: "8rem",
-                border: "1px solid black",
                 borderRadius: "50%",
               }}
               src="https://res.cloudinary.com/andreahabib/image/upload/v1614539664/backup_aurk3d.jpg"
