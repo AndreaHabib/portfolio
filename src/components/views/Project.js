@@ -50,7 +50,7 @@ export default class Project extends Component {
                   href="https://github.com/dfg-care-somalia/caresomalia-maternal-delivery-backend"
                   target="_blank"
                 >
-                  Checkout the project
+                  Source Code
                 </Button>
               </div>
               <div className="card mb-4">
@@ -71,7 +71,7 @@ export default class Project extends Component {
                   href="https://github.com/AndreaHabib/club_website"
                   target="_blank"
                 >
-                  Checkout the project
+                  Source Code
                 </Button>
                 <Button
                   className="button"
@@ -102,7 +102,7 @@ export default class Project extends Component {
                   href="https://github.com/AndreaHabib/portifolio"
                   target="_blank"
                 >
-                  Checkout the project
+                  Source Code
                 </Button>
               </div>
               <div className="w-100"></div>
@@ -122,7 +122,7 @@ export default class Project extends Component {
                   href="https://github.com/AndreaHabib/Discord-bot"
                   target="_blank"
                 >
-                  Checkout the project
+                  Source Code
                 </Button>
               </div>
               <div className="card mb-4">
@@ -143,7 +143,7 @@ export default class Project extends Component {
                   href="https://github.com/AndreaHabib/Hackathon"
                   target="_blank"
                 >
-                  Checkout the project
+                  Source Code
                 </Button>
               </div>
               <div className="card mb-4">
@@ -164,7 +164,7 @@ export default class Project extends Component {
                   href="https://github.com/AndreaHabib/Final_Project_330_JAVA"
                   target="_blank"
                 >
-                  Checkout the project
+                  Source Code
                 </Button>
               </div>
               <div className="w-100"></div>
@@ -189,7 +189,7 @@ export default class Project extends Component {
                   href="https://github.com/GameINFO-cc/gamesFaves"
                   target="_blank"
                 >
-                  Checkout the project
+                  Source Code
                 </Button>
               </div>
               <div className="card mb-4">
@@ -212,7 +212,7 @@ export default class Project extends Component {
                   href="https://github.com/AndreaHabib/CSC382"
                   target="_blank"
                 >
-                  Checkout the project
+                  Source Code
                 </Button>
               </div>
               <div className="card mb-4">
@@ -234,7 +234,7 @@ export default class Project extends Component {
                   href="https://github.com/MLH-Fellowship/ttp-team-2"
                   target="_blank"
                 >
-                  Checkout the project
+                  Source Code
                 </Button>
               </div>
               <div className="w-100"></div>
@@ -256,7 +256,7 @@ export default class Project extends Component {
                   href="https://github.com/AndreaHabib/GameStore"
                   target="_blank"
                 >
-                  Checkout the project
+                  Source Code
                 </Button>
                 <Button
                   className="button"
@@ -285,7 +285,7 @@ export default class Project extends Component {
                   href="https://github.com/Jobooze-iOS-App/Jobooze"
                   target="_blank"
                 >
-                  Checkout the project
+                  Source Code
                 </Button>
               </div>
               <div className="card mb-4">
@@ -307,7 +307,7 @@ export default class Project extends Component {
                   href="https://github.com/AndreaHabib/Blog_Website"
                   target="_blank"
                 >
-                  Checkout the project
+                  Source Code
                 </Button>
                 <Button
                   className="button"
