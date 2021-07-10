@@ -37,10 +37,18 @@ export default class Experience extends Component {
               />
             }
           >
-            <span className="tag">Python </span>
-            <span className="tag">Django</span>
-            <span className="tag">PostgreSQL</span>
-            <span className="tag">GraphQL</span>
+            <span className="tag">
+              <img src="https://img.icons8.com/color/48/000000/python--v1.png" />{" "}
+            </span>
+            <span className="tag">
+              <img src="https://img.icons8.com/color/48/000000/django.png" />
+            </span>
+            <span className="tag">
+              <img src="https://img.icons8.com/color/48/000000/postgreesql.png" />
+            </span>
+            <span className="tag">
+              <img src="https://img.icons8.com/color/48/000000/graphql.png" />
+            </span>
             <h3 className="vertical-timeline-element-title">
               Develop for Good - Care Somalia
             </h3>
@@ -94,10 +102,16 @@ export default class Experience extends Component {
               />
             }
           >
-            <span className="tag">Ember.js </span>
-            <span className="tag">Ruby on Rails</span>
+            <span className="tag">
+              <img src="https://img.icons8.com/windows/64/000000/ember.png" />{" "}
+            </span>
+            <span className="tag">
+              <img src="https://img.icons8.com/fluent/48/000000/ruby-programming-language.png" />
+            </span>
             <span className="tag">Hackathon</span>
-            <span className="tag">React.js</span>
+            <span className="tag">
+              <img src="https://img.icons8.com/small/64/000000/react.png" />
+            </span>
             <h3 className="vertical-timeline-element-title">
               Major League Hacking - Discourse
             </h3>
@@ -149,10 +163,16 @@ export default class Experience extends Component {
               />
             }
           >
-            <span className="tag">React.js </span>
+            <span className="tag">
+              <img src="https://img.icons8.com/small/64/000000/react.png" />{" "}
+            </span>
             <span className="tag">Express.js</span>
-            <span className="tag">PostgreSQL</span>
-            <span className="tag">Redux</span>
+            <span className="tag">
+              <img src="https://img.icons8.com/color/48/000000/postgreesql.png" />
+            </span>
+            <span className="tag">
+              <img src="https://img.icons8.com/ios-filled/50/000000/redux.png" />
+            </span>
             <h3 className="vertical-timeline-element-title">
               Tech Talent Pipeline
             </h3>
