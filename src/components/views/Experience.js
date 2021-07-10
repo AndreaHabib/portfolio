@@ -15,7 +15,10 @@ export default class Experience extends Component {
       <section className="experience">
         <h2
           className="heading"
-          style={{ marginBottom: "4rem", textAlign: "center" }}
+          style={{
+            marginBottom: "4rem",
+            textAlign: "center",
+          }}
         >
           Experience
         </h2>
@@ -73,6 +76,7 @@ export default class Experience extends Component {
                 Used Django Graphene to implement GraphQL and created the
                 queries and mutations.
               </li>
+              <li>Finished Documentation using Sphinx and Rinohtype</li>
             </ul>
           </VerticalTimelineElement>
           <VerticalTimelineElement

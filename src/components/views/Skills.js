@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
+import "aos/dist/aos.css";
 // ..
 AOS.init();
 
@@ -32,7 +32,7 @@ function Skills() {
         <Container fluid>
           <Row>
             <Col className="d-flex align-items-stretch" md="10" lg="4">
-              <Card className="card1" style={{ width: "20rem" }}>
+              <Card className="card" style={{ width: "20rem" }}>
                 <Card.Img variant="top" />
                 <Card.Body>
                   <Card.Title>
@@ -54,7 +54,7 @@ function Skills() {
               </Card>
             </Col>
             <Col className="d-flex align-items-stretch" md="10" lg="4">
-              <Card className="card2" style={{ width: "20rem" }}>
+              <Card className="card" style={{ width: "20rem" }}>
                 <Card.Img variant="top" />
                 <Card.Body>
                   <Card.Title>
@@ -78,7 +78,7 @@ function Skills() {
               </Card>
             </Col>
             <Col className="d-flex align-items-stretch" md="10" lg="4">
-              <Card className="card3" style={{ width: "20rem" }}>
+              <Card className="card" style={{ width: "20rem" }}>
                 <Card.Img variant="top" />
                 <Card.Body>
                   <Card.Title>
@@ -95,7 +95,7 @@ function Skills() {
               </Card>
             </Col>
             <Col className="d-flex align-items-stretch" md="10" lg="4">
-              <Card className="card4" style={{ width: "20rem" }}>
+              <Card className="card" style={{ width: "20rem" }}>
                 <Card.Img variant="top" />
                 <Card.Body>
                   <Card.Title>
