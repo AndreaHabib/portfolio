@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 import "./styles/experience.css";
-import MLH from "./mlh.jpg";
-import DFG from "./dfg.png";
-import TTP from "./ttp.png";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -33,7 +30,7 @@ export default class Experience extends Component {
             iconStyle={{ background: "rgb(255, 255,255)", color: "#fff" }}
             icon={
               <img
-                src={DFG}
+                src="https://res.cloudinary.com/andreahabib/image/upload/v1625917885/dfg_wuzaa4.png"
                 alt="dfg"
                 style={{ borderRadius: "100%", width: "60px" }}
                 className="workIcon"
@@ -90,7 +87,7 @@ export default class Experience extends Component {
             iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
             icon={
               <img
-                src={MLH}
+                src="https://res.cloudinary.com/andreahabib/image/upload/v1625917885/mlh_jw6fue.jpg"
                 alt="mlh"
                 style={{ borderRadius: "100%", width: "60px" }}
                 className="workIcon"
@@ -145,7 +142,7 @@ export default class Experience extends Component {
             iconStyle={{ background: "rgb(0, 0, 0)", color: "#fff" }}
             icon={
               <img
-                src={TTP}
+                src="https://res.cloudinary.com/andreahabib/image/upload/v1625917885/ttp_ykvtit.png"
                 alt="ttp"
                 style={{ borderRadius: "100%", width: "60px" }}
                 className="workIcon"
