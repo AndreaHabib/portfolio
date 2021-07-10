@@ -79,7 +79,7 @@ export default class Project extends Component {
                   href="https://hack-a-project.netlify.app"
                   target="_blank"
                 >
-                  Deployed Website
+                  Deployed on Netlify
                 </Button>
               </div>
               <div className="card mb-4">
@@ -264,7 +264,8 @@ export default class Project extends Component {
                   href="https://game-store1.herokuapp.com/view/index.php"
                   target="_blank"
                 >
-                  Deployed website
+                  Deployed on{" "}
+                  <img src="https://img.icons8.com/color/35/000000/heroku.png" />
                 </Button>
               </div>
               <div className="card mb-4">
@@ -315,7 +316,8 @@ export default class Project extends Component {
                   href="https://andreablog.herokuapp.com/Blogs"
                   target="_blank"
                 >
-                  Deployed Website
+                  Deployed on{" "}
+                  <img src="https://img.icons8.com/color/35/000000/heroku.png" />
                 </Button>
               </div>
               <div className="w-100"></div>
