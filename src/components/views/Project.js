@@ -265,7 +265,10 @@ export default class Project extends Component {
                   target="_blank"
                 >
                   Deployed on{" "}
-                  <img src="https://img.icons8.com/color/35/000000/heroku.png" />
+                  <img
+                    alt="heroku"
+                    src="https://img.icons8.com/color/35/000000/heroku.png"
+                  />
                 </Button>
               </div>
               <div className="card mb-4">
@@ -317,7 +320,10 @@ export default class Project extends Component {
                   target="_blank"
                 >
                   Deployed on{" "}
-                  <img src="https://img.icons8.com/color/35/000000/heroku.png" />
+                  <img
+                    alt="heroku"
+                    src="https://img.icons8.com/color/35/000000/heroku.png"
+                  />
                 </Button>
               </div>
               <div className="w-100"></div>

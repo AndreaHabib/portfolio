@@ -38,16 +38,28 @@ export default class Experience extends Component {
             }
           >
             <span className="tag">
-              <img src="https://img.icons8.com/color/48/000000/python--v1.png" />{" "}
+              <img
+                alt="python"
+                src="https://img.icons8.com/color/48/000000/python--v1.png"
+              />{" "}
             </span>
             <span className="tag">
-              <img src="https://img.icons8.com/color/48/000000/django.png" />
+              <img
+                alt="django"
+                src="https://img.icons8.com/color/48/000000/django.png"
+              />
             </span>
             <span className="tag">
-              <img src="https://img.icons8.com/color/48/000000/postgreesql.png" />
+              <img
+                alt="psql"
+                src="https://img.icons8.com/color/48/000000/postgreesql.png"
+              />
             </span>
             <span className="tag">
-              <img src="https://img.icons8.com/color/48/000000/graphql.png" />
+              <img
+                alt="graphql"
+                src="https://img.icons8.com/color/48/000000/graphql.png"
+              />
             </span>
             <h3 className="vertical-timeline-element-title">
               Develop for Good - Care Somalia
@@ -103,14 +115,23 @@ export default class Experience extends Component {
             }
           >
             <span className="tag">
-              <img src="https://img.icons8.com/windows/64/000000/ember.png" />{" "}
+              <img
+                alt="emberjs"
+                src="https://img.icons8.com/windows/64/000000/ember.png"
+              />{" "}
             </span>
             <span className="tag">
-              <img src="https://img.icons8.com/fluent/48/000000/ruby-programming-language.png" />
+              <img
+                alt="ruby-on-rails"
+                src="https://img.icons8.com/fluent/48/000000/ruby-programming-language.png"
+              />
             </span>
             <span className="tag">Hackathon</span>
             <span className="tag">
-              <img src="https://img.icons8.com/small/64/000000/react.png" />
+              <img
+                alt="reactjs"
+                src="https://img.icons8.com/small/64/000000/react.png"
+              />
             </span>
             <h3 className="vertical-timeline-element-title">
               Major League Hacking - Discourse
@@ -164,14 +185,23 @@ export default class Experience extends Component {
             }
           >
             <span className="tag">
-              <img src="https://img.icons8.com/small/64/000000/react.png" />{" "}
+              <img
+                alt="reactjs"
+                src="https://img.icons8.com/small/64/000000/react.png"
+              />{" "}
             </span>
             <span className="tag">Express.js</span>
             <span className="tag">
-              <img src="https://img.icons8.com/color/48/000000/postgreesql.png" />
+              <img
+                alt="psql"
+                src="https://img.icons8.com/color/48/000000/postgreesql.png"
+              />
             </span>
             <span className="tag">
-              <img src="https://img.icons8.com/ios-filled/50/000000/redux.png" />
+              <img
+                alt="redux"
+                src="https://img.icons8.com/ios-filled/50/000000/redux.png"
+              />
             </span>
             <h3 className="vertical-timeline-element-title">
               Tech Talent Pipeline
