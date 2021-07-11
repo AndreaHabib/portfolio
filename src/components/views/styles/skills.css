@@ -52,9 +52,6 @@ h2 {
     margin-bottom: 15px;
     width: 100%;
   }
-  h2 {
-    font-size: 40px;
-  }
 }
 
 @media screen and (max-width: 768px) and (min-width: 768px) {
@@ -65,9 +62,6 @@ h2 {
   .box {
     margin-bottom: 15px;
     width: 100%;
-  }
-  h2 {
-    font-size: 40px;
   }
 }
 
