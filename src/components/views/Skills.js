@@ -111,7 +111,7 @@ function Skills() {
             />
             <br></br>
             <hr></hr>
-            Sequelize, Express.js, Ruby on Rails, Restful APIs
+            <h5>Sequelize, Express.js, Ruby on Rails, Restful APIs</h5>
           </div>
           <div className="box">
             <h4>Databases</h4>
@@ -131,7 +131,7 @@ function Skills() {
             />
             <br></br>
             <hr></hr>
-            phpmyadmin, Django ORM
+            <h5>phpmyadmin, Django ORM</h5>
           </div>
           <div className="box">
             <h4>Tools/Expertise</h4>
@@ -179,7 +179,7 @@ function Skills() {
             />
             <br></br>
             <hr></hr>
-            Data Structures, Algorithms, Anaconda, Spydr
+            <h5>Data Structures, Algorithms, Anaconda, Spydr</h5>
           </div>
         </span>
       </div>
