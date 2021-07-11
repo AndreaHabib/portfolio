@@ -53,6 +53,7 @@ function About() {
           </h5>
           <span className="icons">
             <a
+              title="github"
               href="https://github.com/AndreaHabib"
               target="_blank"
               rel="noreferrer"
@@ -60,14 +61,20 @@ function About() {
               <i className="fab fa-github fa-2x"></i>
             </a>
             <a
+              title="linkedin"
               href="https://www.linkedin.com/in/andrea-habib-730941198/"
               target="_blank"
               rel="noreferrer"
             >
               <i className="fab fa-linkedin fa-2x"></i>
             </a>
-            <a href="Resume.pdf" target="_blank" rel="noreferrer">
-              <i class="fas fa-file fa-2x"></i>
+            <a
+              title="resume"
+              href="Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fas fa-file fa-2x"></i>
             </a>
           </span>
         </div>
