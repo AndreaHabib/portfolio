@@ -23,7 +23,7 @@ class MyPortfolioView extends Component {
           <div className="color">
             <div id="skills"></div>
             <Skills />
-            <div id="experience" style={{ marginTop: "-8rem" }}></div>
+            <div id="experience" style={{ marginTop: "8rem" }}></div>
             <Experience />
             <div id="posters" style={{ marginTop: "-9rem" }}></div>
             <PhotoGallery />
