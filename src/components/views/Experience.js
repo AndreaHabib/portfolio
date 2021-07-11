@@ -147,6 +147,14 @@ export default class Experience extends Component {
             <ul
               style={{ textAlign: "left", color: "black", fontSize: "medium" }}
             >
+              <h4
+                className="vertical-timeline-element-subtitle"
+                style={{
+                  marginTop: "20px",
+                }}
+              >
+                Open Source Contribution:
+              </h4>
               <li>
                 Applied Ember.js to fix User Interface issues that were
                 preventing sorting text from showing up, and created a modal to
@@ -158,12 +166,32 @@ export default class Experience extends Component {
                 in Discourse
               </li>
               <li>
+                Wrote a{" "}
+                <a href="https://meta.discourse.org/t/beginners-guide-to-install-discourse-on-windows-10-for-development/75149/56?u=andreahabib">
+                  step-by-step guide
+                </a>{" "}
+                on how to install the project on Windows 10 and use Windows
+                Subsystem for Linux 2 and run the project.
+              </li>
+              <h4
+                className="vertical-timeline-element-subtitle"
+                style={{
+                  marginTop: "20px",
+                }}
+              >
+                Hackthon:
+              </h4>
+              <li>
                 Leveraged React.js, Javascript and Google Maps API to show the
                 map with Covid cases on the client side web application
               </li>
               <li>
                 Stored information on a PostgreSQL database for initial user
                 registration and login when returning to the web application
+              </li>
+              <li>
+                Awarded <strong style={{ color: "green" }}>1st</strong> out of 8
+                teams
               </li>
             </ul>
           </VerticalTimelineElement>
@@ -186,8 +214,8 @@ export default class Experience extends Component {
           >
             <span className="tag">
               <img
-                alt="reactjs"
-                src="https://img.icons8.com/small/64/000000/react.png"
+                alt="react"
+                src="https://img.icons8.com/officel/50/000000/react.png"
               />{" "}
             </span>
             <span className="tag">Express.js</span>
