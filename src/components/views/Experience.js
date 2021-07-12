@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 import "./styles/experience.css";
-import MLH from "./mlh.jpg";
-import DFG from "./dfg.png";
-import TTP from "./ttp.png";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -33,17 +30,37 @@ export default class Experience extends Component {
             iconStyle={{ background: "rgb(255, 255,255)", color: "#fff" }}
             icon={
               <img
-                src={DFG}
+                src="https://res.cloudinary.com/andreahabib/image/upload/v1625917885/dfg_wuzaa4.png"
                 alt="dfg"
                 style={{ borderRadius: "100%", width: "60px" }}
                 className="workIcon"
               />
             }
           >
-            <span className="tag">Python </span>
-            <span className="tag">Django</span>
-            <span className="tag">PostgreSQL</span>
-            <span className="tag">GraphQL</span>
+            <span className="tag">
+              <img
+                alt="python"
+                src="https://img.icons8.com/color/48/000000/python--v1.png"
+              />{" "}
+            </span>
+            <span className="tag">
+              <img
+                alt="django"
+                src="https://img.icons8.com/color/48/000000/django.png"
+              />
+            </span>
+            <span className="tag">
+              <img
+                alt="psql"
+                src="https://img.icons8.com/color/48/000000/postgreesql.png"
+              />
+            </span>
+            <span className="tag">
+              <img
+                alt="graphql"
+                src="https://img.icons8.com/color/48/000000/graphql.png"
+              />
+            </span>
             <h3 className="vertical-timeline-element-title">
               Develop for Good - Care Somalia
             </h3>
@@ -90,17 +107,32 @@ export default class Experience extends Component {
             iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
             icon={
               <img
-                src={MLH}
+                src="https://res.cloudinary.com/andreahabib/image/upload/v1625917885/mlh_jw6fue.jpg"
                 alt="mlh"
                 style={{ borderRadius: "100%", width: "60px" }}
                 className="workIcon"
               />
             }
           >
-            <span className="tag">Ember.js </span>
-            <span className="tag">Ruby on Rails</span>
+            <span className="tag">
+              <img
+                alt="emberjs"
+                src="https://img.icons8.com/windows/64/000000/ember.png"
+              />{" "}
+            </span>
+            <span className="tag">
+              <img
+                alt="ruby-on-rails"
+                src="https://img.icons8.com/fluent/48/000000/ruby-programming-language.png"
+              />
+            </span>
             <span className="tag">Hackathon</span>
-            <span className="tag">React.js</span>
+            <span className="tag">
+              <img
+                alt="reactjs"
+                src="https://img.icons8.com/small/64/000000/react.png"
+              />
+            </span>
             <h3 className="vertical-timeline-element-title">
               Major League Hacking - Discourse
             </h3>
@@ -115,6 +147,14 @@ export default class Experience extends Component {
             <ul
               style={{ textAlign: "left", color: "black", fontSize: "medium" }}
             >
+              <h4
+                className="vertical-timeline-element-subtitle"
+                style={{
+                  marginTop: "20px",
+                }}
+              >
+                Open Source Contribution:
+              </h4>
               <li>
                 Applied Ember.js to fix User Interface issues that were
                 preventing sorting text from showing up, and created a modal to
@@ -126,12 +166,32 @@ export default class Experience extends Component {
                 in Discourse
               </li>
               <li>
+                Wrote a{" "}
+                <a href="https://meta.discourse.org/t/beginners-guide-to-install-discourse-on-windows-10-for-development/75149/56?u=andreahabib">
+                  step-by-step guide
+                </a>{" "}
+                on how to install the project on Windows 10 and use Windows
+                Subsystem for Linux 2 and run the project.
+              </li>
+              <h4
+                className="vertical-timeline-element-subtitle"
+                style={{
+                  marginTop: "20px",
+                }}
+              >
+                Hackthon:
+              </h4>
+              <li>
                 Leveraged React.js, Javascript and Google Maps API to show the
                 map with Covid cases on the client side web application
               </li>
               <li>
                 Stored information on a PostgreSQL database for initial user
                 registration and login when returning to the web application
+              </li>
+              <li>
+                Awarded <strong style={{ color: "green" }}>1st</strong> out of 8
+                teams
               </li>
             </ul>
           </VerticalTimelineElement>
@@ -145,17 +205,32 @@ export default class Experience extends Component {
             iconStyle={{ background: "rgb(0, 0, 0)", color: "#fff" }}
             icon={
               <img
-                src={TTP}
+                src="https://res.cloudinary.com/andreahabib/image/upload/v1625917885/ttp_ykvtit.png"
                 alt="ttp"
                 style={{ borderRadius: "100%", width: "60px" }}
                 className="workIcon"
               />
             }
           >
-            <span className="tag">React.js </span>
+            <span className="tag">
+              <img
+                alt="react"
+                src="https://img.icons8.com/officel/50/000000/react.png"
+              />{" "}
+            </span>
             <span className="tag">Express.js</span>
-            <span className="tag">PostgreSQL</span>
-            <span className="tag">Redux</span>
+            <span className="tag">
+              <img
+                alt="psql"
+                src="https://img.icons8.com/color/48/000000/postgreesql.png"
+              />
+            </span>
+            <span className="tag">
+              <img
+                alt="redux"
+                src="https://img.icons8.com/ios-filled/50/000000/redux.png"
+              />
+            </span>
             <h3 className="vertical-timeline-element-title">
               Tech Talent Pipeline
             </h3>

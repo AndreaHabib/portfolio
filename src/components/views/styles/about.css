@@ -18,12 +18,12 @@ span a:hover {
   color: rgba(16, 14, 173, 0.9);
 }
 
-span .fa-2x {
+span a .fa-2x {
   margin: 10px;
   transition: transform 0.2s;
 }
 
-span .fa-2x:hover {
+span a .fa-2x:hover {
   transform: scale(1.2);
 }
 
