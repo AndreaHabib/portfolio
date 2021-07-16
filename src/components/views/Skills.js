@@ -33,7 +33,6 @@ function Skills() {
           <div className="box">
             <h4>Frontend</h4>
             <img alt="frontend" className="illus" src={frontend} />
-            <hr></hr>
             <span>
               <img
                 alt="react"
@@ -72,7 +71,6 @@ function Skills() {
           <div className="box">
             <h4>Backend</h4>
             <img alt="backend" className="illus" src={backend} />
-            <hr></hr>
             <img
               alt="js"
               src="https://img.icons8.com/color/50/000000/javascript--v1.png"
@@ -116,7 +114,6 @@ function Skills() {
           <div className="box">
             <h4>Databases</h4>
             <img alt="databases" className="illus" src={databases} />
-            <hr></hr>
             <img
               alt="psql"
               src="https://img.icons8.com/color/48/000000/postgreesql.png"
@@ -136,7 +133,6 @@ function Skills() {
           <div className="box">
             <h4>Tools/Expertise</h4>
             <img alt="tools" className="illus" src={tools} />
-            <hr></hr>
             <img
               alt="msword"
               src="https://img.icons8.com/color/50/000000/ms-word.png"
