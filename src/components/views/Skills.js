@@ -51,10 +51,6 @@ function Skills() {
                 src="https://img.shields.io/badge/swift-%23FA7343.svg?style=for-the-badge&logo=swift&logoColor=white"
               />
               <img
-                alt="Express.js"
-                src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"
-              />
-              <img
                 alt="React"
                 src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
               />
@@ -82,6 +78,10 @@ function Skills() {
             <img
               alt="NodeJS"
               src="https://img.shields.io/badge/node.js-%2343853D.svg?style=for-the-badge&logo=node-dot-js&logoColor=white"
+            />
+            <img
+              alt="Express.js"
+              src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"
             />
             <img
               alt="JavaScript"

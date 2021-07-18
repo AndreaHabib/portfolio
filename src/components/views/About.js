@@ -27,6 +27,20 @@ function About() {
             I'm Andrea Habib!
           </h1>
           <h3 className="text-muted">Based in NYC</h3>
+          <span className="text-flag">
+            <h3>GitHub Campus Expert</h3>
+            <a
+              title="github campus expert"
+              href="https://githubcampus.expert/AndreaHabib/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                alt="github campus expert flag"
+                src="https://img.icons8.com/color/48/000000/filled-flag.png"
+              />
+            </a>
+          </span>
           <hr></hr>
           <h5>
             Passionate, constantly learning and exploring new skills,
@@ -39,7 +53,7 @@ function About() {
                 strings: [
                   "Frontend",
                   "Backend",
-                  "Object Oriented Programmig",
+                  "Object Oriented",
                   "Designing",
                   "Databases",
                   "Full Stack",

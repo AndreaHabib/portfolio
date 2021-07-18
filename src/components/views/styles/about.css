@@ -9,6 +9,12 @@
   padding: 5%;
 }
 
+.text-flag {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 span a {
   text-decoration: none;
   color: black;
@@ -68,11 +74,15 @@ span a .fa-2x:hover {
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
-    height: 70vh;
+    padding-top: 40px;
+    height: 80vh;
+    padding-bottom: 100px;
   }
   .about-image {
     margin-bottom: 20px;
     margin-right: 0;
+    width: 7.9rem;
+    height: 9.6rem;
   }
 }
 
@@ -109,5 +119,19 @@ span a .fa-2x:hover {
   .about-image {
     margin-bottom: 20px;
     margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 720px) and (min-width: 540px) {
+  .about-image {
+    margin-bottom: 20px;
+    margin-right: 0;
+    width: 5.9rem;
+    height: 7.6rem;
+  }
+  .about-me {
+    padding-top: 81px;
+    height: 95vh;
+    padding-bottom: 100px;
   }
 }
