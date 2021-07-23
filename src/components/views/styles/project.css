@@ -170,3 +170,26 @@ section div hr {
     height: 7.5rem;
   }
 }
+
+@media screen and (max-width: 280px) and (min-width: 280px) {
+  .ptitle {
+    font-size: large;
+  }
+
+  .project {
+    border-left: 5px solid rgb(194, 35, 194);
+    border-top: 5px solid rgb(194, 35, 194);
+    border-right: 5px solid rgb(194, 35, 194);
+  }
+
+  .projects-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .card-img-top {
+    width: 9rem;
+    height: 7.5rem;
+  }
+}
