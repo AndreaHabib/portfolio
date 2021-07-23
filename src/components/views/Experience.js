@@ -24,6 +24,48 @@ export default class Experience extends Component {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{
+              borderTop: "10px solid #000080",
+              color: "#fff",
+            }}
+            date="July 2021 - Present"
+            iconStyle={{ background: "rgb(0, 0, 0)", color: "#fff" }}
+            icon={
+              <img
+                src="https://res.cloudinary.com/andreahabib/image/upload/v1627000875/csi_wuan3q.png"
+                alt="ttp"
+                style={{ borderRadius: "100%", width: "60px" }}
+                className="workIcon"
+              />
+            }
+          >
+            <span className="tag">
+              <img
+                alt="React"
+                src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
+              />{" "}
+              <img
+                alt="Git"
+                src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"
+              />{" "}
+              <img
+                alt="GitHub"
+                src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
+              />{" "}
+            </span>
+            <h3 className="vertical-timeline-element-title">Bridging Tech</h3>
+            <h4
+              style={{ marginBottom: "50px" }}
+              className="vertical-timeline-element-subtitle"
+            >
+              Frontend Developer Volunteer, Product Associate
+            </h4>
+            <ul
+              style={{ textAlign: "left", color: "black", fontSize: "medium" }}
+            ></ul>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{
               borderTop: "10px solid #dc143c",
               color: "#fff",
             }}
