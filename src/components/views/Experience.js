@@ -28,10 +28,10 @@ export default class Experience extends Component {
               color: "#fff",
             }}
             date="July 2021 - Present"
-            iconStyle={{ background: "rgb(0, 0, 0)", color: "#fff" }}
+            iconStyle={{ background: "rgb(255, 255, 255)", color: "#fff" }}
             icon={
               <img
-                src="https://res.cloudinary.com/andreahabib/image/upload/v1627000875/csi_wuan3q.png"
+                src="https://cdn.substack.com/image/fetch/w_170,c_limit,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fc3bf4adb-7902-4377-a660-feb3aa06ef1a_1000x1000.png"
                 alt="ttp"
                 style={{ borderRadius: "100%", width: "60px" }}
                 className="workIcon"
