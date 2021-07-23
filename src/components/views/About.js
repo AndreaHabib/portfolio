@@ -41,7 +41,7 @@ function About() {
               />
             </a>
           </span>
-          <hr></hr>
+          <hr style={{ border: "1px solid #C123C2" }}></hr>
           <h5>
             Passionate, constantly learning and exploring new skills,
             technologies, and tech stacks.
