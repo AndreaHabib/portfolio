@@ -17,7 +17,7 @@ function Contact() {
           textAlign: "center",
         }}
       >
-        Contact Me
+        Get In Touch
       </h2>
       <fieldset id="fs-frm-inputs">
         <input

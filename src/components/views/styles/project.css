@@ -10,10 +10,58 @@
   border-top: 2px solid rgb(231, 130, 14);
 }
 
-.button:hover {
-  background-color: #9720bb !important;
-  color: white !important;
-  border: 0;
+.project {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: white;
+  border-left: 10px solid rgb(194, 35, 194);
+  border-top: 10px solid rgb(194, 35, 194);
+  border-right: 10px solid rgb(194, 35, 194);
+}
+
+.projects-box .project a {
+  text-decoration: none;
+}
+
+.ptitle {
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: xx-large;
+  max-width: 80%;
+  text-align: left;
+}
+
+.description {
+  text-align: left;
+  margin-bottom: -20px;
+  padding-right: 10px;
+}
+
+.semicircle {
+  color: white;
+  border-left: 40px solid rgb(194, 35, 194);
+  width: 12rem;
+  padding: 3%;
+  border-radius: 0 150px 150px 0;
+  background-color: rgb(137, 41, 192);
+  transition: width 1s;
+  display: table;
+}
+
+.semicircle > .text-in {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.semicircle:hover {
+  width: 15rem;
+}
+
+.projects-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 20px;
 }
 
 section div hr {
@@ -33,17 +81,12 @@ section div hr {
   font-size: large;
 }
 
-.img-fluid {
-  width: 100%;
-  height: 13rem;
-}
-
 .moreInfo {
   text-decoration: none;
   color: white;
-  padding: 10px;
+  padding: 19px;
   border-radius: 5px;
-  background-color: #451480 !important;
+  background-color: rgb(194, 35, 194) !important;
 }
 
 .moreInfo:hover {
@@ -52,17 +95,66 @@ section div hr {
   text-decoration: none;
 }
 
+.span {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-img-top {
+  object-fit: fill;
+  border-radius: 5px;
+  width: 12rem;
+  height: 10rem;
+  margin: 30px;
+  margin-top: 10px;
+}
+
 .projects {
   clear: none;
-  padding-top: 100px;
-  padding-bottom: 40px;
-  padding-right: 10px;
-  padding-left: 10px;
   color: white;
-  left: 0;
+  padding-top: 100px;
   width: 100vw;
   position: relative;
   margin-left: -50vw;
   margin-top: 100px;
   left: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .ptitle {
+    font-size: x-large;
+  }
+
+  .project {
+    border-left: 5px solid rgb(194, 35, 194);
+    border-top: 5px solid rgb(194, 35, 194);
+    border-right: 5px solid rgb(194, 35, 194);
+  }
+
+  .projects-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .card-img-top {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
+  .projects-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 768px) {
+  .projects-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
 }

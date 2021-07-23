@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./styles/project.css";
-import { Button } from "react-bootstrap";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
@@ -29,324 +28,365 @@ export default class Project extends Component {
             Notable Projects
           </h2>
           <div>
-            <div className="card-deck">
-              <div className="card mb-4">
-                <img
-                  className="card-img-top img-fluid"
-                  src="https://res.cloudinary.com/andreahabib/image/upload/v1623081724/2020819637334518371227591_rqt6fj.jpg"
-                  alt="Card"
-                />
-                <div className="card-body">
-                  <h4 className="card-title">
-                    Develop for Good - Care Somalia
-                  </h4>
-                  <hr></hr>
-                  <p className="card-text">
-                    Django, Python, GraphQL (Graphene), PostgreSQL
-                  </p>
+            <div className="projects-box">
+              <span className="project">
+                <div>
+                  <p className="ptitle">Care Somalia Project</p>
                 </div>
-                <Button
-                  className="upper button"
-                  variant="info"
+                <div>
+                  <hr style={{ width: "90%", backgroundColor: "#C123C2" }}></hr>
+                  <span className="span">
+                    <img
+                      className="card-img-top img-fluid"
+                      src="https://res.cloudinary.com/andreahabib/image/upload/v1623081724/2020819637334518371227591_rqt6fj.jpg"
+                      alt="Card"
+                    />
+                    <p className="description">
+                      The project will be used in Somalia by health staff of 20
+                      health facilities in IDPs and is expected to increase
+                      hospital delivery by 30%.
+                    </p>
+                  </span>
+                </div>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
                   href="https://github.com/dfg-care-somalia/caresomalia-maternal-delivery-backend"
-                  target="_blank"
                 >
-                  Source Code
-                </Button>
-              </div>
-              <div className="card mb-4">
-                <img
-                  className="card-img-top img-fluid"
-                  src="https://res.cloudinary.com/andreahabib/image/upload/v1623079763/Screenshot_from_2021-06-07_11-28-35_ommpqw.png"
-                  alt="Card"
-                />
-                <div className="card-body">
-                  <h4 className="card-title">Hack-A-Project Website</h4>
-                  <hr></hr>
-                  <p className="card-text">
-                    Informative website for Hack-A-Project
-                  </p>
+                  <div className="semicircle">
+                    <p className="text-in">Source Code</p>
+                  </div>
+                </a>
+              </span>
+              <span className="project">
+                <div>
+                  <p className="ptitle">Hack-A-Project</p>
                 </div>
-                <Button
-                  className="upper button"
-                  variant="info"
+                <div>
+                  <hr style={{ width: "90%", backgroundColor: "#C123C2" }}></hr>
+                  <span className="span">
+                    <img
+                      className="card-img-top img-fluid"
+                      src="https://res.cloudinary.com/andreahabib/image/upload/v1623079763/Screenshot_from_2021-06-07_11-28-35_ommpqw.png"
+                      alt="Card"
+                    />
+                    <p className="description">
+                      Informative Website created for Hack-A-Project Club that
+                      provides a contact form, membership benefits and
+                      application to apply. Developed using React.js
+                    </p>
+                  </span>
+                </div>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
                   href="https://github.com/AndreaHabib/club_website"
-                  target="_blank"
                 >
-                  Source Code
-                </Button>
-                <Button
-                  className="button"
-                  variant="info"
-                  href="https://hack-a-project.netlify.app"
-                  target="_blank"
-                >
-                  Deployed on Netlify
-                </Button>
-              </div>
-              <div className="card mb-4">
-                <img
-                  className="card-img-top img-fluid"
-                  src="https://res.cloudinary.com/andreahabib/image/upload/v1621472665/website_mzrsvx.png"
-                  alt="Card"
-                />
-
-                <div className="card-body">
-                  <h4 className="card-title">This Website</h4>
-                  <hr></hr>
-                  <p className="card-text">
-                    React/Javascript, JSX, HTML, CSS, Bootstrap, AOS.js,
-                    TypewriterJS, particles-bg
-                  </p>
+                  <div className="semicircle">
+                    <p className="text-in">Source Code</p>
+                  </div>
+                </a>
+              </span>
+              <span className="project">
+                <div>
+                  <p className="ptitle">This Website</p>
                 </div>
-                <Button
-                  className="upper button"
-                  variant="info"
+                <div>
+                  <hr style={{ width: "90%", backgroundColor: "#C123C2" }}></hr>
+                  <span className="span">
+                    <img
+                      className="card-img-top img-fluid"
+                      src="https://res.cloudinary.com/andreahabib/image/upload/v1621472665/website_mzrsvx.png"
+                      alt="Card"
+                    />
+                    <p className="description">
+                      This website was created using React.js to showcase all my
+                      skills, experiences, projects and designs. Constantly
+                      evolving!
+                    </p>
+                  </span>
+                </div>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
                   href="https://github.com/AndreaHabib/portifolio"
-                  target="_blank"
                 >
-                  Source Code
-                </Button>
-              </div>
-              <div className="w-100"></div>
-              <div className="card mb-4">
-                <img
-                  className="card-img-top img-fluid"
-                  src="https://res.cloudinary.com/andreahabib/image/upload/v1614539665/discord_x0pttb.jpg"
-                  alt="Card"
-                />
-                <div className="card-body">
-                  <h4 className="card-title">Discord Bot</h4>
-                  <hr></hr>
-                  <p className="card-text">Python, Discord API/discord.py</p>
+                  <div className="semicircle">
+                    <p className="text-in">Source Code</p>
+                  </div>
+                </a>
+              </span>
+              <span className="project">
+                <div>
+                  <p className="ptitle">Discord Bot</p>
                 </div>
-                <Button
-                  className="upper button"
-                  variant="info"
+                <div>
+                  <hr style={{ width: "90%", backgroundColor: "#C123C2" }}></hr>
+                  <span className="span">
+                    <img
+                      className="card-img-top img-fluid"
+                      src="https://res.cloudinary.com/andreahabib/image/upload/v1614539665/discord_x0pttb.jpg"
+                      alt="Card"
+                    />
+                    <p className="description">
+                      Discord bot that was developed using Python where it ran
+                      asynchronous in a discord sever. Not deployed, but useful
+                      to moderate a server.
+                    </p>
+                  </span>
+                </div>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
                   href="https://github.com/AndreaHabib/Discord-bot"
-                  target="_blank"
                 >
-                  Source Code
-                </Button>
-              </div>
-              <div className="card mb-4">
-                <img
-                  className="card-img-top img-fluid"
-                  src="https://res.cloudinary.com/andreahabib/image/upload/v1614539665/hackathon1_ycllgv.png"
-                  alt="Card"
-                />
-                <div className="card-body">
-                  <h4 className="card-title">CUNY Hackathon 2019</h4>
-                  <hr></hr>
-                  <p className="card-text">
-                    Python, Twilio.py, IBM Watson AI (NLP), Twitter API
-                  </p>
+                  <div className="semicircle">
+                    <p className="text-in">Source Code</p>
+                  </div>
+                </a>
+              </span>
+              <span className="project">
+                <div>
+                  <p className="ptitle">CUNY Hackathon 2019</p>
                 </div>
-                <Button
-                  className="upper button"
-                  variant="info"
+                <div>
+                  <hr style={{ width: "90%", backgroundColor: "#C123C2" }}></hr>
+                  <span className="span">
+                    <img
+                      className="card-img-top img-fluid"
+                      src="https://res.cloudinary.com/andreahabib/image/upload/v1614539665/hackathon1_ycllgv.png"
+                      alt="Card"
+                    />
+                    <p className="description">
+                      Hackathon project developed using Python, Twilio and IBM
+                      Watson's Natural Processing Language. Scraps twitter for
+                      wildfire, and alerts everyone in the area.
+                    </p>
+                  </span>
+                </div>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
                   href="https://github.com/AndreaHabib/Hackathon"
-                  target="_blank"
                 >
-                  Source Code
-                </Button>
-              </div>
-              <div className="card mb-4">
-                <img
-                  className="card-img-top img-fluid"
-                  src="https://res.cloudinary.com/andreahabib/image/upload/v1614539664/menu_exksr8.png"
-                  alt="Card"
-                />
-                <div className="card-body">
-                  <h4 className="card-title">BattleFood</h4>
-                  <hr></hr>
-                  <p className="card-text">
-                    Battleship, food themed, using Java and JavaFX (OOP)
-                  </p>
+                  <div className="semicircle">
+                    <p className="text-in">Source Code</p>
+                  </div>
+                </a>
+              </span>
+              <span className="project">
+                <div>
+                  <p className="ptitle">Battlefood</p>
                 </div>
-                <Button
-                  className="upper button"
-                  variant="info"
+                <div>
+                  <hr style={{ width: "90%", backgroundColor: "#C123C2" }}></hr>
+                  <span className="span">
+                    <img
+                      className="card-img-top img-fluid"
+                      src="https://res.cloudinary.com/andreahabib/image/upload/v1614539664/menu_exksr8.png"
+                      alt="Card"
+                    />
+                    <p className="description">
+                      Final for Object Oriented Programming, developed using
+                      Java and JavaFX. A Battleship game where you play against
+                      computer (food themed).
+                    </p>
+                  </span>
+                </div>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
                   href="https://github.com/AndreaHabib/Final_Project_330_JAVA"
-                  target="_blank"
                 >
-                  Source Code
-                </Button>
-              </div>
-              <div className="w-100"></div>
-              <div className="card mb-4">
-                <img
-                  className="card-img-top img-fluid"
-                  src="https://res.cloudinary.com/andreahabib/image/upload/v1614539665/gamef_tlgsqi.png"
-                  alt="Card"
-                />
-                <div className="card-body">
-                  <h4 className="card-title">GamesFave</h4>
-                  <hr></hr>
-                  <p className="card-text">
-                    React, Redux, PostgreSQL, IGDB API, Express, Sequelize,
-                    Bootstrap, Javascript, JSX, CSS, AXIOS <br></br> Features:
-                    Look up games from API, Login/Register, add game to
-                    favorites and view on your profile. Deployed Using Heroku.
-                  </p>
+                  <div className="semicircle">
+                    <p className="text-in">Source Code</p>
+                  </div>
+                </a>
+              </span>
+              <span className="project">
+                <div>
+                  <p className="ptitle">COVID Map</p>
                 </div>
-                <Button
-                  className="upper button"
-                  variant="info"
-                  href="https://github.com/GameINFO-cc/gamesFaves"
+                <div>
+                  <hr style={{ width: "90%", backgroundColor: "#C123C2" }}></hr>
+                  <span className="span">
+                    <img
+                      className="card-img-top img-fluid"
+                      src="https://res.cloudinary.com/andreahabib/image/upload/v1614539665/map_glzxsc.png"
+                      alt="Card"
+                    />
+                    <p className="description">
+                      This project was developed, for Major league hacking
+                      kickoff, using React-Redux, Epxress and PostgreSQL. The
+                      project's purpose was to lower fear in areas with low
+                      COVID cases.
+                    </p>
+                  </span>
+                </div>
+                <a
                   target="_blank"
-                >
-                  Source Code
-                </Button>
-              </div>
-              <div className="card mb-4">
-                <img
-                  className="card-img-top img-fluid"
-                  src="https://res.cloudinary.com/andreahabib/image/upload/v1614539664/cipher_pbtnka.jpg"
-                  alt="Card"
-                />
-                <div className="card-body">
-                  <h4 className="card-title">Analysis of Algorithms (C++)</h4>
-                  <hr></hr>
-                  <p className="card-text">
-                    Analysis of insertion sort, merge sort, heap sort, quick
-                    sort (& randomized), and text compression app using Huffman
-                    algorithm
-                  </p>
-                </div>
-                <Button
-                  className="upper button"
-                  variant="info"
-                  href="https://github.com/AndreaHabib/CSC382"
-                  target="_blank"
-                >
-                  Source Code
-                </Button>
-              </div>
-              <div className="card mb-4">
-                <img
-                  className="card-img-top img-fluid"
-                  src="https://res.cloudinary.com/andreahabib/image/upload/v1614539665/map_glzxsc.png"
-                  alt="Card"
-                />
-                <div className="card-body">
-                  <h4 className="card-title">Coronavirus Map</h4>
-                  <hr></hr>
-                  <p className="card-text">
-                    Hackathon Orientation Project: 1st place -- React, Redux,
-                    PostgreSQL, Google Maps API, CSS, Bootstrap
-                  </p>
-                </div>
-                <Button
-                  className="upper button"
-                  variant="info"
+                  rel="noreferrer"
                   href="https://github.com/MLH-Fellowship/ttp-team-2"
-                  target="_blank"
                 >
-                  Source Code
-                </Button>
-              </div>
-              <div className="w-100"></div>
-              <div className="card mb-4">
-                <img
-                  className="card-img-top img-fluid"
-                  src="https://res.cloudinary.com/andreahabib/image/upload/v1614539665/GameStore_m1u8vq.png"
-                  alt="Card"
-                />
-                <div className="card-body">
-                  <h4 className="card-title">GameStore</h4>
-                  <hr></hr>
-                  <p className="card-text">
-                    Gaming e-commerce website. PHP, HTML, CSS, mySQL
-                  </p>
+                  <div className="semicircle">
+                    <p className="text-in">Source Code</p>
+                  </div>
+                </a>
+              </span>
+              <span className="project">
+                <div>
+                  <p className="ptitle">GameFave</p>
                 </div>
-                <Button
-                  className="upper button"
-                  variant="info"
-                  href="https://github.com/AndreaHabib/GameStore"
-                  target="_blank"
-                >
-                  Source Code
-                </Button>
-                <Button
-                  className="button"
-                  variant="info"
-                  href="https://game-store1.herokuapp.com/view/index.php"
-                  target="_blank"
-                >
-                  Deployed on{" "}
-                  <img
-                    alt="heroku"
-                    src="https://img.icons8.com/color/35/000000/heroku.png"
-                  />
-                </Button>
-              </div>
-              <div className="card mb-4">
-                <img
-                  className="card-img-top img-fluid"
-                  src="https://res.cloudinary.com/andreahabib/image/upload/v1623081086/logo_codepath_org_jgefty.jpg"
-                  alt="Card"
-                />
-                <div className="card-body">
-                  <h4 className="card-title">Jooboze</h4>
-                  <hr></hr>
-                  <p className="card-text">
-                    iOS app to track jobs. Used Swift and Parse
-                  </p>
+                <div>
+                  <hr style={{ width: "90%", backgroundColor: "#C123C2" }}></hr>
+                  <span className="span">
+                    <img
+                      className="card-img-top img-fluid"
+                      src="https://res.cloudinary.com/andreahabib/image/upload/v1614539665/gamef_tlgsqi.png"
+                      alt="Card"
+                    />
+                    <p className="description">
+                      A full-stack capstone project using PERN stack, developed
+                      during Tech Talent Pipeline bootcamp. Displays games from
+                      API, and has feature to add to favorites.
+                    </p>
+                  </span>
                 </div>
-                <Button
-                  className="upper button"
-                  variant="info"
-                  href="https://github.com/Jobooze-iOS-App/Jobooze"
+                <a
                   target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/GameINFO-cc/gamesFaves"
                 >
-                  Source Code
-                </Button>
-              </div>
-              <div className="card mb-4">
-                <img
-                  className="card-img-top img-fluid"
-                  src="https://res.cloudinary.com/andreahabib/image/upload/v1623079972/Screenshot_from_2021-06-07_11-32-42_paakel.png"
-                  alt="Card"
-                />
-                <div className="card-body">
-                  <h4 className="card-title">Andrea Blog</h4>
-                  <hr></hr>
-                  <p className="card-text">
-                    Blog website to share my experiences. Used React-Redux,
-                    Javascript, MongoDB, Express.js. Deployed on Heroku
-                  </p>
+                  <div className="semicircle">
+                    <p className="text-in">Source Code</p>
+                  </div>
+                </a>
+              </span>
+              <span className="project">
+                <div>
+                  <p className="ptitle">AndreaBlog</p>
                 </div>
-                <Button
-                  className="upper button"
-                  variant="info"
+                <div>
+                  <hr style={{ width: "90%", backgroundColor: "#C123C2" }}></hr>
+                  <span className="span">
+                    <img
+                      className="card-img-top img-fluid"
+                      src="https://res.cloudinary.com/andreahabib/image/upload/v1623079972/Screenshot_from_2021-06-07_11-32-42_paakel.png"
+                      alt="Card"
+                    />
+                    <p className="description">
+                      In development blog website using MERN stack, where I can
+                      make blogs about my experiences during my college years.
+                    </p>
+                  </span>
+                </div>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
                   href="https://github.com/AndreaHabib/Blog_Website"
-                  target="_blank"
                 >
-                  Source Code
-                </Button>
-                <Button
-                  className="button"
-                  variant="info"
-                  href="https://andreablog.herokuapp.com/Blogs"
+                  <div className="semicircle">
+                    <p className="text-in">Source Code</p>
+                  </div>
+                </a>
+              </span>
+              <span className="project">
+                <div>
+                  <p className="ptitle">Analysis of Algorithm</p>
+                </div>
+                <div>
+                  <hr style={{ width: "90%", backgroundColor: "#C123C2" }}></hr>
+                  <span className="span">
+                    <img
+                      className="card-img-top img-fluid"
+                      src="https://res.cloudinary.com/andreahabib/image/upload/v1614539664/cipher_pbtnka.jpg"
+                      alt="Card"
+                    />
+                    <p className="description">
+                      This repository contains analysis of different algoirthms
+                      such as merge and quick sort, as well as huffman text
+                      compression program, developed using C++.
+                    </p>
+                  </span>
+                </div>
+                <a
                   target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/AndreaHabib/CSC382"
                 >
-                  Deployed on{" "}
-                  <img
-                    alt="heroku"
-                    src="https://img.icons8.com/color/35/000000/heroku.png"
-                  />
-                </Button>
-              </div>
-              <div className="w-100"></div>
+                  <div className="semicircle">
+                    <p className="text-in">Source Code</p>
+                  </div>
+                </a>
+              </span>
+              <span className="project">
+                <div>
+                  <p className="ptitle">GameStore</p>
+                </div>
+                <div>
+                  <hr style={{ width: "90%", backgroundColor: "#C123C2" }}></hr>
+                  <span className="span">
+                    <img
+                      className="card-img-top img-fluid"
+                      src="https://res.cloudinary.com/andreahabib/image/upload/v1614539665/GameStore_m1u8vq.png"
+                      alt="Card"
+                    />
+                    <p className="description">
+                      E-commerce website developed using PHP, mySQL, HTML5,
+                      CSS3, Bootstrap. Displays different games for the consumer
+                      to checkout and buy.
+                    </p>
+                  </span>
+                </div>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/AndreaHabib/GameStore"
+                >
+                  <div className="semicircle">
+                    <p className="text-in">Source Code</p>
+                  </div>
+                </a>
+              </span>
+              <span className="project">
+                <div>
+                  <p className="ptitle">Joobze</p>
+                </div>
+                <div>
+                  <hr style={{ width: "90%", backgroundColor: "#C123C2" }}></hr>
+                  <span className="span">
+                    <img
+                      className="card-img-top img-fluid"
+                      src="https://res.cloudinary.com/andreahabib/image/upload/v1623081086/logo_codepath_org_jgefty.jpg"
+                      alt="Card"
+                    />
+                    <p className="description">
+                      Final project for Codepath, job tracker, developed using
+                      Swift and Parse.
+                    </p>
+                  </span>
+                </div>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/Jobooze-iOS-App/Jobooze"
+                >
+                  <div className="semicircle">
+                    <p className="text-in">Source Code</p>
+                  </div>
+                </a>
+              </span>
             </div>
-
             <span>
-              <h3 style={{ color: "white", marginTop: "50px" }}>
+              <h3
+                style={{
+                  color: "white",
+                  marginTop: "50px",
+                  marginBottom: "20px",
+                }}
+              >
                 More projects here:{" "}
               </h3>
-            </span>
-            <span className="span">
               <a
                 className="moreInfo"
                 href="https://github.com/AndreaHabib?tab=repositories"

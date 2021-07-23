@@ -39,27 +39,27 @@ export default class Experience extends Component {
           >
             <span className="tag">
               <img
-                alt="python"
-                src="https://img.icons8.com/color/48/000000/python--v1.png"
+                alt="Python"
+                src="https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white"
+              />{" "}
+              <img
+                alt="Django"
+                src="https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white"
+              />{" "}
+              <img
+                alt="Postgres"
+                src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white"
+              />{" "}
+              <img
+                alt="GraphQL"
+                src="https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql"
               />{" "}
             </span>
-            <span className="tag">
+            <span className="tag2">
               <img
-                alt="django"
-                src="https://img.icons8.com/color/48/000000/django.png"
-              />
-            </span>
-            <span className="tag">
-              <img
-                alt="psql"
-                src="https://img.icons8.com/color/48/000000/postgreesql.png"
-              />
-            </span>
-            <span className="tag">
-              <img
-                alt="graphql"
-                src="https://img.icons8.com/color/48/000000/graphql.png"
-              />
+                alt="Postman"
+                src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=red"
+              />{" "}
             </span>
             <h3 className="vertical-timeline-element-title">
               Develop for Good - Care Somalia
@@ -119,13 +119,13 @@ export default class Experience extends Component {
           >
             <span className="tag">
               <img
-                alt="git"
-                src="https://img.icons8.com/color/55/000000/git.png"
-              />
+                alt="Git"
+                src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"
+              />{" "}
               <img
-                alt="github"
-                src="https://img.icons8.com/fluent/55/000000/github.png"
-              />
+                alt="GitHub"
+                src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
+              />{" "}
             </span>
             <h3 className="vertical-timeline-element-title">
               College of Staten Island, CUNY2x
@@ -182,21 +182,31 @@ export default class Experience extends Component {
             <span className="tag">
               <img
                 alt="emberjs"
-                src="https://img.icons8.com/windows/64/000000/ember.png"
+                src="https://img.shields.io/badge/ember.js-E04E39?style=for-the-badge&logo=emberdotjs&logoColor=white"
               />{" "}
-            </span>
-            <span className="tag">
               <img
-                alt="ruby-on-rails"
-                src="https://img.icons8.com/fluent/48/000000/ruby-programming-language.png"
+                alt="Ruby"
+                src="https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white"
+              />{" "}
+              <img
+                alt="Rails"
+                src="https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&logo=ruby-on-rails&logoColor=white"
+              />{" "}
+              <img
+                alt="React"
+                src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
               />
             </span>
-            <span className="tag">Hackathon</span>
-            <span className="tag">
-              <img
-                alt="reactjs"
-                src="https://img.icons8.com/small/64/000000/react.png"
-              />
+            <span className="tag2">
+              <div
+                style={{
+                  border: "1px solid black",
+                  color: "black",
+                  width: "25%",
+                }}
+              >
+                Hackathon{" "}
+              </div>
             </span>
             <h3 className="vertical-timeline-element-title">
               Major League Hacking - Discourse
@@ -279,22 +289,35 @@ export default class Experience extends Component {
           >
             <span className="tag">
               <img
-                alt="react"
-                src="https://img.icons8.com/officel/50/000000/react.png"
+                alt="React"
+                src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
               />{" "}
-            </span>
-            <span className="tag">Express.js</span>
-            <span className="tag">
               <img
-                alt="psql"
-                src="https://img.icons8.com/color/48/000000/postgreesql.png"
+                alt="Postgres"
+                src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white"
+              />{" "}
+              <img
+                alt="Bootstrap"
+                src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white"
+              />{" "}
+              <img
+                alt="Redux"
+                src="https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white"
               />
             </span>
-            <span className="tag">
+            <span className="tag2">
               <img
-                alt="redux"
-                src="https://img.icons8.com/ios-filled/50/000000/redux.png"
-              />
+                alt="NodeJS"
+                src="https://img.shields.io/badge/node.js-%2343853D.svg?style=for-the-badge&logo=node-dot-js&logoColor=white"
+              />{" "}
+              <img
+                alt="Express.js"
+                src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"
+              />{" "}
+              <img
+                alt="JavaScript"
+                src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+              />{" "}
             </span>
             <h3 className="vertical-timeline-element-title">
               Tech Talent Pipeline
