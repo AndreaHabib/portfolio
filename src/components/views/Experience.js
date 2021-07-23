@@ -93,7 +93,72 @@ export default class Experience extends Component {
                 Used Django Graphene to implement GraphQL and created the
                 queries and mutations.
               </li>
+              <li>
+                Authenticated all GraphQL endpoints using JSON Web Tokens
+                (Graphene & JWT)
+              </li>
               <li>Finished Documentation using Sphinx and Rinohtype</li>
+            </ul>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{
+              borderTop: "10px solid #72BFE7",
+              color: "#fff",
+            }}
+            date="June 2021 - July 2021"
+            iconStyle={{ background: "rgb(0, 0, 0)", color: "#fff" }}
+            icon={
+              <img
+                src="https://res.cloudinary.com/andreahabib/image/upload/v1627000875/csi_wuan3q.png"
+                alt="ttp"
+                style={{ borderRadius: "100%", width: "60px" }}
+                className="workIcon"
+              />
+            }
+          >
+            <span className="tag">
+              <img
+                alt="git"
+                src="https://img.icons8.com/color/55/000000/git.png"
+              />
+              <img
+                alt="github"
+                src="https://img.icons8.com/fluent/55/000000/github.png"
+              />
+            </span>
+            <h3 className="vertical-timeline-element-title">
+              College of Staten Island, CUNY2x
+            </h3>
+            <h4
+              style={{ marginBottom: "50px" }}
+              className="vertical-timeline-element-subtitle"
+            >
+              Lead Teaching Assistant, GitHub Campus Expert
+            </h4>
+            <ul
+              style={{ textAlign: "left", color: "black", fontSize: "medium" }}
+            >
+              <li>
+                Compiled and published a{" "}
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://andrea-atef.gitbook.io/csi-csc591/"
+                >
+                  Gitbook page
+                </a>{" "}
+                that includes the syllabus for the class and professional
+                development resources for the students to use.
+              </li>
+              <li>
+                Planned and hosted Git and GitHub workshops to help students be
+                better prepared for internships.
+              </li>
+              <li>
+                Helped students with Leetcode and Hackerrank data structure
+                interview questions during class time.
+              </li>
             </ul>
           </VerticalTimelineElement>
           <VerticalTimelineElement
