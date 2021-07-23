@@ -2,12 +2,6 @@ import React from "react";
 import "./styles/skills.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import frontend from "./frontend.svg";
-import backend from "./backend.svg";
-import os from "./os.svg";
-import databases from "./databases.svg";
-import editor from "./editor.svg";
-import tools from "./tools.svg";
 // ..
 AOS.init();
 
@@ -34,7 +28,11 @@ function Skills() {
         <span className="skills">
           <div className="box">
             <h4>Frontend</h4>
-            <img alt="frontend" className="illus" src={frontend} />
+            <img
+              alt="frontend"
+              className="illus"
+              src="https://res.cloudinary.com/andreahabib/image/upload/v1627079886/frontend_xqwylm.svg"
+            />
             <br></br>
             <br></br>
             <span>
@@ -68,7 +66,11 @@ function Skills() {
           </div>
           <div className="box">
             <h4>Backend</h4>
-            <img alt="backend" className="illus" src={backend} />
+            <img
+              alt="backend"
+              className="illus"
+              src="https://res.cloudinary.com/andreahabib/image/upload/v1627079887/backend_poqzuc.svg"
+            />
             <br></br>
             <br></br>
             <img
@@ -120,7 +122,11 @@ function Skills() {
           </div>
           <div className="box">
             <h4>Databases</h4>
-            <img alt="databases" className="illus" src={databases} />
+            <img
+              alt="databases"
+              className="illus"
+              src="https://res.cloudinary.com/andreahabib/image/upload/v1627079886/databases_uvqgga.svg"
+            />
             <br></br>
             <br></br>
             <img
@@ -151,7 +157,11 @@ function Skills() {
         <span className="skills">
           <div className="box">
             <h4>Text Editors and IDEs</h4>
-            <img alt="editors" className="illus" src={editor} />
+            <img
+              alt="editors"
+              className="illus"
+              src="https://res.cloudinary.com/andreahabib/image/upload/v1627079887/editor_m9mijf.svg"
+            />
             <br></br>
             <br></br>
             <img
@@ -179,7 +189,11 @@ function Skills() {
           </div>
           <div className="box">
             <h4>Operating Systems</h4>
-            <img alt="os" className="illus" src={os} />
+            <img
+              alt="os"
+              className="illus"
+              src="https://res.cloudinary.com/andreahabib/image/upload/v1627079886/os_qvsrtp.svg"
+            />
             <br></br>
             <br></br>
             <img
@@ -203,7 +217,11 @@ function Skills() {
           </div>
           <div className="box">
             <h4>Others/Tools</h4>
-            <img alt="tools" className="illus" src={tools} />
+            <img
+              alt="tools"
+              className="illus"
+              src="https://res.cloudinary.com/andreahabib/image/upload/v1627079886/tools_gdo28k.svg"
+            />
             <br></br>
             <br></br>
             <img
