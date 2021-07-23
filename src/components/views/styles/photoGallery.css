@@ -20,11 +20,12 @@
   background: rgb(255, 255, 255, 0.2);
   border-radius: 20px;
   color: white;
+  border: 5px solid rgb(194, 35, 194);
 }
 
 .photoGallery {
   clear: none;
-  padding-top: 50px;
+  padding-top: 100px;
   padding-right: 10px;
   padding-left: 10px;
   color: white;
@@ -33,5 +34,7 @@
   position: relative;
   margin-left: -50vw;
   margin-top: 100px;
+  margin-bottom: 60px;
+  padding-bottom: 110px;
   left: 50%;
 }

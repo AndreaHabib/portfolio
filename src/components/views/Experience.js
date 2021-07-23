@@ -15,6 +15,7 @@ export default class Experience extends Component {
           style={{
             marginBottom: "4rem",
             textAlign: "center",
+            paddingTop: "80px",
           }}
         >
           Experience
@@ -353,14 +354,18 @@ export default class Experience extends Component {
           </VerticalTimelineElement>
         </VerticalTimeline>
         <div className="activities">
-          <hr style={{ border: "1px solid white" }}></hr>
+          <hr
+            style={{
+              border: "1px solid #C123C2",
+            }}
+          ></hr>
 
           <h2
             className="heading"
             style={{
               marginBottom: "2rem",
               textAlign: "center",
-              marginTop: "3rem",
+              marginTop: "2rem",
             }}
           >
             Activities and Leadership
@@ -411,12 +416,6 @@ export default class Experience extends Component {
               computer science college community
             </li>
           </ul>
-          <hr
-            style={{
-              marginTop: "100px",
-              border: "2px dashed white",
-            }}
-          ></hr>
         </div>
       </section>
     );

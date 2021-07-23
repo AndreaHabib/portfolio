@@ -21,6 +21,7 @@ h2 {
   padding: 40px;
   border-radius: 10px;
   background-color: #9d6bb6;
+  border: 1px solid rgb(194, 35, 194);
   margin-right: 10px;
   width: 25%;
 }

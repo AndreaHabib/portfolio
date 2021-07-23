@@ -19,6 +19,11 @@
   border-right: 10px solid rgb(194, 35, 194);
 }
 
+.icon-text {
+  display: flex;
+  flex-direction: row;
+}
+
 .projects-box .project a {
   text-decoration: none;
 }
@@ -65,7 +70,7 @@
 }
 
 section div hr {
-  background-color: rgb(129, 42, 163);
+  background-color: rgb(194, 35, 194);
 }
 
 .upper:hover {
@@ -104,7 +109,7 @@ section div hr {
   object-fit: fill;
   border-radius: 5px;
   width: 12rem;
-  height: 10rem;
+  height: 8.5rem;
   margin: 30px;
   margin-top: 10px;
 }
@@ -112,12 +117,11 @@ section div hr {
 .projects {
   clear: none;
   color: white;
-  padding-top: 100px;
   width: 100vw;
   position: relative;
   margin-left: -50vw;
-  margin-top: 100px;
   left: 50%;
+  padding-top: 60px;
 }
 
 @media screen and (max-width: 768px) {
@@ -138,8 +142,8 @@ section div hr {
   }
 
   .card-img-top {
-    width: 10rem;
-    height: 10rem;
+    width: 9rem;
+    height: 7.5rem;
   }
 }
 
@@ -156,5 +160,13 @@ section div hr {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 20px;
+  }
+
+  .description {
+    width: 50%;
+  }
+
+  .card-img-top {
+    height: 7.5rem;
   }
 }
