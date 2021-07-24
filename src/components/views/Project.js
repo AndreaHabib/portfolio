@@ -302,9 +302,9 @@ export default class Project extends Component {
                       alt="Card"
                     />
                     <p className="description">
-                      This repository contains analysis of different algoirthms
-                      such as merge and quick sort, as well as huffman text
-                      compression program, developed using C++.
+                      C++ - Contains analysis of different algoirthms such as
+                      merge and quick sort, as well as huffman text compression
+                      program.
                     </p>
                   </span>
                 </div>
