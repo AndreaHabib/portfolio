@@ -4,9 +4,10 @@
   border-radius: 20px;
   display: flex;
   flex-direction: row;
-  height: 50vh;
+  height: 55vh;
   align-items: center;
   padding: 5%;
+  box-shadow: 0px 5px #fa5679;
 }
 
 .text-flag {
