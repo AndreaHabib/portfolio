@@ -61,7 +61,6 @@ function Skills() {
                 src="https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white"
               />
               <br></br>
-              <hr></hr>
             </span>
           </div>
           <div className="box">
@@ -118,7 +117,6 @@ function Skills() {
               src="https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql"
             />
             <br></br>
-            <hr></hr>
           </div>
           <div className="box">
             <h4>Databases</h4>
@@ -150,7 +148,6 @@ function Skills() {
               src="https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white"
             />
             <br></br>
-            <hr></hr>
           </div>
         </span>
         <br></br>
@@ -185,7 +182,6 @@ function Skills() {
               src="https://img.shields.io/badge/VIM-%2311AB00.svg?style=for-the-badge&logo=vim&logoColor=white"
             />
             <br></br>
-            <hr></hr>
           </div>
           <div className="box">
             <h4>Operating Systems</h4>
@@ -213,7 +209,6 @@ function Skills() {
               src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"
             />
             <br></br>
-            <hr></hr>
           </div>
           <div className="box">
             <h4>Others/Tools</h4>
@@ -257,7 +252,6 @@ function Skills() {
               src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white"
             />
             <br></br>
-            <hr></hr>
           </div>
         </span>
       </div>
