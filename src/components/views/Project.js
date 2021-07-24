@@ -71,9 +71,9 @@ export default class Project extends Component {
                       alt="Card"
                     />
                     <p className="description">
-                      Informative Website created for Hack-A-Project Club that
-                      provides a contact form, membership benefits and
-                      application to apply. Developed using React.js
+                      React.js - Informative Website for Hack-A-Project Club
+                      that provides a contact form, membership benefits and
+                      application to apply.
                     </p>
                   </span>
                 </div>
@@ -216,10 +216,9 @@ export default class Project extends Component {
                       alt="Card"
                     />
                     <p className="description">
-                      This project was developed, for Major league hacking
-                      kickoff, using React-Redux, Epxress and PostgreSQL. The
-                      project's purpose was to lower fear in areas with low
-                      COVID cases.
+                      This project for Major league hacking kickoff, usind
+                      React-Redux, Epxress and PostgreSQL. The project's purpose
+                      was to lower fear in areas with low COVID cases.
                     </p>
                   </span>
                 </div>
