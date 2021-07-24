@@ -361,7 +361,8 @@ export default class Project extends Component {
                     />
                     <p className="description">
                       Final project for Codepath, job tracker, developed using
-                      Swift and Parse.
+                      Swift and Parse. Features include profile page, upload
+                      profile picture, and add/edit/delete jobs.
                     </p>
                   </span>
                 </div>
