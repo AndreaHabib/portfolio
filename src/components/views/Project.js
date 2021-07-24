@@ -332,8 +332,8 @@ export default class Project extends Component {
                     />
                     <p className="description">
                       E-commerce website developed using PHP, mySQL, HTML5,
-                      CSS3, Bootstrap. Displays different games for the consumer
-                      to checkout and buy.
+                      CSS3, Bootstrap. Displays different games for consumer to
+                      checkout and buy.
                     </p>
                   </span>
                 </div>
