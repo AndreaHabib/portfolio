@@ -129,7 +129,7 @@ export default class Project extends Component {
                       alt="Card"
                     />
                     <p className="description">
-                      Discord bot that was developed using Python where it ran
+                      Discord bot developed using Python where it ran
                       asynchronous in a discord sever. Not deployed, but useful
                       to moderate a server.
                     </p>
