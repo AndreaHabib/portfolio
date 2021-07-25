@@ -189,7 +189,7 @@ export default class Project extends Component {
                     <p className="description">
                       Final for Object Oriented Programming, developed using
                       Java and JavaFX. A Battleship game where you play against
-                      computer (food themed).
+                      computer, and remembers last hit location. (food themed).
                     </p>
                   </span>
                 </div>

@@ -18,7 +18,7 @@ class MyPortfolioView extends Component {
       <main className="page lanidng-page">
         <NavBar />
         <div className="container">
-          <ParticlesBg color="#fff" num={40} type="cobweb" bg={true} />
+          <ParticlesBg color="#fff" num={45} type="cobweb" bg={true} />
           <About />
           <div className="color">
             <div id="skills"></div>
