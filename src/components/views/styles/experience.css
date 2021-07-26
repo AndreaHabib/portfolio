@@ -1,8 +1,23 @@
 .vertical-timeline-element-title,
 .vertical-timeline-element-subtitle,
 .vertical-timeline-element--work p {
-  color: black !important;
+  color: white !important;
   text-align: left;
+}
+.vertical-timeline::before {
+  background: rgba(255, 255, 255, 0.5) !important;
+}
+
+.vertical-timeline-element-content {
+  box-shadow: 0 5px 0 rgb(194 35 194) !important;
+}
+
+.vertical-timeline-element-content-arrow {
+  border-right: 7px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.vertical-timeline-element--work li {
+  color: white;
 }
 
 .vertical-timeline-element-title {
@@ -10,7 +25,7 @@
 }
 
 .vertical-timeline-element-subtitle {
-  color: grey !important;
+  color: rgb(214, 212, 212) !important;
   font-size: large;
 }
 
@@ -37,10 +52,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .vertical-timeline-element--work {
-    color: black;
-    visibility: hidden;
-  }
   .vertical-timeline-element-subtitle {
     visibility: visible;
     display: block;
@@ -51,22 +62,7 @@
 }
 
 @media screen and (max-width: 1366px) and (min-width: 1024px) {
-  .vertical-timeline-element--work {
-    color: black;
-  }
   .workIcon {
     width: 40px !important;
-  }
-}
-
-@media screen and (max-width: 768px) and (min-width: 768px) {
-  .vertical-timeline-element--work {
-    color: black !important;
-  }
-}
-
-@media screen and (max-width: 280px) and (min-width: 280px) {
-  .vertical-timeline-element--work {
-    color: black !important;
   }
 }

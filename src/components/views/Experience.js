@@ -25,7 +25,8 @@ export default class Experience extends Component {
             className="vertical-timeline-element--work"
             contentStyle={{
               borderTop: "10px solid #000080",
-              color: "#fff",
+              color: "#ff",
+              backgroundColor: "rgba(255, 255, 255, 0.1)",
             }}
             date="July 2021 - Present"
             iconStyle={{ background: "rgb(255, 255, 255)", color: "#fff" }}
@@ -68,6 +69,7 @@ export default class Experience extends Component {
             contentStyle={{
               borderTop: "10px solid #dc143c",
               color: "#fff",
+              backgroundColor: "rgba(255, 255, 255, 0.1)",
             }}
             date="April 2021 – Present"
             iconStyle={{ background: "rgb(255, 255,255)", color: "#fff" }}
@@ -148,6 +150,7 @@ export default class Experience extends Component {
             contentStyle={{
               borderTop: "10px solid #72BFE7",
               color: "#fff",
+              backgroundColor: "rgba(255, 255, 255, 0.1)",
             }}
             date="June 2021 - July 2021"
             iconStyle={{ background: "rgb(0, 0, 0)", color: "#fff" }}
@@ -168,6 +171,14 @@ export default class Experience extends Component {
               <img
                 alt="GitHub"
                 src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
+              />{" "}
+              <img
+                alt="hackerrank"
+                src="https://img.shields.io/badge/-Hackerrank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white"
+              />{" "}
+              <img
+                alt="leetcode"
+                src="https://img.shields.io/badge/-LeetCode-FFA116?style=for-the-badge&logo=LeetCode&logoColor=black"
               />{" "}
             </span>
             <h3 className="vertical-timeline-element-title">
@@ -209,6 +220,7 @@ export default class Experience extends Component {
             contentStyle={{
               borderTop: "10px solid #ff7f50",
               color: "#fff",
+              backgroundColor: "rgba(255, 255, 255, 0.1)",
             }}
             contentArrowStyle={{ borderRight: "7px solid" }}
             date="Jun 2020 – Aug 2020"
@@ -239,17 +251,6 @@ export default class Experience extends Component {
                 alt="React"
                 src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
               />
-            </span>
-            <span className="tag2">
-              <div
-                style={{
-                  border: "1px solid black",
-                  color: "black",
-                  width: "25%",
-                }}
-              >
-                Hackathon{" "}
-              </div>
             </span>
             <h3 className="vertical-timeline-element-title">
               Major League Hacking - Discourse
@@ -318,6 +319,7 @@ export default class Experience extends Component {
             contentStyle={{
               borderTop: "10px solid #080808",
               color: "#fff",
+              backgroundColor: "rgba(255, 255, 255, 0.1)",
             }}
             date="June 2020"
             iconStyle={{ background: "rgb(0, 0, 0)", color: "#fff" }}

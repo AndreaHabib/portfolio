@@ -89,7 +89,7 @@ section div hr {
 .moreInfo {
   text-decoration: none;
   color: white;
-  padding: 19px;
+  padding: 12px;
   border-radius: 5px;
   background-color: rgb(194, 35, 194) !important;
 }
@@ -112,6 +112,7 @@ section div hr {
   height: 7.2rem;
   margin: 30px;
   margin-top: 10px;
+  box-shadow: 5px 5px rgb(194, 35, 194);
 }
 
 .projects {
