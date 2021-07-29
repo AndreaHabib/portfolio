@@ -3,8 +3,6 @@
   max-width: 800px;
   height: 29rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0 auto;
   margin-bottom: 100px;
 }
@@ -15,7 +13,6 @@
   font-family: "Overpass", sans-serif;
   display: flex;
   justify-content: center;
-  align-items: center;
   margin: 0 auto;
   background: rgb(255, 255, 255, 0.2);
   border-radius: 20px;
@@ -24,12 +21,8 @@
 }
 
 .photoGallery {
-  clear: none;
   padding-top: 100px;
-  padding-right: 10px;
-  padding-left: 10px;
   color: white;
-  left: 0;
   width: 100vw;
   position: relative;
   margin-left: -50vw;

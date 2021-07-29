@@ -3,6 +3,7 @@
   background: rgba(255, 255, 255, 0.9);
   border-radius: 20px;
   display: flex;
+  margin-top: 15px;
   flex-direction: row;
   height: 23rem;
   align-items: center;
@@ -49,7 +50,6 @@ span a .fa-2x:hover {
   height: 10.6rem;
   margin-right: 50px;
   box-shadow: 5px 5px;
-  transition: transform 0.5s;
 }
 
 .about-image:hover {
@@ -62,7 +62,6 @@ span a .fa-2x:hover {
 
 .portfolio-block {
   clear: none;
-  margin: 0;
   background-position: center;
   background-size: cover;
   height: 100vh;
