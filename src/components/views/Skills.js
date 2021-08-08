@@ -18,7 +18,7 @@ function Skills() {
     bootstrap:
       "https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white",
     redux:
-      "https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white",
+      "https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white",
     react_router:
       "https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white",
     materialUI:
