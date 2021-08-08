@@ -58,6 +58,8 @@ function Skills() {
       "https://img.shields.io/badge/Xampp-F37623?style=for-the-badge&logo=xampp&logoColor=white",
     heroku:
       "https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white",
+    netlify:
+      "https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white",
   };
   const texteditors_badges = {
     VisualStudioCode:
@@ -135,7 +137,7 @@ function Skills() {
             badges={backend_badges}
           />
           <SkillCard
-            title="Databses"
+            title="Databses and Servers"
             alt_illus="databases"
             illus="https://res.cloudinary.com/andreahabib/image/upload/v1627079886/databases_uvqgga.svg"
             badges={databases_badges}
