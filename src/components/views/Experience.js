@@ -45,12 +45,16 @@ export default class Experience extends Component {
                 src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
               />{" "}
               <img
-                alt="Git"
-                src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"
+                alt="Redux"
+                src="https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white"
               />{" "}
               <img
-                alt="GitHub"
-                src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
+                alt="React Router"
+                src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white"
+              />{" "}
+              <img
+                alt="Material UI"
+                src="https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white"
               />{" "}
             </span>
             <h3 className="vertical-timeline-element-title">Bridging Tech</h3>
@@ -62,7 +66,19 @@ export default class Experience extends Component {
             </h4>
             <ul
               style={{ textAlign: "left", color: "black", fontSize: "medium" }}
-            ></ul>
+            >
+              <li>
+                Using React-Redux to develop the client-side of the project
+              </li>
+              <li>
+                Use MaterialUI as CSS framework to create custom components and
+                make different themes
+              </li>
+              <li>
+                Implemented Merge sort using Javascript in Redux to sort posts
+                by likes or date time
+              </li>
+            </ul>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
