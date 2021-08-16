@@ -18,7 +18,11 @@ function Skills() {
     bootstrap:
       "https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white",
     redux:
-      "https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white",
+      "https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white",
+    react_router:
+      "https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white",
+    materialUI:
+      "https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white",
   };
   const backend_badges = {
     django:
@@ -40,6 +44,8 @@ function Skills() {
       "https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&logo=ruby-on-rails&logoColor=white",
     graphql:
       "https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql",
+    JSON:
+      "https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white",
   };
   const databases_badges = {
     mysql:
@@ -48,10 +54,12 @@ function Skills() {
       "https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white",
     mongodb:
       "https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white",
-    apache:
-      "https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white",
+    xampp:
+      "https://img.shields.io/badge/Xampp-F37623?style=for-the-badge&logo=xampp&logoColor=white",
     heroku:
       "https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white",
+    netlify:
+      "https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white",
   };
   const texteditors_badges = {
     VisualStudioCode:
@@ -73,6 +81,8 @@ function Skills() {
       "https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white",
     linux:
       "https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black",
+    macos:
+      "https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white",
   };
   const tools_badges = {
     figma:
@@ -82,6 +92,10 @@ function Skills() {
     git: "https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white",
     github:
       "https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white",
+    github_actions:
+      "https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white",
+    gitbook:
+      "https://img.shields.io/badge/GitBook-7B36ED?style=for-the-badge&logo=gitbook&logoColor=white",
     trello:
       "https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white",
     postman:
@@ -123,7 +137,7 @@ function Skills() {
             badges={backend_badges}
           />
           <SkillCard
-            title="Databses"
+            title="Databses and Servers"
             alt_illus="databases"
             illus="https://res.cloudinary.com/andreahabib/image/upload/v1627079886/databases_uvqgga.svg"
             badges={databases_badges}
