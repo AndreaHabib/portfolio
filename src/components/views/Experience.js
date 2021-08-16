@@ -126,14 +126,18 @@ export default class Experience extends Component {
               Develop for Good - Care Somalia
             </h3>
             <h4
-              style={{ marginBottom: "50px" }}
+              style={{ marginBottom: "30px" }}
               className="vertical-timeline-element-subtitle"
             >
               Backend Developer Volunteer
             </h4>
-            <ul
-              style={{ textAlign: "left", color: "black", fontSize: "medium" }}
-            >
+            <h4 style={{ textAlign: "left", fontSize: "medium" }}>
+              The project will be used by health staff of 20 health facilities
+              for Internally Displaced People in Somalia and is expected to
+              increase hospital birth delivery by 30% in the first year by
+              tracking mothers’ hospital visit dates
+            </h4>
+            <ul style={{ textAlign: "left", fontSize: "medium" }}>
               <li>
                 Creating entity-relationship diagram containing a database
                 schema to blueprint column data element headers for the client
