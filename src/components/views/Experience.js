@@ -458,6 +458,10 @@ export default class Experience extends Component {
                 website for the club
               </a>
             </li>
+            <li> <a href="https://hackcsi.netlify.app/" target="_blank" rel="noopener noreferrer">HackCSI</a>
+              - Organized, mentored and developed a website for 
+              a hackathon event for College of Staten Island students, as well as running a workshop on version control during the hackathon
+            </li>
           </ul>
           <p
             style={{
@@ -478,6 +482,23 @@ export default class Experience extends Component {
               python workshop to introduce python basic syntax, regular
               expressions, and scraping twitter using BeautifulSoap for my
               computer science college community
+            </li>
+          </ul>
+<p
+            style={{
+              marginLeft: "10px",
+              textAlign: "left",
+              textDecoration: "underline",
+            }}
+          >
+            <a href="https://githubcampus.expert/AndreaHabib/" target="_blank" rel="noopener noreferrer">GitHub Campus Epxert</a> -{" "}
+          </p>
+          <ul style={{ textAlign: "left" }}>
+            <li>
+              Sponsored as a GitHub campus expert to support technical and professional development of CSI computer science students
+            </li>
+            <li>
+              Collaborated with computer science academic advisor to compile internship prep handbook for computer science students
             </li>
           </ul>
         </div>
