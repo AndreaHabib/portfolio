@@ -68,7 +68,7 @@ export default class Experience extends Component {
               style={{ textAlign: "left", color: "black", fontSize: "medium" }}
             >
               <li>
-                Using React-Redux to develop the client-side of the project
+                Translate a high-fidelity wireframe on Figma to code using React-Redux on the client side
               </li>
               <li>
                 Use MaterialUI as CSS framework to create custom components and
