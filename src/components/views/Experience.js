@@ -458,7 +458,7 @@ export default class Experience extends Component {
                 website for the club
               </a>
             </li>
-            <li> <a href="https://hackcsi.netlify.app/" target="_blank" rel="noopener noreferrer">HackCSI</a>
+            <li> <a style={{ textDecoration: "none", color: "orange" }} href="https://hackcsi.netlify.app/" target="_blank" rel="noopener noreferrer">HackCSI</a>
               - Organized, mentored and developed a website for 
               a hackathon event for College of Staten Island students, as well as running a workshop on version control during the hackathon
             </li>
@@ -484,14 +484,14 @@ export default class Experience extends Component {
               computer science college community
             </li>
           </ul>
-<p
+          <p
             style={{
               marginLeft: "10px",
               textAlign: "left",
               textDecoration: "underline",
             }}
           >
-            <a href="https://githubcampus.expert/AndreaHabib/" target="_blank" rel="noopener noreferrer">GitHub Campus Epxert</a> -{" "}
+            <a style={{ textDecoration: "none", color: "orange" }} href="https://githubcampus.expert/AndreaHabib/" target="_blank" rel="noopener noreferrer">GitHub Campus Epxert</a> -{" "}
           </p>
           <ul style={{ textAlign: "left" }}>
             <li>
