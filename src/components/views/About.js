@@ -8,7 +8,7 @@ AOS.init();
 
 function About() {
   return (
-    <section
+    <div
       data-aos="fade-down"
       data-aos-delay="20"
       data-aos-duration="1000"
@@ -93,7 +93,7 @@ function About() {
           </span>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 

@@ -8,7 +8,7 @@
   padding-top: 14px;
   padding-bottom: 14px;
   text-decoration: none;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(20px);
   z-index: 10000;
   font-size: large;
 }
