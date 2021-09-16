@@ -31,12 +31,23 @@ export default class Project extends Component {
           <div>
             <div className="projects-box">
               <ProjectCard
+                isDeployed={true}
+                title="HackCSI"
+                href="https://hackcsi.netlify.app/"
+                description="React.js - Informative Website for HackCSI hackathon that provides sponsorship deck, FAQ, and form to apply to hackathon."
+                image="https://res.cloudinary.com/andreahabib/image/upload/v1627328388/Untitled_design_psaoo7.png"
+                url="https://github.com/dfg-care-somalia/caresomalia-maternal-delivery-backend"
+              />
+              <ProjectCard
+                isDeployed={false}
                 title="Care Somalia"
                 description="The project will be used in Somalia by health staff of 20 health facilities in IDPs and is expected to increase hospital delivery by 30%."
                 image="https://res.cloudinary.com/andreahabib/image/upload/v1623081724/2020819637334518371227591_rqt6fj.jpg"
                 url="https://github.com/dfg-care-somalia/caresomalia-maternal-delivery-backend"
               />
               <ProjectCard
+                isDeployed={true}
+                href="https://hack-a-project.netlify.app/"
                 title="Hack-A-Project"
                 description="React.js - Informative Website for Hack-A-Project Club
                 that provides a contact form, membership benefits and
@@ -45,7 +56,9 @@ export default class Project extends Component {
                 url="https://github.com/AndreaHabib/club_website"
               />
               <ProjectCard
+                isDeployed={true}
                 title="This Website"
+                href="https://andreahabib.netlify.app/"
                 description="This website was created using React.js to showcase all my
                 skills, experiences, projects and designs. Constantly
                 evolving!"
@@ -53,6 +66,7 @@ export default class Project extends Component {
                 url="https://github.com/AndreaHabib/portifolio"
               />
               <ProjectCard
+                isDeployed={false}
                 title="Discord Bot"
                 description="Discord bot developed using Python where it ran
                 asynchronous in a discord sever. Not deployed, but useful
@@ -61,6 +75,7 @@ export default class Project extends Component {
                 url="https://github.com/AndreaHabib/Discord-bot"
               />
               <ProjectCard
+                isDeployed={false}
                 title="CUNY Hackathon 2019"
                 description="Hackathon project developed using Python, Twilio and IBM
                 Watson's Natural Processing Language. Scraps twitter for
@@ -69,6 +84,7 @@ export default class Project extends Component {
                 url="https://github.com/AndreaHabib/Hackathon"
               />
               <ProjectCard
+                isDeployed={false}
                 title="Battlefood"
                 description="Final for Object Oriented Programming, developed using
                 Java and JavaFX. A Battleship game where you play against
@@ -78,6 +94,7 @@ export default class Project extends Component {
               />
               <ProjectCard
                 title="COVID Map"
+                isDeployed={false}
                 description="This project for Major league hacking kickoff, usind
                 React-Redux, Epxress and PostgreSQL. The project's purpose
                 was to lower fear in areas with low COVID cases."
@@ -86,6 +103,7 @@ export default class Project extends Component {
               />
               <ProjectCard
                 title="GameFave"
+                isDeployed={false}
                 description="A full-stack capstone project using PERN stack, developed
                 during Tech Talent Pipeline bootcamp. Displays games from
                 API, and has feature to add to favorites."
@@ -93,13 +111,16 @@ export default class Project extends Component {
                 url="https://github.com/GameINFO-cc/gamesFaves"
               />
               <ProjectCard
+                isDeployed={true}
                 title="AndreaBlog"
+                href="https://andreablog.herokuapp.com/Blogs"
                 description="In development blog website using MERN stack, where I can
                 make blogs about my experiences during my college years."
                 image="https://res.cloudinary.com/andreahabib/image/upload/v1623079972/Screenshot_from_2021-06-07_11-32-42_paakel.png"
                 url="https://github.com/AndreaHabib/Blog_Website"
               />
               <ProjectCard
+                isDeployed={false}
                 title="Analysis of Algorithm"
                 description="C++ - Contains analysis of different algoirthms such as
                 merge and quick sort, as well as huffman text compression
@@ -108,7 +129,9 @@ export default class Project extends Component {
                 url="https://github.com/AndreaHabib/CSC382"
               />
               <ProjectCard
+                isDeployed={true}
                 title="GameStore"
+                href="https://game-store1.herokuapp.com/view/index.php"
                 description="E-commerce website developed using PHP, mySQL, HTML5,
                 CSS3, Bootstrap. Displays different games for consumer to
                 checkout and buy."
@@ -116,6 +139,7 @@ export default class Project extends Component {
                 url="https://github.com/AndreaHabib/GameStore"
               />
               <ProjectCard
+                isDeployed={false}
                 title="Joobze"
                 description="Final project for Codepath, job tracker, developed using
                 Swift and Parse. Features include profile page, upload
