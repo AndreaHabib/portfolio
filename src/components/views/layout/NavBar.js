@@ -15,7 +15,6 @@ export default class NavBar extends Component {
             style={{ color: "black" }}
           >
             Skills
-            <i style={{ marginLeft: "2px" }} class="fas fa-tools"></i>
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
@@ -26,7 +25,6 @@ export default class NavBar extends Component {
             style={{ color: "black" }}
           >
             Experience
-            <i style={{ marginLeft: "2px" }} class="fas fa-stream"></i>
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
@@ -37,7 +35,6 @@ export default class NavBar extends Component {
             style={{ color: "black" }}
           >
             Projects
-            <i style={{ marginLeft: "2px" }} class="fas fa-clipboard-list"></i>
           </Nav.Link>
         </Nav.Item>
       </Nav>
