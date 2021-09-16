@@ -28,6 +28,61 @@ export default class Experience extends Component {
               color: "#ff",
               backgroundColor: "rgba(255, 255, 255, 0.1)",
             }}
+            date="Sept 2021 - Present"
+            iconStyle={{ background: "rgb(0, 0, 0)", color: "#fff" }}
+            icon={
+              <img
+                src="https://res.cloudinary.com/andreahabib/image/upload/v1625917885/ttp_ykvtit.png"
+                alt="ttp"
+                style={{ borderRadius: "100%", width: "60px" }}
+                className="workIcon"
+              />
+            }
+          >
+            <span className="tag">
+              <img
+                alt="HTML"
+                src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
+              />{" "}
+              <img
+                alt="CSS"
+                src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"
+              />{" "}
+              <img
+                alt="Javascript"
+                src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+              />{" "}
+              <img
+                alt="GitHub"
+                src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
+              />{" "}
+            </span>
+            <h3 className="vertical-timeline-element-title">
+              NYC Tech Talent Pipeline
+            </h3>
+            <h4
+              style={{ marginBottom: "50px" }}
+              className="vertical-timeline-element-subtitle"
+            >
+              Workshop Instructor
+            </h4>
+            <ul
+              style={{ textAlign: "left", color: "black", fontSize: "medium" }}
+            >
+              <li>
+                Instruct a series of Technical Development workshops on HTML,
+                CSS, Javascript, Git and GitHub for Computer Science Students
+                for entry into TTP Residency program
+              </li>
+            </ul>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{
+              borderTop: "10px solid #000080",
+              color: "#ff",
+              backgroundColor: "rgba(255, 255, 255, 0.1)",
+            }}
             date="July 2021 - Present"
             iconStyle={{ background: "rgb(255, 255, 255)", color: "#fff" }}
             icon={
@@ -62,13 +117,21 @@ export default class Experience extends Component {
               style={{ marginBottom: "50px" }}
               className="vertical-timeline-element-subtitle"
             >
-              Frontend Developer Volunteer, Product Associate
+              Frontend Developer, Product Associate
             </h4>
             <ul
               style={{ textAlign: "left", color: "black", fontSize: "medium" }}
             >
               <li>
-                Translate a high-fidelity wireframe on Figma to code using React-Redux on the client side
+                Present progress of development in all-hands monthly meetings
+              </li>
+              <li>
+                Weekly sprints with product manager to showcase newly
+                implemented features and divide the tasks for the next feature
+              </li>
+              <li>
+                Translate a high-fidelity wireframe on Figma to code using
+                React-Redux on the client side
               </li>
               <li>
                 Use MaterialUI as CSS framework to create custom components and
@@ -129,7 +192,7 @@ export default class Experience extends Component {
               style={{ marginBottom: "30px" }}
               className="vertical-timeline-element-subtitle"
             >
-              Backend Developer Volunteer
+              Backend Developer
             </h4>
             <h4 style={{ textAlign: "left", fontSize: "medium" }}>
               The project will be used by health staff of 20 health facilities
@@ -138,6 +201,12 @@ export default class Experience extends Component {
               tracking mothers’ hospital visit dates
             </h4>
             <ul style={{ textAlign: "left", fontSize: "medium" }}>
+              <li>
+                Regular meetings with clients from Somalia, product manager,
+                team and mentor to ensure we are on track with the product
+                specifications, plan out the features, and create tasks for the
+                development team, and discuss business needs.
+              </li>
               <li>
                 Creating entity-relationship diagram containing a database
                 schema to blueprint column data element headers for the client
@@ -385,7 +454,7 @@ export default class Experience extends Component {
               />{" "}
             </span>
             <h3 className="vertical-timeline-element-title">
-              Tech Talent Pipeline
+              NYC Tech Talent Pipeline
             </h3>
             <h4
               style={{ marginBottom: "50px" }}
@@ -458,9 +527,19 @@ export default class Experience extends Component {
                 website for the club
               </a>
             </li>
-            <li> <a style={{ textDecoration: "none", color: "orange" }} href="https://hackcsi.netlify.app/" target="_blank" rel="noopener noreferrer">HackCSI</a>
-              - Organized, mentored and developed a website for 
-              a hackathon event for College of Staten Island students, as well as running a workshop on version control during the hackathon
+            <li>
+              {" "}
+              <a
+                style={{ textDecoration: "none", color: "orange" }}
+                href="https://hackcsi.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                HackCSI
+              </a>
+              - Organized, mentored and developed a website for a hackathon
+              event for College of Staten Island students, as well as running a
+              workshop on version control during the hackathon
             </li>
           </ul>
           <p
@@ -491,14 +570,24 @@ export default class Experience extends Component {
               textDecoration: "underline",
             }}
           >
-            <a style={{ textDecoration: "none", color: "orange" }} href="https://githubcampus.expert/AndreaHabib/" target="_blank" rel="noopener noreferrer">GitHub Campus Epxert</a> -{" "}
+            <a
+              style={{ textDecoration: "none", color: "orange" }}
+              href="https://githubcampus.expert/AndreaHabib/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub Campus Epxert
+            </a>{" "}
+            -{" "}
           </p>
           <ul style={{ textAlign: "left" }}>
             <li>
-              Sponsored as a GitHub campus expert to support technical and professional development of CSI computer science students
+              Sponsored as a GitHub campus expert to support technical and
+              professional development of CSI computer science students
             </li>
             <li>
-              Collaborated with computer science academic advisor to compile internship prep handbook for computer science students
+              Collaborated with computer science academic advisor to compile
+              internship prep handbook for computer science students
             </li>
           </ul>
         </div>
