@@ -32,11 +32,19 @@ export default class Project extends Component {
             <div className="projects-box">
               <ProjectCard
                 isDeployed={true}
+                title="RSS Web Scrape"
+                href="https://rss-web-scrape.vercel.app/"
+                description="Scrapped RSS internship postings by the CSI Career Center to provide well formated website for the students. Using Next.js and Cheerio, deployed on Vercel"
+                image="https://miro.medium.com/max/1400/1*oBm_3saYz4AI_MS6OekdFQ.png"
+                url="https://github.com/AndreaHabib/RSS_WebScrape"
+              />
+              <ProjectCard
+                isDeployed={true}
                 title="HackCSI"
                 href="https://hackcsi.netlify.app/"
                 description="React.js - Informative Website for HackCSI hackathon that provides sponsorship deck, FAQ, and form to apply to hackathon."
                 image="https://res.cloudinary.com/andreahabib/image/upload/v1627328388/Untitled_design_psaoo7.png"
-                url="https://github.com/dfg-care-somalia/caresomalia-maternal-delivery-backend"
+                url="https://github.com/AndreaHabib/hackathon_website"
               />
               <ProjectCard
                 isDeployed={false}
