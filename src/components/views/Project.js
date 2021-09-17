@@ -34,7 +34,7 @@ export default class Project extends Component {
                 isDeployed={true}
                 title="RSS Web Scrape"
                 href="https://rss-web-scrape.vercel.app/"
-                description="Scrapped RSS internship postings by the CSI Career Center to provide well formated website for the students. Using Next.js and Cheerio, deployed on Vercel"
+                description="Scrapped RSS internship postings by the CSI Career Center to provide well-formated website for students. Using Next.js, Cheerio, deployed on Vercel"
                 image="https://miro.medium.com/max/1400/1*oBm_3saYz4AI_MS6OekdFQ.png"
                 url="https://github.com/AndreaHabib/RSS_WebScrape"
               />
