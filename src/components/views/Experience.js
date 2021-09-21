@@ -539,7 +539,17 @@ export default class Experience extends Component {
               </a>
               - Organized, mentored and developed a website for a hackathon
               event for College of Staten Island students, as well as running a
-              workshop on version control during the hackathon
+              workshop on version control during the hackathon. The hackathon
+              was featured on{" "}
+              <a
+                style={{ textDecoration: "none", color: "orange" }}
+                href="https://csitoday.com/2021/09/hack-csi-puts-computer-science-students-in-competitive-arena/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                CSI Today
+              </a>
+              .
             </li>
           </ul>
           <p
