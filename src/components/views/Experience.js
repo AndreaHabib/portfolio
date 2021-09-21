@@ -586,7 +586,7 @@ export default class Experience extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              GitHub Campus Epxert
+              GitHub Campus Expert
             </a>{" "}
             -{" "}
           </p>
