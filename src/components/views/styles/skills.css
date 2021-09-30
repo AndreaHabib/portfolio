@@ -24,6 +24,11 @@ h2 {
   margin-right: 10px;
   width: 25%;
   box-shadow: 10px 10px rgb(194, 35, 194);
+  transition: box-shadow 0.5s;
+}
+
+.box:hover {
+  box-shadow: 20px 20px rgb(194, 35, 194);
 }
 
 .illus {
