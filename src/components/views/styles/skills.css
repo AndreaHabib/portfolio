@@ -7,7 +7,7 @@
 }
 
 h2 {
-  font-size: 70px;
+  font-size: 3.5em;
 }
 
 .skills {
@@ -15,14 +15,15 @@ h2 {
   clear: none;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
 .box {
+  flex: 1 1 20%;
   padding: 40px;
   border-radius: 10px;
   background-color: #9d6bb6;
-  margin-right: 10px;
-  width: 25%;
   box-shadow: 10px 10px rgb(194, 35, 194);
   transition: box-shadow 0.5s;
 }
@@ -33,54 +34,4 @@ h2 {
 
 .illus {
   width: 5.5rem;
-}
-
-@media screen and (max-width: 768px) {
-  .skills {
-    display: flex;
-    flex-direction: column;
-  }
-  .box {
-    margin-bottom: 20px;
-    width: 100%;
-  }
-  h2 {
-    font-size: 40px;
-  }
-}
-
-@media screen and (max-width: 1366px) and (min-width: 1024px) {
-  .skills {
-    display: flex;
-    flex-direction: column;
-  }
-  .box {
-    margin-bottom: 20px;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 768px) and (min-width: 768px) {
-  .skills {
-    display: flex;
-    flex-direction: column;
-  }
-  .box {
-    margin-bottom: 20px;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 280px) and (min-width: 280px) {
-  .skills {
-    display: flex;
-    flex-direction: column;
-  }
-  .box {
-    margin-bottom: 20px;
-    width: 100%;
-  }
-  h2 {
-    font-size: 40px;
-  }
 }

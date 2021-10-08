@@ -5,6 +5,8 @@
   display: flex;
   margin: 0 auto;
   margin-bottom: 100px;
+  border: 5px solid rgb(194, 35, 194);
+  border-radius: 10px;
 }
 
 .caption {

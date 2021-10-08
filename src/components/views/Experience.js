@@ -71,8 +71,8 @@ export default class Experience extends Component {
             >
               <li>
                 Instruct a series of Technical Development workshops on HTML,
-                CSS, Javascript, Git and GitHub for Computer Science Students
-                for entry into TTP Residency program
+                CSS, Javascript, Git & GitHub and Unit Testing, for Computer
+                Science Students for entry into TTP Residency program
               </li>
             </ul>
           </VerticalTimelineElement>

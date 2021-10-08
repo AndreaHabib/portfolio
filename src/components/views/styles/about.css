@@ -3,11 +3,11 @@
   background: rgba(255, 255, 255, 0.9);
   border-radius: 20px;
   display: flex;
-  margin-top: 15px;
   flex-direction: row;
   height: 23rem;
   align-items: center;
   padding: 5%;
+  justify-content: center;
 }
 
 /*rgb(193,35,194)*/
@@ -71,12 +71,11 @@ span a .fa-2x:hover {
 
 @media screen and (max-width: 768px) {
   .about-me {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
     padding-top: 40px;
     height: 80vh;
-    padding-bottom: 100px;
   }
   .about-image {
     margin-bottom: 20px;
@@ -90,7 +89,6 @@ span a .fa-2x:hover {
   .about-me {
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
   }
   .about-image {
     margin-bottom: 20px;
@@ -102,7 +100,6 @@ span a .fa-2x:hover {
   .about-me {
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
   }
   .about-image {
     margin-bottom: 20px;
@@ -130,8 +127,7 @@ span a .fa-2x:hover {
     height: 7.6rem;
   }
   .about-me {
-    padding-top: 81px;
-    height: 95vh;
-    padding-bottom: 100px;
+    margin-top: 60px;
+    height: 90vh;
   }
 }
