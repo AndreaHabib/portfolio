@@ -41,6 +41,20 @@ function About() {
               />
             </a>
           </span>
+          <span className="text-flag">
+            <h3>Microsoft Learn Student Ambassador</h3>
+            <a
+              title="microsoft student ambassador"
+              href="https://studentambassadors.microsoft.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                alt="star"
+                src="https://img.icons8.com/fluency/48/000000/star.png"
+              />
+            </a>
+          </span>
           <hr style={{ border: "1px solid #fa5679" }}></hr>
           <h5>
             Passionate, constantly learning and exploring new skills,
