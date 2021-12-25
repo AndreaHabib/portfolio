@@ -19,7 +19,7 @@ function About() {
         <img
           className="about-image"
           alt="About me"
-          src="https://res.cloudinary.com/andreahabib/image/upload/v1614539664/backup_aurk3d.jpg"
+          src="https://res.cloudinary.com/andreahabib/image/upload/v1629141375/236003965_6272724826086174_6549502244216007258_n_il6fe9.jpg"
         />
         <div className="column text">
           <h1>
@@ -42,7 +42,7 @@ function About() {
             </a>
           </span>
           <span className="text-flag">
-            <h3>Microsoft Learn Student Ambassador</h3>
+            <h3>Microsoft LS Ambassador</h3>
             <a
               title="microsoft student ambassador"
               href="https://studentambassadors.microsoft.com/"
