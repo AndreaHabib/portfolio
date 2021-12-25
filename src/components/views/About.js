@@ -54,11 +54,15 @@ function About() {
             Snapshot of my GitHub stats:{" "}
             <a
               className="ambLink"
-              style={{ marginLeft: "5px" }}
+              style={{ marginLeft: "5px", textDecoration: "none" }}
               target="_blank"
               rel="noreferrer"
               href="https://lofi-git.vercel.app/user/AndreaHabib"
             >
+              <i
+                style={{ marginRight: "2px" }}
+                className="fab fa-github-alt"
+              ></i>
               AndreaHabib
             </a>
           </h4>
