@@ -10,7 +10,7 @@
     "@testing-library/user-event": "^7.2.1",
     "aos": "^3.0.0-beta.6",
     "particles-bg": "^2.5.5",
-    "prop-types": "^15.7.2",
+    "prop-types": "^15.8.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.6.4",
     "react-dom": "^16.13.1",
@@ -18,7 +18,7 @@
     "react-scripts": "^4.0.3",
     "react-scroll": "^1.8.4",
     "react-typewriter": "^0.4.1",
-    "react-vertical-timeline-component": "^3.3.3",
+    "react-vertical-timeline-component": "^3.5.2",
     "typewriter-effect": "^2.18.2"
   },
   "scripts": {

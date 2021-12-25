@@ -75,6 +75,7 @@
 }
 
 .semicircle {
+  display: flex;
   color: white;
   border-left: 40px solid rgb(194, 35, 194);
   width: 12rem;

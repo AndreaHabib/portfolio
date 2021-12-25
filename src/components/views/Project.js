@@ -40,11 +40,19 @@ export default class Project extends Component {
               />
               <ProjectCard
                 isDeployed={true}
-                title="HackCSI"
-                href="https://hackcsi.netlify.app/"
-                description="React.js - Informative Website for HackCSI hackathon that provides sponsorship deck, FAQ, and form to apply to hackathon."
-                image="https://res.cloudinary.com/andreahabib/image/upload/v1627328388/Untitled_design_psaoo7.png"
-                url="https://github.com/AndreaHabib/hackathon_website"
+                title="Lofi Git"
+                href="https://lofi-git.vercel.app/"
+                description="React.ts - Website to show snapshot of GitHub stats. Built using Typescript, MaterialUI, and GitHub REST API. Deployed on Vercel"
+                image="https://i.pinimg.com/originals/d3/57/85/d357851d175b239ab09869eb434da746.jpg"
+                url="https://github.com/giannagalard/lofi-git"
+              />
+              <ProjectCard
+                isDeployed={true}
+                title="Coptic Orthodox Church"
+                href="https://michaelmenasi.netlify.app/"
+                description="React.js - Website built for my local coptic church to provide information and announcements to the public. Uses firebase server."
+                image="https://res.cloudinary.com/andreahabib/image/upload/v1637544876/logo_vvn1g0.png"
+                url="https://github.com/AndreaHabib/website"
               />
               <ProjectCard
                 isDeployed={false}

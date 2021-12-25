@@ -37,7 +37,12 @@ export default function ProjectCard(props) {
           <p className="description">{props.description}</p>
         </span>
       </div>
-      <a target="_blank" rel="noreferrer" href={props.url}>
+      <a
+        className="semicricleLink"
+        target="_blank"
+        rel="noreferrer"
+        href={props.url}
+      >
         <div className="semicircle">
           <p className="text-in">Source Code</p>
         </div>

@@ -8,6 +8,7 @@ AOS.init();
 
 function Skills() {
   const frontend_badges = {
+    ts: "https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white",
     html5:
       "https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white",
     css3: "https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white",
@@ -44,10 +45,13 @@ function Skills() {
       "https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&logo=ruby-on-rails&logoColor=white",
     graphql:
       "https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql",
-    JSON:
-      "https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white",
+    JSON: "https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white",
   };
   const databases_badges = {
+    firebase:
+      "https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black",
+    vercel:
+      "https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white",
     mysql:
       "https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white",
     postgres:
