@@ -7,7 +7,6 @@ import {
   Skills,
   Footer,
   About,
-  PhotoGallery,
   NavBar,
   Contact,
 } from "./index";
@@ -25,9 +24,7 @@ class MyPortfolioView extends Component {
             <Skills />
             <div id="experience" style={{ marginTop: "8rem" }}></div>
             <Experience />
-            <div id="posters" style={{ marginTop: "-9rem" }}></div>
-            <PhotoGallery />
-            <div id="project" style={{ marginTop: "-8rem" }}></div>
+            <div id="project"></div>
             <Project />
             <div id="contact" style={{ marginTop: "8rem" }}></div>
             <Contact />
