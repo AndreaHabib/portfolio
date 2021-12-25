@@ -28,33 +28,40 @@ function About() {
           </h1>
           <h3 className="text-muted">Based in NYC</h3>
           <span className="text-flag">
-            <h3>GitHub Campus Expert</h3>
+            <h3>
+              <a
+                title="github campus expert"
+                href="https://githubcampus.expert/AndreaHabib/"
+                target="_blank"
+                rel="noreferrer"
+                className="ambLink"
+              >
+                GitHub Campus Expert
+              </a>{" "}
+              &{" "}
+              <a
+                title="microsoft student ambassador"
+                href="https://studentambassadors.microsoft.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="ambLink"
+              >
+                Microsoft LS Ambassador
+              </a>
+            </h3>
+          </span>
+          <h4>
+            Snapshot of my GitHub stats:{" "}
             <a
-              title="github campus expert"
-              href="https://githubcampus.expert/AndreaHabib/"
+              className="ambLink"
+              style={{ marginLeft: "5px" }}
               target="_blank"
               rel="noreferrer"
+              href="https://lofi-git.vercel.app/user/AndreaHabib"
             >
-              <img
-                alt="github campus expert flag"
-                src="https://img.icons8.com/color/48/000000/filled-flag.png"
-              />
+              AndreaHabib
             </a>
-          </span>
-          <span className="text-flag">
-            <h3>Microsoft LS Ambassador</h3>
-            <a
-              title="microsoft student ambassador"
-              href="https://studentambassadors.microsoft.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                alt="star"
-                src="https://img.icons8.com/fluency/48/000000/star.png"
-              />
-            </a>
-          </span>
+          </h4>
           <hr style={{ border: "1px solid #fa5679" }}></hr>
           <h5>
             Passionate, constantly learning and exploring new skills,

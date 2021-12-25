@@ -17,6 +17,11 @@
   justify-content: center;
 }
 
+.ambLink {
+  color: #fa5679;
+  text-decoration: underline;
+}
+
 span a {
   text-decoration: none;
   color: black;
