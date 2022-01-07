@@ -3,7 +3,6 @@ import React from "react";
 export default function ProjectCard(props) {
   return (
     <span className="project">
-      <h1>Hey</h1>
       {props.isDeployed ? (
         <div className="quarter-circle-container">
           <div class="quarter-circle-top-right">
