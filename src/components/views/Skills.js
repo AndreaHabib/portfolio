@@ -24,6 +24,10 @@ function Skills() {
       "https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white",
     materialUI:
       "https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white",
+    ionic:
+      "https://img.shields.io/badge/Ionic-3880FF?style=for-the-badge&logo=ionic&logoColor=white",
+    angular:
+      "https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white",
   };
   const backend_badges = {
     django:
@@ -106,6 +110,8 @@ function Skills() {
       "https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=red",
     markdown:
       "https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white",
+    docker:
+      "https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white",
   };
 
   return (
