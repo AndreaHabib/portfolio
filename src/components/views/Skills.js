@@ -50,6 +50,8 @@ function Skills() {
     graphql:
       "https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql",
     JSON: "https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white",
+    apollo:
+      "https://img.shields.io/badge/Apollo%20GraphQL-311C87?&style=for-the-badge&logo=Apollo%20GraphQL&logoColor=white",
   };
   const databases_badges = {
     firebase:
