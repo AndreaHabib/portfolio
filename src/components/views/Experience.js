@@ -28,7 +28,7 @@ export default class Experience extends Component {
               color: "#ff",
               backgroundColor: "rgba(255, 255, 255, 0.1)",
             }}
-            date="Sept 2021 - Present"
+            date="Sept 2021 - Jan 2022"
             iconStyle={{ background: "rgb(0, 0, 0)", color: "#fff" }}
             icon={
               <img
@@ -73,6 +73,28 @@ export default class Experience extends Component {
                 Instruct a series of Technical Development workshops on HTML,
                 CSS, Javascript, Git & GitHub and Unit Testing, for Computer
                 Science Students for entry into TTP Residency program
+              </li>
+            </ul>
+            <h4
+              style={{ marginBottom: "50px" }}
+              className="vertical-timeline-element-subtitle"
+            >
+              Teaching Assistant
+            </h4>
+            <ul
+              style={{ textAlign: "left", color: "black", fontSize: "medium" }}
+            >
+              <li>
+                Help and guide students through their assignments, while
+                explaining different concepts on the tech stack being used
+              </li>
+              <li>
+                Grade assignments and give detailed feedback to the students
+              </li>
+              <li>
+                Hosted workshops on Javascript DOM, React.js, Redux, Git and
+                GitHub, and Backend development, along with other miscellaneous
+                workshops
               </li>
             </ul>
           </VerticalTimelineElement>
