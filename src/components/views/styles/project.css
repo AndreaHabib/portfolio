@@ -2,13 +2,15 @@
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   color: white;
+  width: 45%;
   border-left: 10px solid rgb(194, 35, 194);
   border-top: 10px solid rgb(194, 35, 194);
   border-right: 10px solid rgb(194, 35, 194);
+  height: 22rem;
+  position: relative;
 }
 
 .quarter-circle-text {
-  font-size: small;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -25,8 +27,8 @@
   justify-content: flex-end;
   align-items: flex-start;
   position: absolute;
-  width: 6rem;
-  height: 4rem;
+  width: 6.5rem;
+  height: 4.5rem;
   background: rgb(194, 35, 194);
   border-radius: 0 0 0 100px;
   -moz-border-radius: 0 0 0 100px;
@@ -35,20 +37,28 @@
 }
 
 .quarter-circle-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   background-color: rgb(137, 41, 192);
   padding: 10px;
+  width: 5rem;
+  height: 3rem;
   border-radius: 5px;
-  transition: padding 1s;
+  transition: padding 1s, width 1s, height 1s;
 }
+
 .quarter-circle-link:hover {
   color: #fff;
   padding: 20px;
+  width: 6rem;
+  height: 4rem;
 }
 
 .quarter-circle-top-right:hover {
-  width: 7rem;
-  height: 5rem;
+  width: 7.5rem;
+  height: 5.5rem;
 }
 
 .icon-text {
@@ -77,6 +87,8 @@
 .semicircle {
   display: flex;
   color: white;
+  position: absolute;
+  bottom: 0;
   border-left: 40px solid rgb(194, 35, 194);
   width: 12rem;
   padding: 3%;
@@ -96,10 +108,10 @@
 }
 
 .projects-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 20px;
-  row-gap: 20px;
+  justify-content: center;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 section div hr {
@@ -144,13 +156,14 @@ section div hr {
   clear: none;
   color: white;
   width: 100vw;
-  position: relative;
-  margin-left: -50vw;
-  left: 50%;
   padding-top: 60px;
 }
 
 @media screen and (max-width: 768px) {
+  .project {
+    width: 100%;
+  }
+
   .ptitle {
     font-size: x-large;
   }
@@ -161,31 +174,15 @@ section div hr {
     border-right: 8px solid rgb(194, 35, 194);
   }
 
-  .projects-box {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 20px;
-  }
-
   .card-img-top {
     width: 9rem;
     height: 6.5rem;
   }
 }
 
-@media screen and (max-width: 1366px) and (min-width: 1024px) {
-  .projects-box {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 20px;
-  }
-}
-
 @media screen and (max-width: 768px) and (min-width: 768px) {
-  .projects-box {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 20px;
+  .project {
+    width: 100%;
   }
 
   .description {
@@ -198,6 +195,10 @@ section div hr {
 }
 
 @media screen and (max-width: 280px) and (min-width: 280px) {
+  .project {
+    width: 100%;
+  }
+
   .ptitle {
     font-size: large;
   }
@@ -206,12 +207,6 @@ section div hr {
     border-left: 5px solid rgb(194, 35, 194);
     border-top: 5px solid rgb(194, 35, 194);
     border-right: 5px solid rgb(194, 35, 194);
-  }
-
-  .projects-box {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 20px;
   }
 
   .card-img-top {

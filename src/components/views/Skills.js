@@ -1,10 +1,6 @@
 import React from "react";
 import "./styles/skills.css";
 import SkillCard from "../containers/SkillCard";
-import AOS from "aos";
-import "aos/dist/aos.css";
-// ..
-AOS.init();
 
 function Skills() {
   const frontend_badges = {
@@ -118,13 +114,7 @@ function Skills() {
 
   return (
     <section className="skills">
-      <div
-        data-aos="fade-up"
-        data-aos-delay="20"
-        data-aos-duration="300"
-        data-aos-easing="ease-in-out"
-        className="container"
-      >
+      <div className="container">
         <div className="heading">
           <h2
             style={{

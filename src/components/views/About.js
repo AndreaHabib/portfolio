@@ -1,20 +1,10 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 import "./styles/about.css";
-import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-// ..
-AOS.init();
 
 function About() {
   return (
-    <div
-      data-aos="fade-down"
-      data-aos-delay="20"
-      data-aos-duration="1000"
-      data-aos-easing="ease-in-out"
-      className="portfolio-block block-intro"
-    >
+    <div className="portfolio-block block-intro">
       <div className="about-me">
         <img
           className="about-image"

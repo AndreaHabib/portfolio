@@ -1,22 +1,14 @@
 import React, { Component } from "react";
 import "./styles/project.css";
 import ProjectCard from "../containers/ProjectCard";
-import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-// ..
-AOS.init();
 
 export default class Project extends Component {
   render() {
     return (
       <section id="projects" className="website projects">
         <div
-          data-aos="fade-up"
-          data-aos-delay="20"
-          data-aos-duration="300"
-          data-aos-easing="ease-in-out"
           style={{ color: "black", textAlign: "center" }}
-          className="container"
+          className="container-fluid"
         >
           <h2
             className="heading"
@@ -30,6 +22,14 @@ export default class Project extends Component {
           </h2>
           <div>
             <div className="projects-box">
+              <ProjectCard
+                isDeployed={true}
+                title="CS Advisement Toolkit"
+                href="https://flowcharts-csi.vercel.app/"
+                description="This toolkit is designed to assist students in the process of course selection and planning. React.js, React Flow, MaterialUI, deployed on Vercel."
+                image="https://res.cloudinary.com/andreahabib/image/upload/v1648657583/CS_Advisement_toolkit_p3p3z0.png"
+                url="https://github.com/AndreaHabib/flowchart"
+              />
               <ProjectCard
                 isDeployed={true}
                 title="RSS Web Scrape"
