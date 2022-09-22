@@ -159,9 +159,14 @@ section div hr {
   padding-top: 60px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .project {
     width: 100%;
+    height: 25rem;
+  }
+
+  .description {
+    width: 50%;
   }
 
   .ptitle {
@@ -175,42 +180,34 @@ section div hr {
   }
 
   .card-img-top {
-    width: 9rem;
-    height: 6.5rem;
+    height: 7.5rem;
+  }
+
+  .semicircle {
+    width: 15rem;
+  }
+
+  .semicircle:hover {
+    width: 18rem;
   }
 }
 
-@media screen and (max-width: 768px) and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .project {
-    width: 100%;
-  }
-
-  .description {
-    width: 50%;
+    width: 40%;
   }
 
   .card-img-top {
+    width: 9.3rem;
     height: 7.5rem;
   }
-}
 
-@media screen and (max-width: 280px) and (min-width: 280px) {
-  .project {
-    width: 100%;
+  .semicircle {
+    width: 20rem;
+    padding: 2%;
   }
 
-  .ptitle {
-    font-size: large;
-  }
-
-  .project {
-    border-left: 5px solid rgb(194, 35, 194);
-    border-top: 5px solid rgb(194, 35, 194);
-    border-right: 5px solid rgb(194, 35, 194);
-  }
-
-  .card-img-top {
-    width: 9rem;
-    height: 7.5rem;
+  .semicircle:hover {
+    width: 25rem;
   }
 }

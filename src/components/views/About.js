@@ -16,7 +16,6 @@ function About() {
             <strong>Hey! </strong>
             I'm Andrea Habib!
           </h1>
-          <h3 className="text-muted">Based in NYC</h3>
           <span className="text-flag">
             <h3>
               <a
@@ -57,10 +56,6 @@ function About() {
             </a>
           </h4>
           <hr style={{ border: "1px solid #fa5679" }}></hr>
-          <h5>
-            Passionate, constantly learning and exploring new skills,
-            technologies, and tech stacks.
-          </h5>
           <h5 className="typewriter">
             <Typewriter
               className="typewriter"

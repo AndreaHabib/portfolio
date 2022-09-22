@@ -61,8 +61,15 @@
   }
 }
 
-@media screen and (max-width: 1366px) and (min-width: 1024px) {
+@media screen and (max-width: 768px) {
+  .vertical-timeline-element-subtitle {
+    visibility: visible;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .workIcon {
-    width: 40px !important;
+    width: 60px !important;
   }
 }

@@ -5,7 +5,7 @@ export default function ProjectCard(props) {
     <span className="project">
       {props.isDeployed ? (
         <div className="quarter-circle-container">
-          <div class="quarter-circle-top-right">
+          <div className="quarter-circle-top-right">
             <a
               target="_blank"
               rel="noreferrer noopener"

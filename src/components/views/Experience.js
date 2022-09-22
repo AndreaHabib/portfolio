@@ -28,13 +28,86 @@ export default class Experience extends Component {
               color: "#ff",
               backgroundColor: "rgba(255, 255, 255, 0.1)",
             }}
+            date="May 31st - Present"
+            iconStyle={{ background: "rgb(0, 0, 0)", color: "#fff" }}
+            icon={
+              <img
+                src="https://cloudfront-us-east-1.images.arcpublishing.com/gray/NPLCNH4LRVCZBCWROAZL3M7EWA.png"
+                alt="ttp"
+                style={{ borderRadius: "100%", width: "40px" }}
+                className="workIcon"
+              />
+            }
+          >
+            <span className="tag">
+              <img
+                alt="BitBucket"
+                src="https://img.shields.io/badge/Bitbucket-0747a6?style=for-the-badge&logo=bitbucket&logoColor=white"
+              />{" "}
+              <img
+                alt="Jira"
+                src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=Jira&logoColor=white"
+              />{" "}
+              <img
+                alt="Javascript"
+                src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+              />{" "}
+              <img
+                alt="React"
+                src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
+              />{" "}
+              <img
+                alt="Jenkins"
+                src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white"
+              />{" "}
+            </span>
+            <h3 className="vertical-timeline-element-title">
+              Lowe's Home Improvement
+            </h3>
+            <h4
+              style={{ marginBottom: "50px" }}
+              className="vertical-timeline-element-subtitle"
+            >
+              Software Engineer Intern
+            </h4>
+            <ul
+              style={{ textAlign: "left", color: "black", fontSize: "medium" }}
+            >
+              <li>
+                Participated in agile rituals and ceremonies (refinement,
+                sprint, retrospective, backlog grooming, CRQ)
+              </li>
+              <li>
+                Contributed by developing and maintaining multiple components on
+                large scale application using internal version of React
+                (Lowes.com)
+              </li>
+              <li>Learned about different internal technologies used</li>
+              <li>
+                Facilitated an A/B test using Lowe's frameworks to test
+                correlation between customer behavior and hover effects on the
+                web page
+              </li>
+              <li>
+                Demoed and explained new features to stakeholders and product
+                managers
+              </li>
+            </ul>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{
+              borderTop: "10px solid #000080",
+              color: "#ff",
+              backgroundColor: "rgba(255, 255, 255, 0.1)",
+            }}
             date="Sept 2021 - Jan 2022"
             iconStyle={{ background: "rgb(0, 0, 0)", color: "#fff" }}
             icon={
               <img
                 src="https://res.cloudinary.com/andreahabib/image/upload/v1625917885/ttp_ykvtit.png"
                 alt="ttp"
-                style={{ borderRadius: "100%", width: "60px" }}
+                style={{ borderRadius: "100%", width: "40px" }}
                 className="workIcon"
               />
             }
@@ -111,7 +184,7 @@ export default class Experience extends Component {
               <img
                 src="https://cdn.substack.com/image/fetch/w_170,c_limit,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fc3bf4adb-7902-4377-a660-feb3aa06ef1a_1000x1000.png"
                 alt="ttp"
-                style={{ borderRadius: "100%", width: "60px" }}
+                style={{ borderRadius: "100%", width: "40px" }}
                 className="workIcon"
               />
             }
@@ -178,7 +251,7 @@ export default class Experience extends Component {
               <img
                 src="https://res.cloudinary.com/andreahabib/image/upload/v1625917885/dfg_wuzaa4.png"
                 alt="dfg"
-                style={{ borderRadius: "100%", width: "60px" }}
+                style={{ borderRadius: "100%", width: "40px" }}
                 className="workIcon"
               />
             }
@@ -269,7 +342,7 @@ export default class Experience extends Component {
               <img
                 src="https://res.cloudinary.com/andreahabib/image/upload/v1627000875/csi_wuan3q.png"
                 alt="ttp"
-                style={{ borderRadius: "100%", width: "60px" }}
+                style={{ borderRadius: "100%", width: "40px" }}
                 className="workIcon"
               />
             }
@@ -340,7 +413,7 @@ export default class Experience extends Component {
               <img
                 src="https://res.cloudinary.com/andreahabib/image/upload/v1625917885/mlh_jw6fue.jpg"
                 alt="mlh"
-                style={{ borderRadius: "100%", width: "60px" }}
+                style={{ borderRadius: "100%", width: "40px" }}
                 className="workIcon"
               />
             }
@@ -438,7 +511,7 @@ export default class Experience extends Component {
               <img
                 src="https://res.cloudinary.com/andreahabib/image/upload/v1625917885/ttp_ykvtit.png"
                 alt="ttp"
-                style={{ borderRadius: "100%", width: "60px" }}
+                style={{ borderRadius: "100%", width: "40px" }}
                 className="workIcon"
               />
             }
